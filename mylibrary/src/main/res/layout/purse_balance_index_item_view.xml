@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/purse_index_grid_item_view_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:layout_gravity="center|right|top" android:id="@id/purse_balance_index_item_view_subtitle_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="center" android:padding="@dimen/mgjpf_padding_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.astonmartin.image.WebImageView android:layout_gravity="center_vertical" android:id="@id/purse_balance_index_item_view_title_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mgjpf_margin_small" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_main_text_color1" android:layout_gravity="center_vertical" android:id="@id/purse_balance_index_item_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mgjpf_margin_small" android:singleLine="true" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color2" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/purse_balance_index_item_view_subtitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

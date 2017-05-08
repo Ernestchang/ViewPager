@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="450.0dip">
+        <View android:id="@id/live_feedback_outside" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="450.0dip" android:layout_centerInParent="true" />
+        <RelativeLayout android:gravity="center_horizontal" android:background="@drawable/live_feedback_dialog_bg" android:clickable="true" android:layout_width="270.0dip" android:layout_height="245.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/live_feedback_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="19.0dip" android:text="@string/feedback_dialog_title" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#b2ffffff" android:gravity="center" android:id="@id/live_feedback_title_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="19.0dip" android:text="@string/feedback_dialog_title_content" android:layout_below="@id/live_feedback_title_tv" android:lineSpacingExtra="2.0dip" />
+            <EditText android:textSize="14.0sp" android:textColor="#ffffffff" android:textColorHint="#ff999999" android:gravity="top" android:layout_gravity="center" android:id="@id/live_feedback_edittext" android:background="@drawable/live_feedback_content_bg" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:paddingBottom="7.0dip" android:layout_width="208.0dip" android:layout_height="47.0dip" android:layout_marginTop="5.0dip" android:hint="输入你想说的" android:maxLength="100" android:layout_below="@id/live_feedback_title_content_tv" android:layout_centerHorizontal="true" android:textCursorDrawable="@drawable/live_feedback_color_cursor" />
+            <RelativeLayout android:layout_gravity="bottom" android:id="@id/live_feedback_btn_rl" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/live_feedback_edittext">
+                <View android:id="@id/live_feedback_divide" android:background="#33ffffff" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+                <Button android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/live_feedback_cancel" android:background="#00ffffff" android:layout_width="134.0dip" android:layout_height="45.0dip" android:text="不吐槽了" android:layout_toLeftOf="@id/live_feedback_divide" />
+                <LinearLayout android:gravity="center" android:id="@id/live_feedback_confirm_ll" android:clickable="true" android:layout_width="134.0dip" android:layout_height="45.0dip" android:layout_toRightOf="@id/live_feedback_divide">
+                    <Button android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/live_feedback_confirm" android:background="#00ffffff" android:clickable="false" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="发送吐槽" />
+                    <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/live_feedback_picture" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" android:layout_below="@id/live_feedback_edittext" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

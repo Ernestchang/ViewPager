@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:layout_gravity="center" android:id="@id/message_emotion_image" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="5.0dip" android:scaleType="fitCenter" android:layout_toRightOf="@id/user_portrait" android:layout_below="@id/user_name" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/message_emotion_image_text" android:background="@drawable/im_other_item_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxEms="12" android:layout_toRightOf="@id/user_portrait" android:layout_below="@id/user_name" style="@style/IMTextViewStyle" />
+</merge>

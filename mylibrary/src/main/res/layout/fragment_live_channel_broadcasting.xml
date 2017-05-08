@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/content_lay" android:background="@drawable/shape_live_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mogujie.live.view.PullToRefreshLayout android:id="@id/pullToRefreshLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_lay" />
+    <com.mogujie.uikit.progressbar.MGProgressbar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/goto_live_icon" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginRight="15.5dip" android:layout_marginBottom="15.5dip" android:src="@drawable/live_list_live_icon" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/sdk_center_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/title_size" android:textColor="@color/grey_d1" android:ellipsize="end" android:gravity="center" android:id="@id/sdk_title_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="180.0dip" android:singleLine="true" android:layout_centerInParent="true" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/back_linear" android:paddingLeft="@dimen/title_padding_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="60.0dip" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/back_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/menu_linear" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <Button android:textSize="15.0sp" android:textColor="@color/official_text0" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/right_btn" android:background="@android:color/transparent" android:paddingRight="15.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <com.meilishuo.base.view.RedImageButton android:layout_gravity="center_vertical" android:id="@id/right_image_btn1" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="12.0dip" />
+    </LinearLayout>
+    <View android:background="@color/divider_line_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</merge>

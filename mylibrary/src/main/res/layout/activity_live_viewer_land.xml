@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mogujie.live.widget.LiveDrawerLayout android:id="@id/mg_live_screen_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="-64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/flyt_viewer_root" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="64.0dip">
+        <ViewStub android:id="@id/viewstub_video_layer_ui" android:inflatedId="@id/view_video_ui_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.mogujie.live.component.refactor.danmu.view.DanmuShowView android:layout_gravity="center_vertical" android:id="@id/live_danmu_show_view" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="120.0dip" />
+        <include layout="@layout/live_viewer_top_bar" />
+        <RelativeLayout android:id="@id/mg_live_content_pane_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@drawable/shape_live_bottom_bar_bg" android:layout_width="fill_parent" android:layout_height="230.0dip" android:layout_alignParentBottom="true" />
+            <include layout="@layout/live_chat_layout_land" />
+            <ViewStub android:id="@id/viewstub_viewer_bottom_bar" android:inflatedId="@id/mg_live_bottom_layout_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+            <com.mogujie.live.view.MGGiftBigAnimView android:id="@id/mg_live_gift_biganim_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <com.mogujie.live.component.refactor.comment.view.CommentSendView android:layout_gravity="bottom" android:id="@id/mg_live_message_input_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/bottom_gift_container" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="284.0dip" />
+        <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/bottom_host_busy" android:background="@drawable/mg_live_host_busys_bg" android:visibility="gone" android:layout_width="153.0dip" android:layout_height="140.0dip">
+            <ImageView android:id="@id/mg_host_busy_icon" android:background="@drawable/mg_live_host_busy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="主播正忙  稍后回来" android:layout_below="@id/mg_host_busy_icon" />
+        </RelativeLayout>
+        <ViewStub android:id="@id/mg_live_viewer_full_layout" android:layout="@layout/mg_live_viewer_full_layout" android:inflatedId="@id/subTree" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.mogujie.live.component.ebusiness.view.GoodsShelfView android:id="@id/view_goods_shelf" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/mg_live_guide_layout" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="start" android:id="@id/drawer_goods_onsale" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.mogujie.live.widget.LiveDrawerLayout>

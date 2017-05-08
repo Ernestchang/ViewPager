@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textColor="@color/white" android:id="@id/et_roomid" android:layout_width="wrap_content" android:layout_height="fill_parent" android:hint="当期那房间号" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <Switch android:id="@id/switch_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="通告" android:textOff="通告" />
+                <Switch android:id="@id/switch_liveinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="live信息" android:textOff="live信息" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <Switch android:id="@id/switch_livedata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="live数据" android:textOff="live数据" />
+                <Switch android:id="@id/switch_actorinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="ActorInfo" android:textOff="ActorInfo" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <Switch android:id="@id/switch_FunctionInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="FunctionInfo" android:textOff="Function" />
+                <Switch android:id="@id/switch_biz_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="BizData" android:textOff="BizData" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主播数据（加购 成交）" />
+                    <Switch android:id="@id/switch_biz_data_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="bidata" android:textOff="bizdata" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品列表id" />
+                        <EditText android:textColor="@color/white" android:id="@id/et_tradeItemIds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1ntcplq,1ntcplo,1ntcstg]" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主推商品id" />
+                        <EditText android:textColor="@color/white" android:id="@id/et_mainItemId" android:layout_width="100.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠券id" />
+                        <EditText android:textColor="@color/white" android:id="@id/et_couponId" android:layout_width="100.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+                        <Switch android:textColor="@color/white" android:id="@id/switch_biz_set_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="开" android:textOff="关" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="禁言ID" />
+                    <EditText android:textColor="@color/white" android:id="@id/et_audience" android:layout_width="200.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+                    <Switch android:textColor="@color/white" android:id="@id/switch_audience_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="开" android:textOff="关" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="助理ID" />
+                    <EditText android:textColor="@color/white" android:id="@id/et_assistantUserId" android:layout_width="200.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+                    <Switch android:id="@id/switch_assistant_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="开" android:textOff="关" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点赞数" />
+                        <EditText android:textColor="@color/white" android:id="@id/et_favor_count" android:layout_width="30.0dip" android:layout_height="wrap_content" android:text="123" android:singleLine="true" />
+                        <Switch android:textColor="@color/white" android:id="@id/switch_favor_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="开" android:textOff="关" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加购车" />
+                        <EditText android:textColor="@color/white" android:id="@id/et_add_cart_viewer" android:layout_width="30.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+                        <Switch android:textColor="@color/white" android:id="@id/switch_add_cart_count_viewer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="开" android:textOff="关" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <Switch android:textColor="@color/white" android:id="@id/switch_data_channel_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="开" android:textOff="关" />
+                <Button android:textColor="@color/white" android:id="@id/switch_request" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Request Data" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <Button android:textColor="@color/white" android:id="@id/btn_goto_present_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择礼物" />
+                <Button android:textColor="@color/white" android:id="@id/btn_send_presnet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送礼物" />
+                <Button android:textColor="@color/white" android:id="@id/btn_send_barrage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送弹幕" />
+                <Button android:textColor="@color/white" android:id="@id/btn_send_redPackage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送红包" />
+            </LinearLayout>
+            <TextView android:textColor="@color/white" android:id="@id/tv_Log" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="12321" />
+            <RelativeLayout android:id="@id/av_video_layer_ui" android:layout_width="300.0dip" android:layout_height="400.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

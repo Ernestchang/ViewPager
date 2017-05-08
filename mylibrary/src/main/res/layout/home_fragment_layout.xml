@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/base_title_bar_height" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/search_btn" android:layout_width="@dimen/base_title_bar_height" android:layout_height="@dimen/base_title_bar_height" android:src="@drawable/home_search_icon" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <com.meilishuo.mainpage.view.DoubleImageview android:id="@id/meilishuo_double" android:layout_width="200.0dip" android:layout_height="fill_parent" android:src="@drawable/home_meilishuo_title" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/rijian_btn" android:layout_width="@dimen/base_title_bar_height" android:layout_height="@dimen/base_title_bar_height" android:src="@drawable/home_publish_rijian_icon" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/divider_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.mogujie.ui.view.PullToRefreshLayout android:id="@id/pullToRefreshLayout" android:background="@color/comment_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header" />
+    <com.astonmartin.image.WebImageView android:id="@id/home_618_btn" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

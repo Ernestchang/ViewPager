@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="81.0dip" android:layout_height="81.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="81.0dip" android:layout_height="81.0dip" android:src="@mipmap/im_notice_default_icon_seat" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/isselected" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@mipmap/im_album_img_select_nor" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

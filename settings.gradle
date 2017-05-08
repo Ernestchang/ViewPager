@@ -1,1 +1,1 @@
-include ':app', ':yviewpager'
+include ':app', ':yviewpager', ':meilidemo'//, ':mylibrary'

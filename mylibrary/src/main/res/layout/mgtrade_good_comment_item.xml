@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="1.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dragAndDrop="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/good_item_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/dot_line" android:background="@color/mgtrade_list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="14.0dip" android:layout_below="@id/good_item_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/service_rating_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/dot_line" />
+    <EditText android:textSize="12.5sp" android:textColorHint="#ffbfbfbf" android:gravity="top" android:id="@id/good_comment" android:background="@drawable/mgtrade_order_comment_edit_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:hint="@string/mgtrade_order_comment_good_hint" android:layout_below="@id/service_rating_layout" />
+    <com.mogujie.uikit.gridview.draggridview.CoolDragAndDropGridView android:id="@id/img_comment_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/good_comment" dragAndDrop:numColumns="4" dragAndDrop:itemMargin="10.0dip" />
+</RelativeLayout>

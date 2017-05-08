@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grid="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_expand" android:paddingLeft="4.0dip" android:paddingTop="15.0dip" android:paddingRight="4.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/detail_goods_service_toggle" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    <com.mogujie.widget.scatteredview.HorizontalScatteredLayout android:id="@id/goods_detail_services" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/iv_expand" android:layout_alignParentLeft="true" android:layout_toStartOf="@id/iv_expand" android:layout_alignParentStart="true" grid:item_right_margin="12.0dip" />
+</merge>

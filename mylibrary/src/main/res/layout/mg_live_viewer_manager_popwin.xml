@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/live_assistant_pop_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/live_ffffff" android:id="@id/set_manager_view" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赏为助理" android:layout_centerVertical="true" />
+    <View android:id="@id/divider_view" android:background="#ff979797" android:layout_width="1.0dip" android:layout_height="30.0dip" android:layout_toRightOf="@id/set_manager_view" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/live_ffffff" android:id="@id/shutup_view" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="让TA闭嘴" android:layout_toRightOf="@id/divider_view" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/rlyt_guest_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/shutup_view">
+        <View android:id="@id/divider_view1" android:background="#ff979797" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/live_ffffff" android:id="@id/guest_set_view" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_honoredguest_set_guest" android:layout_toRightOf="@id/divider_view1" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/divider_call_view" android:background="#ff979797" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="30.0dip" android:layout_toRightOf="@id/rlyt_guest_set" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/live_ffffff" android:id="@id/live_req_call_view" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连麦" android:layout_toRightOf="@id/divider_call_view" android:layout_centerVertical="true" />
+</RelativeLayout>

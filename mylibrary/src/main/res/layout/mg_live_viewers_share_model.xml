@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:id="@id/mg_live_share_qr_scroll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/mg_live_share_actor_big_icon_iv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+                    <View android:id="@id/mg_live_share_actor_big_bg_iv" android:background="#4d000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+                    <com.astonmartin.image.WebImageView android:id="@id/mg_live_share_top_logo" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/mg_live_share_toptag_image" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="155.0dip">
+                        <ImageView android:id="@id/mg_live_liveing_tv_img" android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/mg_live_share_tv_image" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="16.0sp" android:id="@id/mg_live_liveing_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="直播中..." android:layout_below="@id/mg_live_liveing_tv_img" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/mg_live_share_content" android:paddingLeft="26.0dip" android:paddingRight="26.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="别人笑我“嘿嘿嘿”，我笑他们没点开。我最爱的主播正在在MOGU直播，快来围观Ta~" android:layout_below="@id/mg_live_share_actor_big_icon_iv" android:layout_centerHorizontal="true" />
+                    <View android:id="@id/mg_live_share_middle_flag" android:background="#ffd8d8d8" android:layout_width="30.0dip" android:layout_height="1.0dip" android:layout_marginTop="28.0dip" android:layout_below="@id/mg_live_share_content" android:layout_centerHorizontal="true" />
+                    <com.astonmartin.image.WebImageView android:id="@id/mg_live_share_mogu_logo_iv" android:layout_width="94.0dip" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/mg_live_share_mogu_logo_image" android:layout_below="@id/mg_live_share_middle_flag" />
+                    <ImageView android:id="@id/mg_live_qrc_image" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="14.0dip" android:layout_below="@id/mg_live_share_middle_flag" android:layout_alignParentRight="true" />
+                    <View android:layout_width="fill_parent" android:layout_height="125.0dip" android:layout_below="@id/mg_live_qrc_image" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <LinearLayout android:background="#b4000000" android:layout_width="fill_parent" android:layout_height="125.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="center_horizontal" android:id="@id/mg_live_share_qrc_qq" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/live_share_qq_bg" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/share_qq_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:id="@id/mg_live_share_qrc_wechat_friends" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/live_share_wechat_bg" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/share_wechat_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/mg_live_share_qrc_friends_group" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/live_share_friend_bg" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/share_friendcicle_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/mg_live_share_qrc_save_local" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="37.0dip" android:src="@drawable/share_save_to_local" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="保存" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

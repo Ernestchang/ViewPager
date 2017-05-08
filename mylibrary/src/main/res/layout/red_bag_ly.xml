@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/contentview" android:background="@drawable/hongbao_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/red_bag_type_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="52.0dip" android:layout_marginTop="38.0dip" android:ems="1" android:lineSpacingMultiplier="0.9" />
+        <TextView android:textSize="38.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/red_bag_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="112.0dip" android:layout_marginTop="32.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/red_bag_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="98.0dip" android:layout_marginTop="77.0dip" />
+        <TextView android:textSize="26.0sp" android:textColor="#ffffdb11" android:id="@id/red_bag_center_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="175.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffe193" android:gravity="center" android:id="@id/failed_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="150.0dip" android:layout_marginRight="15.0dip" android:layout_centerHorizontal="true" />
+        <View android:id="@id/top_right_btn" android:layout_width="30.0dip" android:layout_height="27.0dip" android:layout_alignParentRight="true" />
+        <View android:id="@id/center_btn" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="71.0dip" android:layout_centerHorizontal="true" />
+        <View android:id="@id/bottom_btn" android:layout_width="165.0dip" android:layout_height="37.0dip" android:layout_marginBottom="58.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/loading" android:background="@drawable/dialog_loading_bg" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true">
+            <com.meilishuo.base.view.progress.MLSProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

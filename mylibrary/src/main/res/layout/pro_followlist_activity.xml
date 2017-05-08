@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mls="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header_layout" style="@style/mainHeader">
+        <ImageView android:id="@id/back_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/pro_personal_ico_return" android:layout_centerVertical="true" />
+        <com.meilishuo.profile.app.views.tabview.HomeTabViewWithTip android:id="@id/title_parent" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" mls:defaultColor="@color/grey_d3" mls:selectColor="@color/pink" mls:lineColor="@color/pink" mls:animation="true" mls:tabTextSize="14.0sp" mls:profilegapWidth="40.0dip" mls:lineBeyond="5.0dip" mls:customIndex="2" />
+    </RelativeLayout>
+    <com.meilishuo.profile.app.views.NoScrollViewPager android:id="@id/viewpager" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="300" android:layout_below="@id/header_layout" />
+</RelativeLayout>

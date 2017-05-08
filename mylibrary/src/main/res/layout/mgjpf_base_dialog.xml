@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/pf_dialog_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:singleLine="true" style="@style/PFDialogText.Title" />
+    <TextView android:gravity="center" android:id="@id/pf_dialog_msg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="33.0dip" style="@style/PFDialogText.Msg" />
+    <FrameLayout android:orientation="vertical" android:id="@id/pf_dialog_content_container" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+    <LinearLayout android:id="@id/pf_dialog_btn_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/pf_linearlayout_vertical_divider" android:showDividers="middle">
+        <Button android:id="@id/pf_dialog_cancelBtn" style="@style/PFDialogText.Btn.LEFT_CANCEL" />
+        <Button android:id="@id/pf_dialog_okBtn" style="@style/PFDialogText.Btn.RIGHT_OK" />
+    </LinearLayout>
+</LinearLayout>

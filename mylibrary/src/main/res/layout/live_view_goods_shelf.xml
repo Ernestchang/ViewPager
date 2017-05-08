@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlyt_goods_shelf" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.mogujie.live.view.WrapContentViewPager android:id="@id/pager_goods_shelf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/live_sku_margin_bottom" android:layout_alignParentBottom="true" />
+        <FrameLayout android:id="@id/btn_shopping_cart" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/btn_shopping_cart_bottom_margin" android:layout_above="@id/pager_goods_shelf" android:layout_alignParentRight="true">
+            <ImageButton android:background="@drawable/live_ic_shopping_mart" android:clickable="false" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+            <ImageButton android:layout_gravity="center|right|top" android:id="@id/btn_cart_red_dot" android:background="@drawable/live_ic_cart_red_dot" android:clickable="false" android:layout_width="11.0dip" android:layout_height="11.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/guide_ly" android:background="#66000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_goods_recommend_guide" android:visibility="gone" android:layout_width="224.0dip" android:layout_height="fill_parent" android:layout_marginTop="141.5dip" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.astonmartin.image.WebImageView android:layout_gravity="center|left|top" android:id="@id/iv_cart_anim_icon" android:background="@drawable/live_detail_cart_anim_circle" android:padding="1.0dip" android:visibility="gone" android:layout_width="@dimen/mg_live_cart_anim_icon" android:layout_height="@dimen/mg_live_cart_anim_icon" />
+</merge>

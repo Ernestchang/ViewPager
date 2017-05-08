@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/mgjpf_transaction_bank_item_view_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/pf_bankcard_item_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/pf_bankcard_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/pf_bankcard_item_checked_indicator" android:layout_toRightOf="@id/pf_bankcard_item_logo" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_main_text_color1" android:id="@id/pf_bankcard_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size3" android:textColor="@color/mgjpf_main_text_color3" android:gravity="center_vertical" android:id="@id/pf_bankcard_item_limit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/pf_bankcard_item_checked_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mgjpf_item_view_indicator_checked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/tag_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/tag_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/tag_bg" android:layout_alignBottom="@id/tag_bg" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.mogujie" version="0.0.1" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:test="http://www.w3.org/ns/widgets">
+    <name> WebContainer
+</name>
+    <description> description
+</description>
+    <author email="alpha@mogujie.com"> mogujie android team
+</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <inject origin="*.mogujie.org" />
+    <inject origin="*.mogujie.com" />
+    <inject origin="*.mogujie.cn" />
+    <inject origin="*.webdemo.com" />
+    <inject origin="webdemo.com" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
+    <preference name="xwalkview" value="" />
+    <preference name="noUpdate" value="false" />
+    <preference name="webView" value="com.mogujie.hdp.plugins.mitengine.MITWebViewEngine" />
+    <feature name="Whitelist">
+        <param name="android-package" value="com.mogujie.web.plugin.MGWhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Client">
+        <param name="android-package" value="com.mogujie.web.plugin.MGClientPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="NavigatePlugin">
+        <param name="android-package" value="com.mogujie.web.plugin.NavigatePlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="DebugPlugin">
+        <param name="android-package" value="com.mogujie.debug.DebugPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+</widget>

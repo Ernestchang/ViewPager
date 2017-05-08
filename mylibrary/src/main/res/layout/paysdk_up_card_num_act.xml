@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffeffffe" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ff424242" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paysdk_up_card_list_order_desc_label" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff177fbc" android:ellipsize="end" android:id="@id/up_card_num_order_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff424242" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paysdk_up_card_list_order_price_label" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff177fbc" android:ellipsize="end" android:id="@id/up_card_num_order_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff1f7fbc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="15.0dip" android:text="@string/paysdk_up_card_list_num_input_label" />
+    <RelativeLayout android:background="@drawable/paysdk_up_et_bg" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/paysdk_up_card_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="14.0sp" android:textColor="#ff424242" android:textColorHint="#ffc0c0c0" android:gravity="center_vertical" android:id="@id/up_captcha_card_num_et" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="52.0dip" android:hint="@string/paysdk_up_card_list_num_input_hint" android:layout_alignParentLeft="true" android:inputType="number" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff1f7fbc" android:id="@id/up_notice_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+    <CheckBox android:textSize="12.0sp" android:id="@id/up_card_num_remember_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:checked="true" android:text="@string/paysdk_up_pay_remember_card_num" />
+    <Button android:textSize="18.0sp" android:textColor="@color/mgjpf_white" android:textColorHighlight="#ffffffff" android:id="@id/next_btn" android:background="@drawable/paysdk_up_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/paysdk_up_btn" />
+</LinearLayout>

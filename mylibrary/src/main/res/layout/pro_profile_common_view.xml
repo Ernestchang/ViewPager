@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+        <ImageView android:id="@id/img_common" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pro_common" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/text_common" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="常用入口" android:layout_toRightOf="@id/img_common" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#33333333" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/layout_baby_collection" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_baby_collection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pro_baby_collect" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="宝贝收藏" android:layout_below="@id/img_baby_collection" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_shop_collection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_shop_collection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/pro_shop_collection" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/img_shop_collection_point" android:visibility="gone" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/pro_img_red_point" android:layout_toRightOf="@id/img_shop_collection" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="店铺收藏" android:layout_below="@id/img_shop_collection" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_footprint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_footprint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/pro_footprint" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffff3366" android:id="@id/text_footprint_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/img_footprint" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="浏览足迹" android:layout_below="@id/img_footprint" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_guess_you_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_guess_you_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/pro_guess_you_like" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffff3366" android:id="@id/text_guess_you_like_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/img_guess_you_like" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:id="@id/guess_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="猜你喜欢" android:layout_below="@id/img_guess_you_like" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/videoplayer_icon_pause" android:contentDescription="@null" />
+    <ProgressBar android:id="@id/videoplayer_progressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@android:style/Widget.ProgressBar.Small" />
+</FrameLayout>

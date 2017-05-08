@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_line" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/parent_item" android:background="@drawable/pro_item_trans_selector" android:paddingLeft="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="@dimen/single_small_item_height">
+        <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/grey_d3" android:ellipsize="end" android:id="@id/parent_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="朝阳区" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/grey_d3" android:ellipsize="end" android:id="@id/parent_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_tiny" android:text="(23)" android:singleLine="true" android:layout_toRightOf="@id/parent_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

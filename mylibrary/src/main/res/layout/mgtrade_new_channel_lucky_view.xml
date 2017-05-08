@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="205.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/new_channel_background" android:layout_width="fill_parent" android:layout_height="205.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/official_text0" android:id="@id/new_channel_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="122.0dip" android:singleLine="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/official_text2" android:id="@id/new_channel_desc" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/new_channel_title" android:layout_centerHorizontal="true" />
+    <com.astonmartin.image.WebImageView android:id="@id/new_channel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/new_channel_desc" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mls="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/btn_back" android:paddingLeft="10.0dip" android:paddingRight="@dimen/padding_big" android:layout_width="40.0dip" android:layout_height="fill_parent" android:drawableLeft="@drawable/home_personal_ico_return" android:drawablePadding="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.mogujie.base.ui.view.SlidingTabLayout android:id="@id/sliding_tabs" android:layout_width="210.0dip" android:layout_height="50.0dip" android:layout_centerHorizontal="true" mls:stsTabTextSize="18.0sp" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="12.0sp" android:textColor="@color/detail_goods_match_text_color" android:gravity="center" android:id="@id/tab" android:background="@drawable/detail_match_goods_tab" android:layout_width="60.0dip" android:layout_height="20.0dip" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_2">14.5sp</dimen>
+    <dimen name="font_size_3">13.5sp</dimen>
+    <dimen name="font_size_4">12.5sp</dimen>
+    <dimen name="font_size_5">11.5sp</dimen>
+    <dimen name="padding_big">18.0dip</dimen>
+    <dimen name="padding_middle">13.0dip</dimen>
+    <dimen name="padding_small">8.0dip</dimen>
+    <dimen name="font_size_1">15.5sp</dimen>
+    <dimen name="font_size_6">10.5sp</dimen>
+    <dimen name="font_size_8">9.5sp</dimen>
+    <dimen name="padding_tiny">4.0dip</dimen>
+    <dimen name="round_head_size_big">58.0dip</dimen>
+    <dimen name="round_head_size_middle">48.0dip</dimen>
+    <dimen name="round_head_size_small">33.0dip</dimen>
+    <dimen name="round_head_size_tiny">23.0dip</dimen>
+    <dimen name="single_item_height">45.0dip</dimen>
+    <dimen name="single_small_item_height">40.0dip</dimen>
+    <dimen name="title_size">17.0sp</dimen>
+    <dimen name="two_item_height">55.0dip</dimen>
+</resources>

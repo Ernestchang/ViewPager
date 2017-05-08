@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pfbindcard_back_card_container" android:background="@drawable/pfbindcard_card_color_round_rect_default" android:layout_width="@dimen/pfbindcard_card_width_normal" android:layout_height="@dimen/pfbindcard_card_height_normal" android:elevation="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/pfbindcard_card_back_black_slice_color" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_centerVertical="true">
+        <View android:id="@id/pfbindcard_card_cvv_bg" android:background="@drawable/pfbindcard_cvv_sign_strip_bg" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_weight="8.5" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size3" android:textColor="@color/mgjpf_main_text_color1" android:gravity="center" android:layout_gravity="center" android:id="@id/pfbindcard_card_cvv" android:background="@color/mgjpf_white" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginLeft="-1.0px" android:hint="@string/pfbindcard_card_cvv_hint" android:layout_weight="1.5" />
+    </LinearLayout>
+</RelativeLayout>

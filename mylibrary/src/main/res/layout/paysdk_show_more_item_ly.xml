@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cashier_more_payment" android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_hint_color" android:id="@id/tv_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paysdk_cashier_payment_show_more" android:drawableRight="@drawable/paysdk_drop_down_arrow" android:drawablePadding="10.0dip" android:layout_centerInParent="true" />
+    <View android:id="@id/item_bottom_divider" android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

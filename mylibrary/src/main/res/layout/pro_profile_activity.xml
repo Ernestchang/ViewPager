@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.profile.view.ProfileTitleLayout android:id="@id/layout_profile_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="#ffff3366" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+        <com.meilishuo.profile.view.ElasticScrollView android:id="@id/scrollow" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.meilishuo.profile.view.ProfileHeaderLayout android:id="@id/layout_profile_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.meilishuo.profile.view.ProfileResourceStateLayout android:id="@id/layout_profile_resource" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <com.meilishuo.profile.view.ProfileOrderLayout android:id="@id/layout_profile_order" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.meilishuo.profile.view.ProfileContentLayout android:id="@id/layout_profile_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <com.meilishuo.profile.view.ProfileCommonLayout android:id="@id/layout_profile_common" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <com.meilishuo.profile.view.ProfileFamilyAppLayout android:id="@id/layout_profile_family_app" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            </LinearLayout>
+        </com.meilishuo.profile.view.ElasticScrollView>
+    </RelativeLayout>
+</LinearLayout>

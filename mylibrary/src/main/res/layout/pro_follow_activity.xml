@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerbar" style="@style/mainHeader">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/meilishuo_back" android:layout_width="40.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/pro_personal_ico_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <TextView android:id="@id/title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <com.meilishuo.profile.app.widget.pulltorefresh.RefreshView android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/headerbar">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" />
+            <RelativeLayout android:id="@id/empty_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/empty_textView" android:layout_marginTop="@dimen/empty_page_margin_top" android:text="你还没有关注任何店铺哦" android:drawableTop="@drawable/pro_shop_no_focus_image" android:layout_centerHorizontal="true" style="@style/EmptyDataFirstTextStyle" />
+            </RelativeLayout>
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/networkerror_default_layout" />
+        </FrameLayout>
+    </com.meilishuo.profile.app.widget.pulltorefresh.RefreshView>
+    <TextView android:id="@id/myfans_to_top" android:background="@drawable/pro_to_top_icon" android:visibility="gone" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="@dimen/padding_small" android:layout_marginBottom="@dimen/padding_small" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

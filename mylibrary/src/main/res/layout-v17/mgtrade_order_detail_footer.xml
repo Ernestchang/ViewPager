@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bill_foot_view" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/coupon_show_ly" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:id="@id/coupon_redenvelope_content" android:paddingLeft="14.0dip" android:paddingTop="13.0dip" android:paddingRight="14.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:id="@id/red_envelope_divider" android:visibility="gone" android:layout_below="@id/coupon_redenvelope_content" style="@style/MGTradeDivider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:gravity="center" android:id="@id/coupon_text" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:singleLine="true" android:layout_below="@id/coupon_redenvelope_content" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/mgtrade_red_color" android:gravity="center|right" android:id="@id/coupon_money" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="-￥1" android:singleLine="true" android:layout_below="@id/coupon_redenvelope_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        <View android:id="@id/coupon_divider" android:visibility="gone" android:layout_below="@id/coupon_text" style="@style/MGTradeDivider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:gravity="center" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_below="@id/coupon_divider" />
+    </RelativeLayout>
+</LinearLayout>

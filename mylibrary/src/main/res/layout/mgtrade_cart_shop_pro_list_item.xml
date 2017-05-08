@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="85.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <TextView android:textSize="18.0sp" android:textColor="#ffff3366" android:id="@id/pro_value_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/pro_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:id="@id/pro_period_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="#ffaeaeae" android:id="@id/pro_need_not_get_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pro_need_not_get" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/mgtrade_pro_get_btn_text_color" android:gravity="center" android:id="@id/pro_get_btn" android:background="@drawable/mgtrade_pro_get_btn_bg" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="24.0dip" android:text="@string/shop_pro_can_get" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

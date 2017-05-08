@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.astonmartin.image.WebImageView
+        android:id="@id/iv_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/live_facesocre_rankbg"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@id/null_face_score_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-60.0dip">
+
+        <TextView
+            android:id="@id/calculate_face_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="颜值正在计算中..."
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+
+        <ImageView
+            android:id="@id/null_facescore_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/calculate_face_text_view"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/calculate_face_score" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black_transport" />
+
+    <View
+        android:id="@id/white_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="6.0dip"
+        android:layout_marginRight="6.0dip"
+        android:layout_marginTop="242.0dip"
+        android:background="@drawable/facescore_rank_corners_bg"
+        android:visibility="gone" />
+
+    <com.mogujie.uikit.listview.MGRecycleListView
+        android:id="@id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <include
+        android:id="@id/title"
+        layout="@layout/live_facescore_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@id/bang_dan_tab_layout_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/month_bang_dan_tab_left_copy"
+            android:layout_width="110.0dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/bang_dan_tab_bg_left_corner_selected"
+            android:gravity="center"
+            android:text="月榜"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:id="@id/tall_bang_dan_tab_right_copy"
+            android:layout_width="110.0dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/bang_dan_tab_bg_right_corner_unselected"
+            android:gravity="center"
+            android:text="总榜" />
+    </LinearLayout>
+</RelativeLayout>

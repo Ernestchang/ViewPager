@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/out_side_info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:textSize="19.0sp" android:textColor="#ffff3366" android:id="@id/out_side_info_now_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:layout_gravity="center_vertical" android:id="@id/out_side_info_origin_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_out_side_collect_text" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/out_side_info_collection_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/out_side_recommend_wrap" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:layout_marginRight="5.0dip" android:text="@string/detail_out_side_recommend_text" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/out_side_info_recommend1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/detail_selecter_out_side_rmd_bg" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/out_side_info_recommend2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/detail_selecter_out_side_rmd_bg" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/out_side_info_recommend3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/detail_selecter_out_side_rmd_bg" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/out_side_info_recommend4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/detail_selecter_out_side_rmd_bg" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/out_side_info_recommend5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/detail_selecter_out_side_rmd_bg" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/out_side_web_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/detail_out_side_info_divider" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/detail_out_side_side_text" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/detail_out_side_info_divider" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/out_side_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="18.0dip" android:maxLines="3" android:lineSpacingExtra="4.0dip" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/out_side_tag_wrap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <RelativeLayout android:id="@id/out_side_more_tag_wrap" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/out_side_more_tag_expand" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/detail_out_side_info_expand" />
+            <ImageView android:id="@id/out_side_more_tag_hide" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/detail_out_side_info_hide" />
+        </RelativeLayout>
+        <com.mogujie.widget.scatteredview.HorizontalScatteredLayout android:id="@id/out_side_tag_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/out_side_more_tag_wrap" app:item_top_margin="13.0dip" app:item_right_margin="13.0dip" app:row_count_limited="1" />
+    </RelativeLayout>
+</merge>

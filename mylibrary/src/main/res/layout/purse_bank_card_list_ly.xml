@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@id/purse_bankcard_dy_bankcards_container" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <TextView android:textSize="@dimen/mgjpf_main_text_title_size" android:textColor="@color/mgjpf_main_text_color1" android:gravity="center_horizontal" android:id="@id/purse_bankcard_no_tv" android:paddingTop="80.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/purse_bankcard_no_text" android:singleLine="true" android:drawableTop="@drawable/purse_bankcard_index_no_icon" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/purse_bankcard_add_container" android:background="@drawable/purse_dy_item_view_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/mgjpf_main_text_title_size" android:textColor="@color/mgjpf_main_text_color1" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/purse_bankcard_index_add_text" android:drawableLeft="@drawable/mgjpf_bankcard_add_icon" android:drawablePadding="10.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/purse_bankcard_list_unbind_btn_container" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="?pf_brand_text_color" android:id="@id/purse_bankcard_list_unbind_btn" android:background="@drawable/purse_bankcard_list_unbind_btn_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/purse_bankcard_context_menu_unbind" />
+            <Button android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="#ff007aff" android:id="@id/purse_bankcard_list_cancel_btn" android:background="@drawable/purse_bankcard_list_cancel_btn_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/purse_bankcard_context_menu_cancel" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

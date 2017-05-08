@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/detail_official_text0" android:id="@id/detail_recommend_title" android:background="@color/detail_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/detail_recommend_text" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/image_ly" android:background="@color/detail_white" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/detail_divider_10dp" android:showDividers="end|middle|beginning">
+        <include layout="@layout/detail_recommend_item" />
+        <include layout="@layout/detail_recommend_item" />
+    </LinearLayout>
+</merge>

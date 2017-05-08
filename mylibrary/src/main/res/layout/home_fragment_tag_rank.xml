@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/pull_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/padding_small" />
+    <ListView android:id="@id/list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@color/grey_l19" android:dividerHeight="1.0px" android:overScrollMode="never" />
+</LinearLayout>

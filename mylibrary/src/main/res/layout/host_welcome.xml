@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.meilishuo.base.utils.WelcomeSplashVIew android:id="@id/init_model" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/welcome_jump_btn" android:background="@drawable/host_welcome_jump_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginTop="46.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/init_bg" android:background="@drawable/host_welcom_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+</FrameLayout>

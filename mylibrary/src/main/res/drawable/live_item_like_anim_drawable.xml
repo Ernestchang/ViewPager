@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:repeatCount="infinite" android:repeatMode="restart"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_01" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_02" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_03" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_04" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_05" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_06" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_07" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_08" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_09" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_10" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_11" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_12" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_13" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_14" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_15" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_16" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_17" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_18" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_19" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_20" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_21" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_22" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_23" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_24" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_25" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_26" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_27" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_28" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_29" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_30" />
+    <item android:duration="60" android:drawable="@mipmap/live_item_zan_31" />
+</animation-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/msg_ico" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/pro_ico_msg_gray" />
+    <ImageView android:textColor="@color/white" android:layout_gravity="center|right|top" android:id="@id/msg_num" android:visibility="visible" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="0.0dip" android:src="@drawable/pro_me_bg_bubble_small_new" android:scaleType="fitXY" />
+</merge>

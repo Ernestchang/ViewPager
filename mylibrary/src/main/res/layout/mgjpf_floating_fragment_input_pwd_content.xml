@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mogujie.mgjpfbasesdk.pwd.PFInputPwdEchoView android:id="@id/pf_input_pwd_echo_view" android:background="@drawable/mgjpf_view_border_separator_bg" android:layout_width="fill_parent" android:layout_height="@dimen/mgjpf_input_pwd_echo_view_height" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="15.0dip" />
+    <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_safe_keyboard_blue_text_color" android:layout_gravity="right" android:id="@id/pf_input_pwd_forget_tv" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/mgjpf_pwd_forget_note" />
+    <include android:id="@id/pf_input_pwd_keyboard" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/mgjpf_input_pwd_keyboard" />
+</merge>

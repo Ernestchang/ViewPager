@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/refund_bank_timeline_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.mogujie.mgjpfbasesdk.widget.HorizontalTimeLineView android:id="@id/status_view" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="100.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" app:textLocation="below" app:layoutStrategy="lock_dot" app:lineColorNormal="#ffcccccc" app:lineColorSelected="#ffeb4868" app:dotColorNormal="#ffcccccc" app:dotColorSelected="#ffff5777" app:htlv_textColorNormal="#ffcccccc" app:htlv_textColorSelected="#ffff5777" app:dotTextColorNormal="#ffffffff" app:dotTextColorSelected="#ffffffff" app:htvLineHeight="5.0dip" app:dotWidth="30.0dip" app:htlv_textSize="15.0sp" app:textMargin="5.0dip" app:dotTextMargin="5.0dip" app:dotCount="3" />
+            <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/list_ly" android:background="#ffffffff" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingRight="15.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/arrived_detail_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+        <TextView android:textColor="#ffff5777" android:layout_gravity="right" android:id="@id/refundFailDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" />
+        <TextView android:id="@id/check_fund_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="15.0dip" style="@style/MGJPF_tv_btn" />
+    </LinearLayout>
+</ScrollView>

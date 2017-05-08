@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/header_bg_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/fl_inner" android:paddingLeft="@dimen/header_footer_left_right_padding" android:paddingTop="@dimen/header_footer_top_bottom_padding" android:paddingRight="@dimen/header_footer_left_right_padding" android:paddingBottom="@dimen/header_footer_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/text_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="14.0dip" android:textColor="#ff727272" android:gravity="center" android:id="@id/pull_to_refresh_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载中..." android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff9d9d9d" android:id="@id/pull_to_refresh_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:id="@id/pull_to_refresh_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/pull_to_refresh_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="?android:attr/progressBarStyleSmall" />
+        </FrameLayout>
+    </RelativeLayout>
+</merge>

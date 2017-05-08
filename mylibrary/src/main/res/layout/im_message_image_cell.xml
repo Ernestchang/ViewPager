@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meilishuo.im.ui.view.widget.SquareLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/message_image_gird_item" android:background="@mipmap/im_default_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+</com.meilishuo.im.ui.view.widget.SquareLayout>

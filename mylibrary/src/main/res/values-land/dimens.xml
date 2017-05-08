@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_material">0.0dip</dimen>
+    <dimen name="abc_action_bar_progress_bar_size">32.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14.0dip</dimen>
+    <dimen name="btn_shopping_cart_bottom_margin">5.0dip</dimen>
+    <dimen name="live_sku_margin_bottom">10.0dip</dimen>
+    <dimen name="mdtp_selected_date_day_size">100.0dip</dimen>
+    <dimen name="mdtp_selected_date_month_size">30.0dip</dimen>
+    <dimen name="mdtp_selected_date_year_size">30.0dip</dimen>
+    <dimen name="sku_default_backgroud_height">255.0dip</dimen>
+    <dimen name="sku_popup_body_minheight">110.0dip</dimen>
+    <dimen name="sku_viewer_action_btn_height">35.0dip</dimen>
+    <dimen name="sku_viewer_action_btn_margin">10.0dip</dimen>
+    <dimen name="sku_viewer_divider_top_margin">10.0dip</dimen>
+    <dimen name="sku_viewer_padding">10.0dip</dimen>
+    <dimen name="mdtp_dialog_height">200.0dip</dimen>
+    <dimen name="mdtp_left_side_width">270.0dip</dimen>
+</resources>

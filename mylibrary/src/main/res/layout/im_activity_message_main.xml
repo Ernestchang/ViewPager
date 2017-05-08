@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/im_message_bottom_bg_view" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true" />
+        <ScrollView android:id="@id/im_message_bg_view" android:background="#00000000" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/im_message_bottom_bg_view">
+            <ImageView android:id="@id/im_message_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/im_resize_layout" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/im_goods_cards" android:layout="@layout/im_goods_cards" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/im_friend_cards" android:layout="@layout/im_friend_cards" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.meilishuo.im.ui.view.widget.MGPullDownView android:id="@id/im_message_pull_down_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ListView android:id="@id/message_list" android:background="@null" android:paddingBottom="5.0dip" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:transcriptMode="normal" android:cacheColorHint="#00000000" android:divider="@null" />
+            </com.meilishuo.im.ui.view.widget.MGPullDownView>
+            <com.meilishuo.im.ui.view.message.IMMessageBottomBarView android:id="@id/im_message_bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/im_new_message_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="55.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/im_new_message" android:background="@mipmap/im_new_message_tip_bk" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/im_new_msg_tip" style="@style/IMTextViewStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

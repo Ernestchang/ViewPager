@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/mg_register_captcha_textlayuot" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/captcha_notice_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/captcha_notice_1" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:id="@id/mg_register_refresh_captcha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/another_group" android:layout_alignParentRight="true" style="?attr/refreshButtonStyle" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/pic_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.mogujie.login.coreapi.view.FixedProportionImageView android:id="@id/image1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <com.mogujie.login.coreapi.view.FixedProportionImageView android:id="@id/image2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <com.mogujie.login.coreapi.view.FixedProportionImageView android:id="@id/image3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <com.mogujie.login.coreapi.view.FixedProportionImageView android:id="@id/image4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_weight="1.0" />
+    </LinearLayout>
+</merge>

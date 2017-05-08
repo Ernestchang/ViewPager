@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/preview_topbar" android:background="#ff30282a" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageButton android:id="@id/preview_back" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/gallery_image_preview_back" android:layout_alignParentLeft="true" />
+        <ImageButton android:id="@id/preview_checkbox" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/gallery_image_preview_checkbox" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <uk.co.senab.photoview.PhotoView android:id="@id/preview_image" android:background="#ff221e1f" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_below="@id/preview_topbar" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageViewWithCover android:id="@id/detail_top_image" android:background="@drawable/detail_default_item_bg_large" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:cover="@drawable/detail_top_img_cover" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</merge>

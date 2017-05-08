@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="190.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:background="#ee000000" android:layout_width="fill_parent" android:layout_height="165.0dip" android:layout_alignParentBottom="true" />
+        <com.mogujie.live.widget.CircularImageButton android:id="@id/live_invite_host_avator" android:background="@drawable/mg_live_host_default_header" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/mg_live_common_margin_left" android:layout_centerHorizontal="true" />
+        <com.mogujie.live.widget.CircularImageButton android:id="@id/live_invite_uni" android:background="@drawable/live_call_uni_big" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginLeft="-8.0dip" android:layout_toRightOf="@id/live_invite_host_avator" android:layout_alignBottom="@id/live_invite_host_avator" />
+        <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/host_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Pony朴惠明" android:layout_below="@id/live_invite_host_avator" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#99ffffff" android:gravity="center_horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="19.0dip" android:text="主播邀请您与他进行互动直播" android:layout_below="@id/host_id" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/invite_refuse" android:background="@drawable/btn_invite_reject_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="12.0dip" android:text="拒绝" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/invite_agree" android:background="@drawable/btn_invite_accept_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="25.0dip" android:text="接受" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

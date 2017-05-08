@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/publish_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/photo_select_linear" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/publish_main_title_bar_height" />
+        <RelativeLayout android:id="@id/canvas_photo" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="300.0dip">
+            <com.meilishuo.publish.publishphoto.SeniorCropImageView android:id="@id/photo_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageView android:textColor="@color/publish_white" android:id="@id/ratio_1_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/publish_album_crop_ratio_selector" />
+                <ImageView android:textColor="@color/publish_white" android:id="@id/ratio_3_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_small" android:src="@drawable/publish_album_crop_ratio2_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/expand_btn" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/publish_photo_ico_up" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/header" android:layout_alignParentTop="true" style="@style/mainHeader">
+        <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/publish_grey_d5" android:gravity="center|left" android:id="@id/cancel_btn" android:paddingLeft="@dimen/padding_small" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="@string/publish_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/headerTextStyle" />
+        <TextView android:id="@id/title" android:paddingLeft="@dimen/padding_small" android:paddingRight="@dimen/padding_small" android:layout_height="fill_parent" android:text="相机胶卷" android:drawablePadding="5.0dip" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <TextView android:textSize="@dimen/font_size_4" android:id="@id/next_btn" android:paddingLeft="@dimen/padding_middle" android:paddingTop="6.0dip" android:paddingRight="@dimen/padding_middle" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BtnPinkStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/photo_list_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <ImageView android:id="@id/photo_list_bg" android:background="@color/publish_black_t70" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.meilishuo.publish.view.HeightListView android:id="@id/album_list" android:background="@color/publish_white_t95" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/publish_transparent" android:cacheColorHint="@color/publish_transparent" android:divider="#26505056" android:dividerHeight="0.5dip" android:footerDividersEnabled="false" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shop_more_bg" android:paddingTop="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/shop_im_part" android:layout_width="wrap_content" android:layout_height="45.0dip">
+        <ImageView android:id="@id/shop_goto_im_icon" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/shop_im" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/shop_goto_im_unread" android:layout_width="8.5dip" android:layout_height="8.5dip" android:layout_marginRight="-3.0dip" android:src="@drawable/shop_cart_red_point" android:layout_alignTop="@id/shop_goto_im_icon" android:layout_alignRight="@id/shop_goto_im_icon" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/goto_im_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/shop_im" android:layout_toRightOf="@id/shop_goto_im_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ff5d5557" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/shop_share_part" android:layout_width="wrap_content" android:layout_height="45.0dip">
+        <ImageView android:id="@id/goto_share_icon" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/shop_header_share" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/goto_share_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/shop_share" android:layout_toRightOf="@id/goto_share_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/userinfo" android:background="@color/color_white" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.astonmartin.image.WebImageView android:id="@id/avatar" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginRight="13.0dip" android:src="@drawable/shop_xd_default_avatar_56x56" android:layout_alignParentLeft="true" />
+        <TextView android:textColor="@color/xd_color_ff333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/avatar" />
+        <TextView android:textColor="@color/xd_color_ff999999" android:gravity="center_vertical" android:id="@id/sales" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar" android:layout_alignBottom="@id/avatar" />
+        <TextView android:textColor="@color/xd_color_ff999999" android:gravity="center_vertical" android:id="@id/fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_toRightOf="@id/sales" android:layout_alignBottom="@id/avatar" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="13.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/shop_xd_grey_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/my_shop_publish_btn" android:background="@drawable/shop_xd_round_corner_red_bg_s" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/my_shop_btn_icon" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/shop_xd_my_little_shop_publish_btn" />
+    </LinearLayout>
+    <View android:background="@color/color_dddddd" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <View android:background="@color/color_dddddd" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+    <com.mogujie.uikit.gridview.AutoHeightGridView android:id="@id/modules" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="0.5dip" android:verticalSpacing="0.5dip" android:numColumns="3" />
+    <View android:background="@color/color_dddddd" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="-0.5dip" />
+    <FrameLayout android:id="@id/download_btn" android:background="@drawable/shop_xd_shape_xd_download_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="15.0dip" android:src="@drawable/shop_xd_little_shop_download" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/emptyView" android:background="@color/app_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/text_color_99" android:gravity="bottom|center" android:id="@id/emptyText" android:background="@drawable/shop_xd_resell_empty" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="78.0dip" android:text="@string/shop_xd_my_little_shop_empty_desc" />
+        <ImageView android:id="@id/empty_add_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/shop_xd_empty_btn" android:layout_alignTop="@id/emptyText" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

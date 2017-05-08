@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/contact_stub_layout" android:layout="@layout/im_default_conversation_view" android:inflatedId="@id/default_contact_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

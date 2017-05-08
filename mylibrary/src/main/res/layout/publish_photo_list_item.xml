@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/publish_item_trans_selector" android:paddingLeft="@dimen/padding_small" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/photo_img_view" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/publish_default_pic_bg" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/font_size_1" android:textColor="@color/publish_grey_d3" android:gravity="center_vertical" android:id="@id/photo_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_middle" android:layout_marginTop="14.0dip" android:text="Camera" android:layout_toRightOf="@id/photo_img_view" android:layout_alignTop="@id/photo_img_view" />
+    <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/publish_grey_d6" android:gravity="center_vertical" android:id="@id/photo_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_middle" android:layout_marginTop="3.0dip" android:text="41" android:layout_toRightOf="@id/photo_img_view" android:layout_below="@id/photo_name" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_big" android:src="@drawable/publish_circle_info_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

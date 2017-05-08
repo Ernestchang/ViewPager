@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_newfans_avatar_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/img_newfans_avatar" android:background="@color/white" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:src="@mipmap/im_default_avatar_round" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.astonmartin.image.WebImageView android:id="@id/img_newfans_identify" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="46.0dip" android:layout_marginTop="44.0dip" />
+        <com.meilishuo.im.ui.view.widget.AttentionTextView android:textColor="@color/white" android:gravity="center" android:id="@id/txt_newfans_follow" android:clickable="true" android:layout_width="65.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:minWidth="65.0dip" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/rl_newfans_content" android:paddingTop="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/txt_newfans_follow" android:layout_toRightOf="@id/img_newfans_avatar" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/txt_newfans_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:ellipsize="end" android:id="@id/txt_newfans_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" android:layout_below="@id/txt_newfans_username" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+</LinearLayout>

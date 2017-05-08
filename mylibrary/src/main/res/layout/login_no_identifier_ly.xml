@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@id/left_btn" android:paddingLeft="15.0dip" android:paddingRight="35.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/login_back_btn" android:scaleType="center" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/login_official_text42" android:ellipsize="end" android:id="@id/middle_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/login_title_max_width" android:text="@string/phone_unbind_no_identifier_title" android:singleLine="true" android:layout_centerInParent="true" />
+        <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56.0dip" android:layout_marginBottom="40.0dip" android:text="@string/phone_unbind_no_longer_used_notice" android:drawableLeft="@drawable/login_phone_unbind_no_identifier" android:drawablePadding="16.0dip" />
+    <Button android:gravity="center" android:id="@id/btn_identify" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="16.0dip" android:text="@string/phone_unbind_btn_identify" style="?attr/loginLargeButtonStyle" />
+</LinearLayout>

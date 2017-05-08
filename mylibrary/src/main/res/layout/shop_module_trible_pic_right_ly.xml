@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/divider" android:background="@color/grey_l3" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginBottom="6.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/grey_d1" android:id="@id/left_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="6.0dip" android:layout_below="@id/divider" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/right_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignTop="@id/left_title" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/title_layout" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <com.astonmartin.image.WebImageView android:id="@id/pic1" android:background="@drawable/shop_tile_default_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+            <com.astonmartin.image.WebImageView android:id="@id/pic2" android:background="@drawable/shop_tile_default_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignBottom="@id/pic3" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <com.astonmartin.image.WebImageView android:id="@id/pic3" android:background="@drawable/shop_tile_default_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

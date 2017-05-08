@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_l30"
+    android:orientation="vertical">
+
+    <!--<com.meilishuo.base.view.VerticalViewPager-->
+        <!--android:id="@id/pager"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent" />-->
+
+    <cn.youngkaaa.yviewpager.YViewPager
+        android:id="@+id/viewpager"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:orientation="vertical"
+        app:circulatory="true"
+        app:circulationCount="600"/>
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="40.0dip"
+        android:layout_height="47.0dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/home_index_back_btn_white" />
+
+    <!--layout="@layout/home_networkerror_default_layout"-->
+
+    <!--<include-->
+        <!--android:id="@id/neterror"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:visibility="gone" />-->
+</RelativeLayout>

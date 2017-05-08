@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_sid_invalid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_mwp_sid_invalid" android:onClick="onClick" />
+    <Button android:id="@id/btn_get" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_mwp_get" android:onClick="onClick" />
+    <Button android:id="@id/btn_get_need_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_mwp_get_need_login" android:onClick="onClick" />
+    <Button android:id="@id/btn_get_adapter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_mwp_adapter_get" android:onClick="onClick" />
+    <Button android:id="@id/btn_cache_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_mwp_cache_request" android:onClick="onClick" />
+    <Button android:id="@id/btn_cache_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_mwp_cache_request_offline" android:onClick="onClick" />
+    <Button android:id="@id/btn_cache_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_mwp_cache_service" android:onClick="onClick" />
+</LinearLayout>

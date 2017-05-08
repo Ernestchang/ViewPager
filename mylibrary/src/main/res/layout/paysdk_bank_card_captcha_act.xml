@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paysdk_bank_name" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/tv_bank_card_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View style="@style/mgjpf_paysdk_hdivider" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paysdk_bank_card_num" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/tv_bank_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View style="@style/mgjpf_paysdk_hdivider" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgjpf_pay_captcha_bank_bind_phone_label" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/tv_bank_bind_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View style="@style/mgjpf_paysdk_hdivider" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/cvv_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip">
+        <TextView android:id="@id/ccv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/paysdk_text_ccv" />
+        <EditText android:id="@id/cvv_edit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/paysdk_input_cvv_hint" android:layout_weight="1.0" style="@style/PFRowTextView.PFRowRightEditText.InputCaptcha" />
+        <ImageView android:id="@id/show_cvv_tip_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/paysdk_cvv_tip" android:scaleType="centerInside" />
+    </LinearLayout>
+    <View style="@style/mgjpf_basesdk_hdivider" />
+    <RelativeLayout android:id="@id/sms_input_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip">
+        <com.mogujie.mgjpfbasesdk.widget.PFCaptchaButton android:id="@id/re_get_captcha_btn" android:layout_alignTop="@id/captcha_et_container" android:layout_alignBottom="@id/captcha_et_container" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:countDownQuantityInSecond="60" style="@style/MGJPF_tv_btn.PFCaptcha" />
+        <View android:layout_toLeftOf="@id/re_get_captcha_btn" style="@style/mgjpf_basesdk_vdivider" />
+        <FrameLayout android:id="@id/captcha_et_container" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_toLeftOf="@id/re_get_captcha_btn">
+            <EditText android:id="@id/captcha_et" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/pfbindcard_captcha_hint" style="@style/PFRowTextView.PFRowRightEditText.InputCaptcha" />
+            <com.mogujie.mgjpfbasesdk.widget.PFCaptchaEchoView android:id="@id/captcha_echo_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+    <View android:layout_marginTop="0.0dip" style="@style/mgjpf_paysdk_hdivider" />
+    <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color2" android:gravity="right" android:id="@id/tv_sms_channel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+    <Button android:gravity="center" android:id="@id/btn_next" android:clickable="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="15.0dip" android:text="@string/paysdk_confirm_pay" style="@style/MGJPF_tv_btn" />
+</LinearLayout>

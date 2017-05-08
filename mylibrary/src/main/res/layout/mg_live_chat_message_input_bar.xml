@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ff333333" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mogujie.live.view.LiveSwitchButton android:id="@id/mg_live_switch_bar" android:layout_width="51.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" app:live_cursor="@drawable/mg_live_btn_barrage_close" app:live_selectedBG="@color/pink" app:live_unselectedBG="@color/line_gray" app:live_trackWidth="51.0dip" app:live_trackPadding="1.0dip" app:live_trackRadius="2.0dip" app:live_status="OFF" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <include layout="@layout/mg_live_chat_message_input_edit" />
+</LinearLayout>

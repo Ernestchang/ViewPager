@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/shop_logo" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="7.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/official_text0" android:gravity="center" android:id="@id/shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/shop_logo" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/shop_fixed_tag_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/shop_name" android:layout_centerVertical="true" />
+        <FrameLayout android:id="@id/shop_tag_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/shop_im_btn" android:layout_toRightOf="@id/shop_fixed_tag_container" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/mls_red" android:gravity="center" android:id="@id/shop_im_btn" android:background="@drawable/mgtrade_red_stroke_round_corner_bg" android:paddingLeft="13.5dip" android:paddingRight="13.5dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="@string/mgtrade_contact" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/shop_item_list_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip" />
+    <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:id="@id/delivery_com_ly" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/mgtrade_official_text_color_2" android:paddingLeft="14.0dip" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_delivery_com" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/official_text1" android:id="@id/delivery_com_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="默认快递" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tariff_ly" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/mgtrade_official_text_color_2" android:id="@id/tariff_lab" android:paddingLeft="14.0dip" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_tariff_cost" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/official_text1" android:id="@id/tariff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignBaseline="@id/tariff_lab" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <include android:id="@id/tariff_price_block" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/tariff_lab" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@layout/mgtrade_complex_price_block" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/delivery_ly" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/mgtrade_official_text_color_2" android:id="@id/delivery_lab" android:paddingLeft="14.0dip" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_delivery_cost" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/official_text1" android:id="@id/delivery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:drawableRight="@drawable/mgtrade_bill_right_grey_arrow" android:drawablePadding="12.0dip" android:layout_alignBaseline="@id/delivery_lab" android:layout_alignParentRight="true" />
+        <include android:id="@id/delivery_price_block" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/delivery_lab" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@layout/mgtrade_complex_price_block" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/price_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <RelativeLayout android:id="@id/price_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <View android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+        <TextView android:textSize="14.0sp" android:textColor="#fffb527a" android:id="@id/shop_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignBaseline="@id/price_lab" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/mgtrade_official_text_color_33" android:id="@id/price_lab" android:paddingTop="12.0dip" android:paddingRight="10.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_shop_item_sum" android:layout_toLeftOf="@id/shop_price" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/presale_ly" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/official_text1" android:id="@id/tv_lable1" android:paddingLeft="14.0dip" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_delivery_com" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/official_text1" android:id="@id/tv_value1" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="默认快递" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/official_text1" android:id="@id/tv_lable2" android:paddingLeft="14.0dip" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_delivery_com" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/official_text1" android:id="@id/tv_value2" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="默认快递" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:id="@id/tv_lable3" android:paddingLeft="14.0dip" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_delivery_com" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:id="@id/tv_value3" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="默认快递" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:id="@id/s_line" android:visibility="gone" android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:id="@id/tv_lable4" android:paddingLeft="14.0dip" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_delivery_com" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:id="@id/tv_value4" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="默认快递" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/official_text1" android:id="@id/tv_lable5" android:paddingLeft="14.0dip" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_delivery_com" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/official_text1" android:id="@id/tv_value5" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="默认快递" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View style="@style/MGTradeDivider" />
+        <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <RelativeLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/official_text1" android:id="@id/tv_phone" android:paddingLeft="14.0dip" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_pre_sell_sms_phone" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_principle" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/mgtrade_official_text_color_2" android:id="@id/tv_presell_principle" android:paddingLeft="14.0dip" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_pre_sell_principle" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/official_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:drawableRight="@drawable/mgtrade_bill_right_grey_arrow" android:drawablePadding="12.0dip" android:layout_alignBaseline="@id/tv_presell_principle" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/price_change_ly" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentTop="true" style="@style/MGTradeDivider" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/mgtrade_official_text_color_2" android:id="@id/price_lab0" android:paddingLeft="14.0dip" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_bill_shop_item_all_price_change" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/mgtrade_red_color" android:id="@id/shop_change_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip" android:layout_alignBaseline="@id/price_lab0" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/shop_privilege_divider" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/order_base_info_ly" android:paddingBottom="11.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

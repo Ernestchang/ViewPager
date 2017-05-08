@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head" layout="@layout/pro_title_view" />
+    <com.meilishuo.profile.app.widget.pulltorefresh.RefreshView android:layout_gravity="top" android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/head">
+        <FrameLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:divider="@null" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/no_goods_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/empty_icon" android:background="@drawable/pro_show_ico_goods_empty_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" />
+                <TextView android:text="还没有晒过任何宝贝哦" style="@style/EmptyDataFirstTextStyle" />
+                <TextView android:id="@id/btn_to_shopping" android:visibility="gone" android:clickable="true" android:text="去看看" android:onClick="onClick" style="@style/EmptyDataButtonTextStyle" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/empty_layout" android:background="@color/white" android:paddingTop="100.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/empty_textView" android:layout_centerHorizontal="true" style="@style/EmptyDataFirstTextStyle" />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.meilishuo.profile.app.widget.pulltorefresh.RefreshView>
+    <TextView android:id="@id/to_top" android:background="@drawable/pro_to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="@dimen/padding_small" android:layout_marginBottom="@dimen/padding_small" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/iv_addlike_anim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pro_pic_like_animation" android:layout_centerInParent="true" />
+</RelativeLayout>

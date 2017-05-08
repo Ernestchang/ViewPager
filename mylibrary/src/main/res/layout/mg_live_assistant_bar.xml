@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/mg_live_assistant_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/assistant_image" android:background="@drawable/mg_live_host_default_header" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="9.0dip" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/assistant_state" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/live_assistant_state" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/live_ffffff" android:id="@id/assistant_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="助理" android:layout_toRightOf="@id/assistant_image" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/assistant_delete" android:layout_width="36.0dip" android:layout_height="35.0dip" android:src="@drawable/mg_live_assistant_delete" android:scaleType="center" android:layout_toRightOf="@id/assistant_name" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_default_height">
+        <TextView android:textSize="@dimen/top_title_size" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/take_photo_btn_text" android:layout_centerInParent="true" style="@style/IMTextViewStyle" />
+        <TextView android:textSize="18.0sp" android:textColor="@drawable/im_text_while" android:gravity="center|right" android:id="@id/cancel" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/top_bar_btn_right_margin" android:text="@string/im_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/IMTextViewStyle" />
+    </RelativeLayout>
+    <View android:id="@id/pick_photo_act_divide" android:background="@color/grey_d1_t20" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/top" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/grey_l19" android:dividerHeight="0.5px" android:layout_below="@id/pick_photo_act_divide" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mg_live_rank_lay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mg_live_rank1" android:layout_width="35.0dip" android:layout_height="30.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/mg_live_rich_btn1" android:layout_centerHorizontal="true" style="@style/MgLiveHeaderPicStyle" />
+        <View android:background="@drawable/live_shape_rank_first_ring" android:layout_centerHorizontal="true" style="@style/MgLiveHeaderRingPicStyle" />
+        <ImageView android:background="@drawable/gold_medal" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/MgLiveHostInfoIMVStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mg_live_rank2" android:layout_width="35.0dip" android:layout_height="30.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/mg_live_rich_btn2" android:layout_centerHorizontal="true" style="@style/MgLiveHeaderPicStyle" />
+        <View android:background="@drawable/live_shape_rank_second_ring" android:layout_centerHorizontal="true" style="@style/MgLiveHeaderRingPicStyle" />
+        <ImageView android:background="@drawable/sliver_medal" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/MgLiveHostInfoIMVStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mg_live_rank3" android:layout_width="35.0dip" android:layout_height="30.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/mg_live_rich_btn3" android:layout_centerHorizontal="true" style="@style/MgLiveHeaderPicStyle" />
+        <View android:background="@drawable/live_shape_rank_third_ring" android:layout_centerHorizontal="true" style="@style/MgLiveHeaderRingPicStyle" />
+        <ImageView android:background="@drawable/bronze_medal" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/MgLiveHostInfoIMVStyle" />
+    </RelativeLayout>
+</LinearLayout>

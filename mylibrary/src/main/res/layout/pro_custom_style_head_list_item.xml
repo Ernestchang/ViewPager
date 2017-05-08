@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+        <TextView android:textSize="@dimen/profile_custom_style_head_user_name" android:textColor="@color/profile_black" android:ellipsize="end" android:id="@id/user_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="6" android:singleLine="true" android:layout_toLeftOf="@id/web_image_view" android:layout_alignTop="@id/web_image_view" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/profile_custom_style_head" android:textColor="@color/profile_black" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="选出你的标签定制你的风格！" android:layout_toLeftOf="@id/web_image_view" android:layout_alignBottom="@id/web_image_view" android:layout_alignParentLeft="true" />
+        <com.astonmartin.image.WebImageView android:id="@id/web_image_view" android:background="@drawable/default_avatar_round" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:background="@color/profile_bg_grey" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="20.0dip" />
+</LinearLayout>

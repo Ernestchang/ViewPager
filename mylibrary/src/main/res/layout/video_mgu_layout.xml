@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_video" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ll_videoview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <com.mogujie.uikit.progressbar.MGProgressbar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageButton android:id="@id/btn_close" android:background="@android:color/transparent" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/video_btn_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/top_layout" android:background="#50000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottom_layout" android:background="#50000000" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/play_btn" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/video_btn_pause" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <ImageButton android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_screen_toggle" android:background="@android:color/transparent" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/video_btn_screen_full" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <SeekBar android:id="@id/seekbar" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="3.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/video_bg_bar" android:minHeight="3.0dip" android:thumb="@drawable/video_thumb_bar" android:thumbOffset="0.0dip" android:layout_toLeftOf="@id/btn_screen_toggle" android:layout_toRightOf="@id/play_btn" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="2.0dip" android:layout_toLeftOf="@id/btn_screen_toggle" android:layout_alignParentBottom="true">
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/play_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/video_timeformat" />
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/video_slash_left" />
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/total_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/video_timeformat" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

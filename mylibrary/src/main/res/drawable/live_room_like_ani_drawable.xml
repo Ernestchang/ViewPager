@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@drawable/mgj_live_praise_sequence_frame_animation_0" />
+    <item android:duration="30" android:drawable="@drawable/mgj_live_praise_sequence_frame_animation_1" />
+    <item android:duration="30" android:drawable="@drawable/mgj_live_praise_sequence_frame_animation_2" />
+    <item android:duration="30" android:drawable="@drawable/mgj_live_praise_sequence_frame_animation_3" />
+    <item android:duration="30" android:drawable="@drawable/mgj_live_praise_sequence_frame_animation_4" />
+    <item android:duration="30" android:drawable="@drawable/mgj_live_praise_sequence_frame_animation_5" />
+    <item android:duration="30" android:drawable="@drawable/mgj_live_praise_sequence_frame_animation_6" />
+    <item android:duration="30" android:drawable="@drawable/mgj_live_praise_sequence_frame_animation_7" />
+    <item android:duration="30" android:drawable="@drawable/mgj_live_praise_sequence_frame_animation_8" />
+    <item android:duration="30" android:drawable="@drawable/mgj_live_praise_sequence_frame_animation_9" />
+</animation-list>

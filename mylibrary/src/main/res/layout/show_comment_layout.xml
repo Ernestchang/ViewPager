@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/show_cell_comment_avatar" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="centerCrop" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/official_text0" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/show_cell_comment_name_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/official_text4" android:gravity="center_vertical" android:id="@id/show_cell_comment_name_mid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_cell_reply" android:singleLine="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/official_text0" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/show_cell_comment_name_suffix" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <com.minicooper.view.MGTextView android:textSize="13.0sp" android:textColor="@color/official_text2" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/show_cell_comment_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:singleLine="true" />
+</LinearLayout>

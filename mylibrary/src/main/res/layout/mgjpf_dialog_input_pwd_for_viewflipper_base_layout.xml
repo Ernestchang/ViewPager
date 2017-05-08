@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mogujie.mgjpfbasesdk.suspensionbox.PFInputPwdViewLayout android:background="@color/mgjpf_transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/pf_floating_dialog_main_container" android:background="@color/mgjpf_main_body_area_bg_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/mgjpf_floating_fragment_height">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/mgjpf_input_pwd_echo_view_height">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/pf_floating_dialog_close_icon" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mgjpf_floating_fragment_close_icon" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_main_text_color1" android:id="@id/pf_floating_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="@dimen/mgjpf_main_text_size3" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/pf_floating_dialog_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center|right" android:id="@id/pf_floating_dialog_right_icon" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <View android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <include android:id="@id/pf_input_pwd_forget_tv1" layout="@layout/mgjpf_floating_dialog_input_pwd_content" />
+    </LinearLayout>
+</com.mogujie.mgjpfbasesdk.suspensionbox.PFInputPwdViewLayout>

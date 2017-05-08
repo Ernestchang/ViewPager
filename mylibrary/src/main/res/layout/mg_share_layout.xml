@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mg_share_cancel" android:background="@drawable/mg_share_cancel_bg" android:layout_width="172.0dip" android:layout_height="36.0dip" android:layout_marginBottom="44.0dip" android:text="@string/share_cancel" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/mg_share_button_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/mg_share_qrcode_ly" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <FrameLayout android:id="@id/mg_share_qrcode_item" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mg_share_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/share_save_to_local" android:drawableLeft="@mipmap/share_save_to_local" android:drawablePadding="8.0dip" android:layout_below="@id/mg_share_qrcode_item" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/detail_share_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/share_model_close_btn" android:layout_alignTop="@id/mg_share_qrcode_item" android:layout_alignRight="@id/mg_share_qrcode_item" />
+    </RelativeLayout>
+</RelativeLayout>

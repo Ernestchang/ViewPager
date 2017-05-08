@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mg_live_bottom_layout_id" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/mg_live_bottom_flag" android:layout_width="5.0dip" android:layout_height="1.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/mg_live_faceu" android:layout_marginRight="10.0dip" android:src="@drawable/mg_live_facesticker_icon" android:layout_toRightOf="@id/mg_live_bottom_flag" style="@style/MgLiveBottomViewStyle" />
+    <ImageView android:id="@id/mg_live_show_screen" android:visibility="gone" android:layout_marginRight="10.0dip" android:src="@drawable/mg_live_restore_screen" android:layout_toRightOf="@id/mg_live_faceu" style="@style/MgLiveBottomViewStyle" />
+    <ImageView android:id="@id/anchor_switchcamera" android:layout_marginRight="10.0dip" android:src="@drawable/mg_live_switch_camera_btn" android:layout_toRightOf="@id/mg_live_show_screen" style="@style/MgLiveBottomViewStyle" />
+    <ImageView android:id="@id/mg_live_shake_baby_btn" android:src="@drawable/mg_live_host_shake_baby" android:layout_toRightOf="@id/anchor_switchcamera" style="@style/MgLiveBottomViewStyle" />
+    <View android:id="@id/mg_live_bottom_flag1" android:layout_width="5.0dip" android:layout_height="1.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/mg_live_beauty_layout" android:visibility="gone" android:layout_marginLeft="10.0dip" android:src="@drawable/mg_live_no_beauty_btn" android:layout_toLeftOf="@id/mg_live_bottom_flag1" style="@style/MgLiveBottomViewStyle" />
+    <ImageView android:id="@id/mg_live_quality" android:src="@drawable/quality_high" android:layout_toLeftOf="@id/mg_live_beauty_layout" style="@style/MgLiveBottomViewStyle" />
+    <com.mogujie.live.component.ebusiness.view.GoodsShelfBtn android:id="@id/lyt_host_shopping_bag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip" android:layout_toLeftOf="@id/mg_live_quality" android:layout_alignParentBottom="true" />
+</RelativeLayout>

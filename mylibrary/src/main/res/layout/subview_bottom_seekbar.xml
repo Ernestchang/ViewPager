@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="visible" android:clickable="true" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/player_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="00:00" android:singleLine="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/player_total_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="00:00" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <SeekBar android:id="@id/player_progressbar" android:paddingLeft="12.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="4.0dip" android:progressDrawable="@drawable/videoplayer_bg_bar" android:minHeight="4.0dip" android:thumb="@drawable/videoplayer_seekbar_cursor" android:thumbOffset="0.0dip" android:layout_toLeftOf="@id/player_total_progress_text" android:layout_toRightOf="@id/player_progress_text" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

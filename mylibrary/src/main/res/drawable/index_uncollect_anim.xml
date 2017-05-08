@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima01" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima02" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima03" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima04" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima05" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima06" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima07" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima08" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima09" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima10" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima11" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima12" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima13" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima14" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima15" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima16" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima17" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima18" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima19" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima20" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima21" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima22" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima23" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima24" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima25" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima26" />
+    <item android:duration="40" android:drawable="@drawable/index_uncollect_anima27" />
+un
+un
+</animation-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mgjpf_main_text_title_size" android:textColor="@color/mgjpf_brand_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/mobile_change_result_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="30.0dip" android:text="@string/purse_mobile_change_success_result" android:drawableTop="@drawable/purse_mobile_change_result" android:drawablePadding="20.0dip" />
+    <Button android:id="@id/finish_btn" android:layout_width="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/mgjpf_dialog_ok_btn_text" style="@style/MGJPF_tv_btn" />
+</LinearLayout>

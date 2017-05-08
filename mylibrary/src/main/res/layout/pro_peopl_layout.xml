@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mls="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/followlist_tab" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <RelativeLayout android:id="@id/myfollowuser" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/pink" android:gravity="center" android:id="@id/follow_user_text" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="好友" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <View android:id="@id/follow_user_line" android:background="@color/pink" android:layout_width="50.0dip" android:layout_height="1.0dip" android:layout_below="@id/follow_user_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/myfollowcircle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/follow_circle_text" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="群" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <View android:id="@id/follow_circle_line" android:background="@color/pink" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="1.0dip" android:layout_below="@id/follow_circle_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/myfollowmaga" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/follow_maga_text" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="杂志" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <View android:id="@id/follow_maga_line" android:background="@color/pink" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="1.0dip" android:layout_below="@id/follow_maga_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/follow_viewpager" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="300" />
+    <TextView android:id="@id/to_top" android:background="@drawable/pro_to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="@dimen/padding_small" android:layout_marginBottom="@dimen/padding_small" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <include android:id="@id/neterror" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/networkerror_default_layout" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageViewWithCover android:id="@id/image" android:background="@drawable/water_fall_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/tags" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/image" android:layout_alignTop="@id/image" />
+    <RelativeLayout android:id="@id/bottom_ly" android:background="@drawable/index_item_text_bg" android:paddingLeft="8.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/image">
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/text" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffff397e" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/text" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:id="@id/old_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_toRightOf="@id/price" android:layout_alignBaseline="@id/price" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center|left" android:id="@id/balance_transaction_result_content" android:padding="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:drawablePadding="10.0dip" style="@style/PFRowTextView" />
+    <Button android:id="@id/balance_transaction_result_btn" android:layout_width="fill_parent" android:layout_margin="15.0dip" android:text="@string/purse_check_balance" style="@style/MGJPF_tv_btn" />
+</LinearLayout>

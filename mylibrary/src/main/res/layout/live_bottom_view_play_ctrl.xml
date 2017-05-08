@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/btn_play_pause" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/live_btn_play" android:scaleType="center" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <SeekBar android:id="@id/sb_play_progress" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="4.0dip" android:progressDrawable="@drawable/live_play_progress_drawable" android:minHeight="4.0dip" android:thumb="@drawable/live_play_progress_thumb" android:thumbOffset="0.0dip" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:textSize="8.0sp" android:textColor="#ccffffff" android:id="@id/tv_play_time" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/sb_play_progress" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</merge>

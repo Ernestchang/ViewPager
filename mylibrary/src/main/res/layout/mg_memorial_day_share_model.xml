@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/memorial_share_ly" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/share_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/share_memorial_logo" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/detail_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="22.0dip" android:layout_below="@id/share_logo">
+            <TextView android:textSize="60.0sp" android:typeface="normal" android:textColor="#ffffffff" android:id="@id/days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20" android:includeFontPadding="false" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/days_later" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="9.0dip" android:text="天后" android:includeFontPadding="false" android:layout_toRightOf="@id/days" android:layout_alignBottom="@id/days" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/memorial_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:text="妈妈的生日" android:includeFontPadding="false" android:layout_alignBottom="@id/days" android:layout_alignParentRight="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/memorial_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="2000年12月12日" android:includeFontPadding="false" android:layout_above="@id/memorial_day" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/memorial_share_image" android:background="@drawable/food_share_model_image_ly_bg" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" android:layout_below="@id/detail_layout" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/memorial_share_detail" android:background="@drawable/memorial_share_model_image_ly_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="22.0dip" android:maxLines="3" android:layout_below="@id/memorial_share_image" android:lineSpacingExtra="3.0dip" />
+        <RelativeLayout android:id="@id/memorial_share_desc_layout" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="105.0dip" android:layout_below="@id/memorial_share_image">
+            <RelativeLayout android:background="@drawable/memorial_share_qrcode_ly_bg" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/memorial_share_qrcode" android:background="@drawable/memorial_share_qrcode_ly_bg" android:layout_width="75.0dip" android:layout_height="75.0dip" android:scaleType="fitXY" android:layout_centerInParent="true" />
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/qrcode_share_logo" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:background="@drawable/memorial_share_model_text_ly_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/long_click_to_look_memorial_small_screen" android:singleLine="true" android:layout_below="@id/memorial_share_desc_layout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/pf_linearlayout_horizonal_divider" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mogujie.purse.baifumei.BaifumeiMoreListItemLayout android:orientation="vertical" android:id="@id/baifumei_more_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/pf_linearlayout_horizonal_divider" android:showDividers="middle" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/baifumei_freeze_layout" android:background="@color/mgjpf_white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/baifumei_more_freeze_tx" android:text="@string/purse_baifumei_freeze" style="@style/purse_baifumei_more_text" />
+        <View style="@style/purse_hfiller" />
+        <ImageView android:id="@id/baifumei_more_freeze" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/purse_index_item_arrow" />
+    </LinearLayout>
+</LinearLayout>

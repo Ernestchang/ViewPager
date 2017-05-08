@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/live_blur_bg_small" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/playback_retry_imageview" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/playback_retry_btn_small" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:id="@id/playback_retry_textview_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="直播回放失败了" android:layout_below="@id/playback_retry_imageview" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="点击重试" android:layout_below="@id/playback_retry_textview_1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

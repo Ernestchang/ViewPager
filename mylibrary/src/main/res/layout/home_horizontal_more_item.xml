@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/home_fashion_footer_bg" android:layout_width="25.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.mainpage.MlsBeyondFatherImageView android:id="@id/home_img_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_show_more" android:layout_centerVertical="true" />
+</RelativeLayout>

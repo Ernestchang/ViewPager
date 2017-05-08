@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_error" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/videoplayer_error" android:layout_centerInParent="true" android:contentDescription="@null" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/errorMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/icon_error" android:layout_centerHorizontal="true" />
+</RelativeLayout>

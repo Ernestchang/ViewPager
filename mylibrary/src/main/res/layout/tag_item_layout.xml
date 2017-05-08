@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tag_item_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/top_content" android:background="@drawable/tag_bg_left_brand" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/center_content" android:background="@drawable/tag_bg_left_catalog" android:layout_width="wrap_content" android:layout_height="22.0dip" android:singleLine="true" />
+    <LinearLayout android:id="@id/price_layout" android:background="@drawable/tag_bg_left_price" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@id/shop_icon_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/tag_icon_shop" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/down_content" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" />
+        <ImageView android:id="@id/shop_icon_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/tag_icon_shop" />
+    </LinearLayout>
+</LinearLayout>

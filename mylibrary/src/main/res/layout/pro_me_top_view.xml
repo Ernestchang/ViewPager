@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="20.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/me_top_userpic" android:background="@drawable/default_avatar_round" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/user_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/me_top_userpic" android:layout_centerVertical="true">
+            <TextView android:textSize="27.0sp" android:textColor="@color/grey_d1" android:ellipsize="end" android:id="@id/me_top_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="220.0dip" android:lines="1" />
+            <com.astonmartin.image.WebImageView android:id="@id/me_top_vip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="8.0dip" android:layout_marginBottom="6.0dip" android:layout_toRightOf="@id/me_top_username" android:layout_alignBottom="@id/me_top_username" />
+            <ImageView android:id="@id/biasline" android:background="@drawable/pro_me_biasline" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/me_top_username" />
+            <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/grey_d1" android:ellipsize="end" android:id="@id/me_user_style" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" android:layout_toRightOf="@id/biasline" android:layout_below="@id/me_top_username" />
+        </RelativeLayout>
+        <ImageView android:id="@id/me_add_style" android:background="@drawable/pro_me_style_add" android:layout_width="89.0dip" android:layout_height="25.0dip" android:layout_marginRight="15.0dip" android:layout_alignBottom="@id/me_top_userpic" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

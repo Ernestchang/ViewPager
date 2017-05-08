@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/debug_item_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="config" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+    <LinearLayout android:id="@id/debug_link_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/debug_item_txt" android:layout_alignParentRight="true">
+        <TextView android:layout_gravity="center" android:id="@id/debug_item_link_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="http://hello" android:maxLength="20" />
+        <Switch android:layout_gravity="center" android:id="@id/debug_link_item_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/debug_link_layout" android:layout_alignParentRight="true">
+        <com.astonmartin.image.WebImageView android:layout_gravity="center" android:id="@id/debug_item_img" android:layout_width="150.0dip" android:layout_height="150.0dip" />
+        <Switch android:layout_gravity="center" android:id="@id/debug_image_item_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

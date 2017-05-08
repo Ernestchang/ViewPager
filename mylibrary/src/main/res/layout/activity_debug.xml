@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:textSize="17.0sp" android:id="@id/et_uri" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="输入要跳转的链接" android:inputType="text" />
+        <Button android:id="@id/btn_go" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Go!" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:id="@id/tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/mls_request_debug" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/mls_request_debug" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/mls_env" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip">
+            <RadioButton android:id="@id/mls_release" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="线上" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/mls_pre_release" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="预发" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/mls_conten" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="内容预览" android:layout_weight="1.0" />
+        </RadioGroup>
+        <Button android:id="@id/btn_qrcode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="扫码" />
+        <Button android:id="@id/btn_h5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="h5" />
+        <Button android:id="@id/btn_login" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:id="@id/btn_httpdns" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="mwp接口环境调试:" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/mwp_env" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip">
+            <RadioButton android:id="@id/release" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="线上" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/pre_release" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="预发" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/daily" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="线下" android:layout_weight="1.0" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

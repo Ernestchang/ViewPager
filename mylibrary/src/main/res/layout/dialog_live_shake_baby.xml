@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_live_share_baby_bg" android:layout_width="259.0dip" android:layout_height="232.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dialog_shake_wheel_bg" android:background="@drawable/dialog_shake_baby_wheel_bg_1" android:layout_width="232.0dip" android:layout_height="132.0dip" android:layout_marginTop="47.0dip" android:layout_centerHorizontal="true" />
+    <com.mogujie.live.component.prizedraw.WheelView android:id="@id/shake_wheel_view" android:layout_width="180.0dip" android:layout_height="110.0dip" android:layout_marginTop="11.0dip" android:layout_alignTop="@id/dialog_shake_wheel_bg" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:visibility="gone" android:layout_width="180.0dip" android:layout_height="110.0dip" android:layout_marginTop="11.0dip" android:layout_alignTop="@id/dialog_shake_wheel_bg" android:layout_centerHorizontal="true">
+        <TextView android:textSize="20.0dip" android:textColor="#ffff496b" android:ellipsize="marquee" android:id="@id/dialog_shake_target_baby" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:maxLines="1" android:singleLine="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffff496b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="被抽中啦 !" android:layout_below="@id/dialog_shake_target_baby" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <Button android:id="@id/dialog_shake_btn" android:background="@drawable/dialog_shake_baby_bottom_btn" android:layout_width="134.0dip" android:layout_height="38.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/dialog_shake_load_image" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/dialog_load_bottom_image" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/dialog_shake_intro_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主播抽宝宝中..." />
+    </LinearLayout>
+</RelativeLayout>

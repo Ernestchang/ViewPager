@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/purse_index_grid_item_view_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:layout_gravity="center|right|top" android:id="@id/purse_index_grid_item_subtitle_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ViewStub android:layout_gravity="center" android:id="@id/webimage_stub" android:layout="@layout/purse_index_grid_item_view_webimageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/purse_grid_item_view_top_bottom_margin" android:layout_marginTop="@dimen/purse_grid_item_view_top_bottom_margin" android:layout_marginRight="@dimen/purse_grid_item_view_top_bottom_margin" android:layout_marginBottom="5.0dip" />
+            <com.astonmartin.image.WebImageView android:layout_gravity="center" android:id="@id/purse_index_grid_item_title_logo_front" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/purse_grid_item_view_top_bottom_margin" android:layout_marginTop="@dimen/purse_grid_item_view_top_bottom_margin" android:layout_marginRight="@dimen/purse_grid_item_view_top_bottom_margin" android:layout_marginBottom="5.0dip" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color1" android:gravity="center" android:layout_gravity="center" android:id="@id/purse_index_grid_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="2.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size3" android:textColor="@color/mgjpf_main_text_color3" android:layout_gravity="center" android:id="@id/purse_index_grid_item_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/purse_grid_item_view_top_bottom_margin" android:singleLine="true" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/mgjpf_main_body_area_bg_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <View android:layout_gravity="right" android:background="@color/mgjpf_main_body_area_bg_color" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+</FrameLayout>

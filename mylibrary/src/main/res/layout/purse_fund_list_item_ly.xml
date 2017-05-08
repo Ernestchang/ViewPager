@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/content_ly" android:background="@color/mgjpf_white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_main_text_color1" android:id="@id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/title_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_toLeftOf="@id/money" android:layout_alignBottom="@id/money" android:layout_alignParentLeft="true">
+        <com.astonmartin.image.WebImageView android:id="@id/tag_iv" android:layout_width="37.0dip" android:layout_height="15.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color1" android:id="@id/title" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/tag_iv" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/mgjpf_main_text_size3" android:textColor="@color/mgjpf_main_text_color3" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/title_ly" android:layout_alignLeft="@id/title_ly" />
+    <TextView android:textSize="@dimen/mgjpf_main_text_size3" android:textColor="@color/mgjpf_main_text_color3" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/time" android:layout_alignParentRight="true" />
+</RelativeLayout>

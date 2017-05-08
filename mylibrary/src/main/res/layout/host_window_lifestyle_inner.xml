@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dismiss_click" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/video_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-50.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:alpha="0.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/host_icon_video" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="视频" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/photo_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-50.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:alpha="0.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/host_icon_photo" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="照片" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/live_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-50.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:alpha="0.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/host_icon_live" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="直播" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/lifestyle_btn_close" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="bottom|center" android:paddingBottom="7.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/host_lifestyle_btn_close" />
+    </FrameLayout>
+</RelativeLayout>

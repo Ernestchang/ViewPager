@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/v_header_date" layout="@layout/subject_header_date" />
+    <com.meilishuo.base.home.widget.GridGoodsLayout android:id="@id/gridImageView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:layout_below="@id/v_header_date" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/grey_d1" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="10.0dip" android:lines="1" android:layout_below="@id/gridImageView" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/blck_text" android:ellipsize="end" android:id="@id/subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:lines="1" android:maxEms="22" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+</RelativeLayout>

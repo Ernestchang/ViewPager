@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/detail_coupon_used_bg" android:layout_width="90.0dip" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="90.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="11.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="¥" android:includeFontPadding="false" />
+            <TextView android:textSize="21.0dip" android:textColor="@color/white" android:id="@id/coupon_effect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/coupon_desc" android:layout_width="90.0dip" android:layout_height="wrap_content" android:text="满88减" />
+    </LinearLayout>
+    <ImageView android:id="@id/coupon_tip" android:background="@drawable/detail_coupon_used_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

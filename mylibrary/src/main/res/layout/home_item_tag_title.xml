@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/grey_l19" android:layout_width="fill_parent" android:layout_height="@dimen/padding_small" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_size_2" android:textColor="@color/grey_d1" android:id="@id/zh_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_small" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true" />
+        <TextView android:textSize="@dimen/font_size_9" android:textColor="@color/grey_d5" android:id="@id/en_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_tiny" android:layout_marginBottom="@dimen/padding_small" android:layout_below="@id/zh_title" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true" />
+    </RelativeLayout>
+    <com.meilishuo.mainpage.view.DivideGridView android:id="@id/scattered_layout" android:paddingLeft="@dimen/padding_middle" android:paddingTop="@dimen/padding_tiny" android:paddingRight="@dimen/padding_middle" android:paddingBottom="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@null" android:dividerHeight="0.0dip" android:overScrollMode="never" app:itemMinWidth="80.0dip" app:column_padding="@dimen/padding_small" app:row_padding="@dimen/padding_small" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/conversation_empty_icon" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="160.0dip" android:src="@mipmap/im_conversation_empty_icon" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="#ff999999" android:id="@id/conversation_empty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160.0dip" android:text="你还没有私聊" android:layout_below="@id/conversation_empty_icon" android:layout_centerInParent="true" />
+</RelativeLayout>

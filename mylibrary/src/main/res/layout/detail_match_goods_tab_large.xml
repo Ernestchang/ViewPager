@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="27.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/detail_goods_match_detail_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_label" android:background="@drawable/detail_match_goods_detail_tab" android:layout_width="90.0dip" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_tab_text_size">11.0dip</dimen>
+    <dimen name="search_dialog_corner_radius">3.0dip</dimen>
+    <dimen name="search_main_title_bar_height">44.0dip</dimen>
+    <dimen name="search_sort_bar_height">45.0dip</dimen>
+    <dimen name="search_tc_header_height">133.0dip</dimen>
+    <dimen name="search_tc_header_list_height">123.0dip</dimen>
+    <dimen name="search_tc_header_view_height">108.0dip</dimen>
+    <dimen name="search_tc_res_left_margin">15.0dip</dimen>
+    <dimen name="search_tc_res_mid_margin">10.0dip</dimen>
+    <dimen name="search_tc_res_top_margin">20.0dip</dimen>
+    <dimen name="search_tc_round_corner_radius">10.0dip</dimen>
+    <dimen name="search_tc_tab_height">60.0dip</dimen>
+    <dimen name="search_tc_tab_line_above">4.0dip</dimen>
+    <dimen name="search_tc_tab_line_height">2.0dip</dimen>
+    <dimen name="search_tc_tab_text_size">16.0sp</dimen>
+</resources>

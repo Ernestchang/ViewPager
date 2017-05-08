@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/shop_inner_search_title_ly" />
+    <com.meilishuo.xiaodian.search.widget.ShopSearchNavLayout android:id="@id/shop_inner_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/shop_inner_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.mogujie.v2.waterfall.goodswaterfall.WaterfallSortBar android:id="@id/sort_bar" android:layout_width="fill_parent" android:layout_height="41.0dip" android:baselineAligned="false" />
+            <FrameLayout android:id="@id/cat_body" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/sort_bar" />
+            <View android:id="@id/shop_innder_search_layer" android:background="@color/shop_search_layer_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </com.meilishuo.xiaodian.search.widget.ShopSearchNavLayout>
+</LinearLayout>

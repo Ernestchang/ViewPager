@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meilishuo.mlssearch.widget.category.CustomLinearLayout android:orientation="vertical" android:id="@id/ll_all" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.mlssearch.widget.category.CustomLinearLayout android:orientation="vertical" android:id="@id/header_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:background="@color/catgeory_tab_background" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <com.astonmartin.image.WebImageView android:id="@id/webImageView" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_margin="10.0dip" />
+</com.meilishuo.mlssearch.widget.category.CustomLinearLayout>

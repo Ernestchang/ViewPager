@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#fff6f6f6" android:paddingLeft="14.5dip" android:paddingTop="23.5dip" android:paddingRight="14.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/paysdk_up_et_bg" android:layout_width="fill_parent" android:layout_height="41.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/paysdk_up_card_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff424242" android:gravity="center_vertical" android:id="@id/up_captcha_card_num_tv" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="52.0dip" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/paysdk_up_et_bg" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginTop="15.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.5dip" android:src="@drawable/paysdk_up_phone_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff424242" android:gravity="center_vertical" android:id="@id/up_captcha_phone_num_tv" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="52.0dip" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <com.mogujie.mgjpfbasesdk.widget.PFCaptchaButton android:textColor="@color/mgjpf_white" android:id="@id/up_captcha_send_btn" android:background="@drawable/paysdk_up_btn_bg" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="41.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:countDownQuantityInSecond="60" style="@style/MGJPF_tv_btn.PFCaptcha" />
+            <RelativeLayout android:background="@drawable/paysdk_up_et_bg" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginRight="14.5dip" android:layout_toLeftOf="@id/up_captcha_send_btn">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.5dip" android:src="@drawable/paysdk_up_sms_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:textColor="#ff424242" android:textColorHint="#ffc0c0c0" android:gravity="center_vertical" android:id="@id/up_captcha_captcha_et" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="52.0dip" android:hint="@string/paysdk_up_captcha_sms_et_hint" android:layout_alignParentLeft="true" android:inputType="number" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <Button android:textSize="18.0sp" android:textColor="@color/mgjpf_white" android:textColorHighlight="#ffffffff" android:id="@id/next_btn" android:background="@drawable/paysdk_up_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/paysdk_up_btn" />
+    </LinearLayout>
+</ScrollView>

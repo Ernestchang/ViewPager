@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mg_live_gift_pannel_layout" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/gift_layout" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_above="@id/message_layout">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/page_list_view" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:id="@id/view_pager_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/page_list_view">
+            <android.support.v4.view.ViewPager android:id="@id/gift_viewpager" android:layout_width="fill_parent" android:layout_height="210.0dip" android:layout_centerInParent="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/message_layout" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/give_button" android:background="@drawable/shape_pink_round_corner" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" android:text="赠送" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/last_pean_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.5dip" android:text="么么豆：100" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/recharge_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.5dip" android:text="@string/mg_live_viewers_gift_recharge_text" android:drawableRight="@drawable/live_right_arrow" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/last_pean_number" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

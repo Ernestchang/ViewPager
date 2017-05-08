@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi0" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi1" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi2" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi3" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi4" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi5" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi6" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi7" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi8" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi9" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi10" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi11" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi12" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi13" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi14" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi15" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi16" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi17" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi18" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi19" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi20" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi21" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi22" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi23" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi24" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi25" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi26" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi27" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi28" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi29" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi30" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi31" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi32" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi33" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi34" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi35" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi36" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi37" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi38" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi39" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi40" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi41" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi42" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi43" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi44" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi45" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi46" />
+    <item android:duration="30" android:drawable="@drawable/prl_mls_loading_wenzi47" />
+</animation-list>

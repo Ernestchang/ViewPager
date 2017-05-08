@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/detail_official_text0" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_below="@id/image" android:layout_alignParentLeft="true" />
+    <View android:id="@id/_anchor" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/detail_theme_color" android:ellipsize="end" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/title" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/detail_official_text2" android:ellipsize="end" android:gravity="right" android:id="@id/faved" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/detail_recommend_fav" android:drawablePadding="2.0dip" android:layout_below="@id/title" android:layout_alignParentRight="true" />
+</RelativeLayout>

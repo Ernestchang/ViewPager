@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/mg_live_report_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择举报原因" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/report_first_button" android:background="@drawable/mg_live_report_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="色情、暴力、赌博" android:layout_weight="1.0" />
+        <Button android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/report_second_button" android:background="@drawable/mg_live_report_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="敏感信息" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/report_third_button" android:background="@drawable/mg_live_report_button_bg" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="民族、宗教歧视" android:layout_weight="1.0" />
+        <Button android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/report_fourth_button" android:background="@drawable/mg_live_report_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="恶意广告" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/report_fifth_button" android:background="@drawable/mg_live_report_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="谣言" android:layout_weight="1.0" />
+        <Button android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/report_sixth_button" android:background="@drawable/mg_live_report_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人身攻击" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#80808080" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <Button android:textSize="14.0sp" android:textColor="#ffff5777" android:id="@id/report_cancel" android:background="#00000000" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="取消" />
+</LinearLayout>

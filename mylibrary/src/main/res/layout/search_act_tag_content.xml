@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mogujie.ui.view.PullToRefreshLayout android:id="@id/lv_pull" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.mogujie.uikit.listview.MGListView android:id="@id/lv_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

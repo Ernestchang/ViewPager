@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/sort_bar_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/default_item" android:background="@drawable/sort_bar_item_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/shop_tab_default" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/sort_bar_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/sales" android:background="@drawable/sort_bar_item_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/shop_tab_sales" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/sort_bar_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/latest" android:background="@drawable/sort_bar_item_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/shop_tab_latest" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/sort_bar_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/price" android:paddingLeft="4.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/shop_tab_price" android:drawableRight="@drawable/sort_closed" android:drawablePadding="4.0dip" />
+    </FrameLayout>
+</merge>

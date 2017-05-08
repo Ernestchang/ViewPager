@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <com.mogujie.login.component.view.LabelEditText android:id="@id/password_input_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="70.0dip" android:layout_marginRight="15.0dip" android:inputType="textPassword" app:labelText="@string/login_reg_fill_pwd_label" app:labelTextAppearance="?loginLabelTextAppearance" app:editTextHint="@string/login_reg_fill_pwd_hint" app:editTextAppearance="?loginEditTextAppearance" style="?attr/loginPasswordEditTextStyle" />
+            <com.mogujie.login.component.view.PwdLevelView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/reg_pwd_strength" android:layout_width="80.0dip" android:layout_height="25.0dip" android:layout_marginTop="20.0dip" />
+            <Button android:id="@id/btn_next" android:layout_marginLeft="15.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/register_next_step" style="?attr/loginLargeButtonStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:id="@id/safe_tip" style="@style/DefaultLoginNotAllowTipStyle" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:background="@color/mgjpf_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pfbindcard_creditcard_container" android:background="@drawable/pfbindcard_blury_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.37">
+        <com.mogujie.mgjpfbindcard.bindcard.creditcard.widget.CreditCardView android:id="@id/pfbindcard_credit_card_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/mgjpf_main_body_area_bg_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.63">
+        <RelativeLayout android:id="@id/pfbindcard_mini_title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/mgjpf_fund_base_title_bar_height">
+            <ImageView android:id="@id/pfbindcard_mini_title_left_btn" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/pfbindcard_back_btn" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/pfbindcard_mini_title_close_btn" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/pfbindcard_close_btn" android:scaleType="fitCenter" android:layout_toRightOf="@id/pfbindcard_mini_title_left_btn" />
+            <TextView android:textSize="@dimen/mgjpf_main_text_title_size" android:textColor="@color/mgjpf_main_text_color1" android:id="@id/pfbindcard_mini_title_center_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pfbindcard_title" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/pfbindcard_btn_text_color" android:gravity="center" android:id="@id/pfbindcard_mini_title_right_btn" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" android:text="@string/pfbindcard_next_btn_text" android:layout_alignParentRight="true" />
+            <View android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <com.mogujie.mgjpfbindcard.bindcard.creditcard.widget.SwipeableViewPager android:orientation="horizontal" android:id="@id/pfbindcard_card_field_container_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

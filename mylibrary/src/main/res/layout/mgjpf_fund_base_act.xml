@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/base_layout_title" android:background="@drawable/mgjpf_fund_base_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/mgjpf_fund_base_title_bar_height">
+        <ImageView android:id="@id/title_left_btn" android:paddingLeft="@dimen/mgjpf_padding_normal" android:paddingRight="@dimen/mgjpf_padding_normal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/mgjpf_fund_base_back_btn" android:scaleType="center" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_title_size" android:textColor="@color/mgjpf_main_text_color1" android:ellipsize="end" android:id="@id/title_center_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dip" android:singleLine="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color2" android:gravity="center" android:id="@id/title_right_btn" android:paddingLeft="@dimen/mgjpf_padding_normal" android:paddingRight="@dimen/mgjpf_padding_normal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/base_layout_body" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/base_layout_title" />
+    <FrameLayout android:id="@id/pf_base_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

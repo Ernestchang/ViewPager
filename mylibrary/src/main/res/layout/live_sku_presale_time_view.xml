@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="66.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:id="@id/sku_presale_pay_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/live_sku_presale_paytime_string" android:layout_centerVertical="true" />
+    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:id="@id/sku_presale_remain_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sku_presale_remain_time_string" android:layout_above="@id/sku_presale_pay_time_text" />
+    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:id="@id/sku_presale_indicate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/sku_presale_pay_time_text" />
+    <ImageView android:id="@id/sku_presale_more_content_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_sku_presale_more_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="#33e5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

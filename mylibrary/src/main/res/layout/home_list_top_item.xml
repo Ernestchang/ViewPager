@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="145.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/imageView" android:background="@drawable/mls_default_bg" android:layout_width="145.0dip" android:layout_height="65.0dip" android:scaleType="centerCrop" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/grey_d3_1" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:includeFontPadding="false" android:maxLength="9" android:drawableLeft="@drawable/home_top_arrow" android:drawablePadding="4.0dip" android:layout_below="@id/imageView" />
+</RelativeLayout>

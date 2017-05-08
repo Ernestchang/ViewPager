@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/mg_share_button_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/divider_line" android:background="#d8ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mg_share_cancel" android:layout_width="fill_parent" android:layout_height="49.5dip" android:text="@string/share_cancel" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/mg_share_qrcode_ly" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <FrameLayout android:id="@id/mg_share_qrcode_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/detail_share_close" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="16.0dip" android:src="@drawable/mg_live_share_qr_cancel" android:layout_alignTop="@id/mg_share_qrcode_item" android:layout_alignRight="@id/mg_share_qrcode_item" />
+    </RelativeLayout>
+</RelativeLayout>

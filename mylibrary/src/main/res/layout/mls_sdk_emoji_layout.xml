@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/emoji_linearLayout">
+        <android.support.v4.view.ViewPager android:id="@id/emoji_viewPager" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/emoji_linearLayout" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_margin="4.0dip" android:layout_above="@id/emoji_tabs_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/emoji_tabs_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.meilishuo.base.emoji.PagerSlidingTabStrip android:id="@id/emoji_tabs" android:layout_width="fill_parent" android:layout_height="40.0dip" app:pstsIndicatorHeight="2.0dip" app:pstsTabPaddingLeftRight="25.0dip" app:pstsShouldExpand="false" />
+    </LinearLayout>
+</merge>

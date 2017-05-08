@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/key_value_item_view_key" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View style="@style/purse_hfiller" />
+    <TextView android:id="@id/key_value_item_view_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

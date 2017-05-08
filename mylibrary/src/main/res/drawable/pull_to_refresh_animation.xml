@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse00" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse01" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse02" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse03" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse04" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse05" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse06" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse07" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse08" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse09" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse10" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse11" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse12" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse13" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse14" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse15" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse16" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse17" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse18" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse19" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse20" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse21" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse22" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse23" />
+    <item android:duration="20" android:drawable="@drawable/mg_ptr_reverse24" />
+</animation-list>

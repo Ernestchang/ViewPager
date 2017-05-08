@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mogujie.live.widget.LiveTabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="30.0dip" app:live_tabSelectedTextBold="true" app:tabIndicatorColor="@color/live_tabIndicatorColor" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="@color/live_tabTextColor" app:tabSelectedTextColor="@color/live_tabSelectedTextColor" app:tabPaddingStart="16.0dip" app:tabPaddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/shop_header_top_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/shop_title_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/shop_backbtn" android:layout_width="@dimen/shop_title_bar_height" android:layout_height="fill_parent" android:src="@drawable/shop_back_btn" android:scaleType="center" />
+    <TextView android:textColor="@color/grey_d5" android:gravity="center_vertical" android:id="@id/shop_search_btn" android:background="@drawable/shop_search_bg" android:paddingLeft="50.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/search_in_shop_input_hint" android:drawableLeft="@drawable/shop_search_icon" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/shop_share_btn" android:layout_width="@dimen/shop_title_bar_height" android:layout_height="fill_parent" android:src="@drawable/shop_share_btn" android:scaleType="center" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip">
+        <ImageView android:id="@id/shop_cart" android:layout_width="@dimen/shop_title_bar_height" android:layout_height="fill_parent" android:src="@drawable/shop_cart_btn" android:scaleType="center" />
+        <TextView android:id="@id/shop_cart_new" android:background="@drawable/shop_more_new_bg" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="9.5dip" android:layout_marginRight="2.0dip" android:layout_alignTop="@id/shop_cart" android:layout_alignRight="@id/shop_cart" />
+    </RelativeLayout>
+</LinearLayout>

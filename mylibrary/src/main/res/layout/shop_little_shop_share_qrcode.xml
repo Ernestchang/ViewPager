@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/mg_share_qrcode_ly" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/mg_share_qrcode_item" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/mg_share_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:text="@string/share_save_to_local" android:drawableLeft="@drawable/share_save_to_local" android:drawablePadding="8.0dip" android:layout_below="@id/mg_share_qrcode_item" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/detail_share_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_model_close_btn" android:layout_alignTop="@id/mg_share_qrcode_item" android:layout_alignRight="@id/mg_share_qrcode_item" />
+    </RelativeLayout>
+</FrameLayout>

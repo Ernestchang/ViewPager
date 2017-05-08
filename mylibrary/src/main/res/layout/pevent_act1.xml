@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textColor="@android:color/primary_text_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_p_event_act1_name" />
+    <Button android:id="@id/ptp_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="带ptp跳转" />
+    <Button android:id="@id/no_ptp_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="不带ptp跳转" />
+</LinearLayout>

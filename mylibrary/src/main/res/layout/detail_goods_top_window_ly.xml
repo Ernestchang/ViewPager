@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <com.meilishuo.detail.view.PullToRefreshHorizontalViewPager android:id="@id/detail_top_image_pager" android:layout_width="fill_parent" android:layout_height="200.0dip" ptr:ptrMode="both" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/indicator_panel" android:background="@drawable/detail_indicator_bg" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="39.0dip" />
+        <ViewStub android:id="@id/goods_detail_timer_stub" android:layout="@layout/detail_goods_count_down_ly" android:layout_width="fill_parent" android:layout_height="34.0dip" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/paysdk_pay_fail_dialog_bg" android:layout_width="244.0dip" android:layout_height="244.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_main_text_color1" android:gravity="center" android:id="@id/pay_fail_reason_text" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/paysdk_pay_fail_dialog_reason" android:layout_weight="166.0" />
+    <View android:layout_margin="0.0dip" style="@style/mgjpf_basesdk_hdivider" />
+    <RelativeLayout android:id="@id/pay_fail_first_payment_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="90.0">
+        <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textStyle="bold" android:textColor="@color/mgjpf_brand_text_color" android:id="@id/pay_fail_first_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:textColor="@color/mgjpf_brand_text_color" android:id="@id/pay_fail_first_payment_recommend" android:background="@drawable/paysdk_pay_fail_recommend" android:layout_width="32.0dip" android:layout_height="18.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/pay_fail_first_payment" />
+    </RelativeLayout>
+    <View android:layout_margin="0.0dip" style="@style/mgjpf_basesdk_hdivider" />
+    <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_brand_text_color" android:gravity="center" android:id="@id/pay_fail_second_payment" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="90.0" />
+    <View android:layout_margin="0.0dip" style="@style/mgjpf_basesdk_hdivider" />
+    <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_main_text_color2" android:gravity="center" android:id="@id/pay_fail_cancel_pay" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/paysdk_pay_fail_cancel" android:layout_weight="90.0" />
+</LinearLayout>

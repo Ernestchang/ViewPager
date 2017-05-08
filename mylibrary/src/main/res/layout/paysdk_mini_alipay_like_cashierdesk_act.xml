@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/mgjpf_floating_fragment_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/mini_floating_main_container" android:background="@color/mgjpf_main_body_area_bg_color" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/mgjpf_floating_fragment_height">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/mgjpf_input_pwd_echo_view_height">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/mini_floating_close_icon" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mgjpf_floating_fragment_close_icon" />
+            <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_main_text_color1" android:layout_gravity="center" android:id="@id/mini_floating_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paysdk_cashier_title" android:singleLine="true" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/mini_floating_help_icon" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <View android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <ViewFlipper android:id="@id/mini_floating_content_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/mini_floating_pay_view" />
+        </ViewFlipper>
+    </LinearLayout>
+</FrameLayout>

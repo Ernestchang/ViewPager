@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/live_sku_stop_sale_tips_image" android:layout_width="wrap_content" android:layout_height="85.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/live_sku_event_act_end" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:id="@id/live_sku_stop_sale_tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="已经结束啦~下次赶早" android:layout_below="@id/live_sku_stop_sale_tips_image" android:layout_centerHorizontal="true" />
+</RelativeLayout>

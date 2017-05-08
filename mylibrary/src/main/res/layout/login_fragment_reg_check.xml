@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.mogujie.login.component.view.LabelEditText android:id="@id/code_input_ly" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" app:labelTextAppearance="?loginLabelTextAppearance" app:editTextHint="@string/login_reg_phone_check_hint" app:editTextAppearance="?loginEditTextAppearance" />
+        <View android:background="@color/login_gray_ebebeb" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        <TextView android:textAppearance="?loginResendCaptchaTextAppearance" android:layout_gravity="center_horizontal" android:id="@id/re_get_captcha_btn" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_re_get_captcha" style="?attr/loginLabelStyle" />
+        <com.mogujie.login.coreapi.view.CaptchaView android:id="@id/captcha" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" />
+        <Button android:id="@id/btn_next" android:layout_marginLeft="15.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/register_next_step" style="?attr/loginLargeButtonStyle" />
+    </LinearLayout>
+</ScrollView>

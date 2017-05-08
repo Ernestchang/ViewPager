@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mogujie.live.view.MGGiftMessageLlView android:id="@id/mg_live_gift_message_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="108.0dip" />
+    <com.mogujie.live.component.refactor.comment.view.CommentShowView android:id="@id/mg_live_comment_show_v" android:layout_width="wrap_content" android:layout_height="200.0dip" android:layout_below="@id/mg_live_gift_message_container" />
+</RelativeLayout>

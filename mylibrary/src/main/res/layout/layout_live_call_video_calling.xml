@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/live_layout_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/live_call_bg" android:background="@drawable/live_calling_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="-10.0dip" />
+    <RelativeLayout android:background="#88000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/call_video_avator_rly" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_live_call_icon" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/live_calling_icon" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+            <com.mogujie.live.widget.CircularImageButton android:id="@id/img_handup_userico_bg" android:background="@drawable/call_video_shap_default_ico" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+            <com.mogujie.live.widget.CircularImageButton android:id="@id/img_handup_userico" android:background="@drawable/call_video_shap_default_ico" android:visibility="gone" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/tv_calling_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="直播连线中" android:layout_below="@id/call_video_avator_rly" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/id_shop_gather_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/id_shop_coupon_view"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_left" android:background="@drawable/detail_over_free_gb" android:layout_width="wrap_content" android:layout_height="18.0dip" android:text="满件免1" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/grey_d1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="活动商品满3件免1件" android:layout_toRightOf="@id/tv_left" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/grey_d5" android:id="@id/tv_valid_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016.11.29-2016.12.11" android:layout_below="@id/tv_desc" android:layout_alignLeft="@id/tv_desc" />
+</RelativeLayout>

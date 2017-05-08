@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meilishuo.mainpage.view.TagTabView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mls="http://schemas.android.com/apk/res-auto">
+    <com.meilishuo.mainpage.view.TagConvergeTabView android:id="@id/tab_lay" android:layout_width="fill_parent" android:layout_height="38.0dip" mls:defaultColor="@color/grey_d3" mls:selectColor="@color/pink" mls:lineColor="@color/pink" mls:animation="true" mls:tabTextSize="14.0sp" mls:showMiddleLine="false" mls:showBottomLine="true" mls:linewidth="2.0dip" />
+</com.meilishuo.mainpage.view.TagTabView>

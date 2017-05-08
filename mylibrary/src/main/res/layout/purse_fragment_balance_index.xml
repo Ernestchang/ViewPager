@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/purse_balance_index_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/purse_balance_index_header_container" android:layout_width="fill_parent" android:layout_height="175.0dip">
+            <com.astonmartin.image.WebImageView android:id="@id/purse_balance_index_header_logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/purse_view_header_bg" android:scaleType="centerCrop" />
+            <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="@color/mgjpf_white" android:id="@id/purse_balance_index_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:singleLine="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_white" android:id="@id/purse_balance_index_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/purse_balance_index_details_text" android:singleLine="true" android:drawableLeft="@drawable/purse_balance_index_details_icon" android:drawablePadding="5.0dip" android:layout_below="@id/purse_balance_index_balance" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="61.0dip">
+            <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_main_text_color1" android:gravity="center" android:id="@id/purse_balance_index_recharge" android:background="@drawable/purse_index_grid_item_view_bg" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/purse_balance_index_recharge" android:singleLine="true" android:layout_weight="1.0" />
+            <View android:background="@color/mgjpf_view_divider_color" android:visibility="gone" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_main_text_color1" android:gravity="center" android:id="@id/purse_balance_index_withdraw" android:background="@drawable/purse_index_grid_item_view_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/purse_balance_index_withdraw" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:id="@id/purse_balance_index_dy_item_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mgjpf_margin_large" android:divider="@drawable/pf_linearlayout_horizonal_divider" android:showDividers="middle">
+                <RelativeLayout android:id="@id/purse_balance_index_fund_auto_container" android:background="@drawable/purse_dy_item_view_bg" android:padding="@dimen/mgjpf_padding_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_main_text_color1" android:id="@id/purse_balance_index_fund_auto_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" />
+                    <com.mogujie.widget.switchbutton.SwitchButton android:id="@id/purse_balance_index_fund_auto_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cursor="@drawable/purse_cursor" app:selectedBG="?pf_brand_text_color" app:unselectedBG="#ffeeeeee" app:trackWidth="48.0dip" app:trackPadding="1.0dip" app:status="OFF" app:shadowExtend="3.0dip" app:shadowXDiff="0.0dip" app:shadowYDiff="3.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <com.mogujie.mgjpfbasesdk.banner.PFBannerLayout android:id="@id/purse_balance_index_topBanner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.mogujie.uikit.autoscroll.viewpager.AutoScrollBanner android:layout_gravity="bottom" android:id="@id/purse_balance_index_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

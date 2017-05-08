@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mogujie.mgjpfbindcard.bindcard.view.PFBindCardNumInputView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mgjpf_main_text_size4" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/mgjpf_bindcard_auth_tip_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/pfbindcard_num_auth_tip" />
+    <TextView android:textSize="@dimen/mgjpf_main_text_size4" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/mgjpf_bind_card_modify_mobile_tip_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/pfbindcard_modify_mobile_tip" />
+    <View android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/pf_linearlayout_horizonal_divider" android:showDividers="middle" android:dividerPadding="15.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/mgjpf_bindcard_realname_name_ly" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/add_new_name_label" android:layout_width="50.0dip" android:text="@string/pfbindcard_num_name_tv" style="@style/PFRowTextView.PFRowLeftTextView" />
+            <TextView android:id="@id/add_new_name_tv" android:layout_width="fill_parent" android:layout_toRightOf="@id/add_new_name_label" style="@style/PFRowTextView.PFRowRightEditText" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/add_new_card_label" android:layout_width="50.0dip" android:text="@string/pfbindcard_num_card_id_tv" style="@style/PFRowTextView.PFRowLeftTextView" />
+            <ImageView android:id="@id/scan_card" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/pfbindcard_scan_card_icon" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.mogujie.mgjpfbasesdk.widget.PFClearableEditText android:id="@id/add_new_card_et" android:layout_width="fill_parent" android:hint="@string/pfbindcard_num_hint" android:layout_toLeftOf="@id/scan_card" android:layout_toRightOf="@id/add_new_card_label" android:inputType="number" style="@style/PFRowTextView.PFRowRightEditText" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/mgjpf_bindcard_num_protocol_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/mgjpf_bindcard_num_protocol_cb" android:background="@android:color/transparent" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:checked="true" android:button="@drawable/mgjpf_checkbox_circle_bg" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size4" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/mgjpf_bindcard_num_protocol_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/pfbindcard_num_protocol" android:layout_toRightOf="@id/mgjpf_bindcard_num_protocol_cb" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <Button android:id="@id/next_btn" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/pfbindcard_next_btn_text" style="@style/MGJPF_tv_btn" />
+</com.mogujie.mgjpfbindcard.bindcard.view.PFBindCardNumInputView>

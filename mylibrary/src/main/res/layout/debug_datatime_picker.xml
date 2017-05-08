@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="输入日期和时间预览首页内容：" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <EditText android:textSize="16.0dip" android:gravity="center" android:id="@id/edit_year" android:background="@drawable/debug_edittext_bg" android:layout_width="60.0dip" android:layout_height="25.0dip" android:maxLength="4" android:inputType="number" />
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="年" />
+        <EditText android:textSize="16.0dip" android:gravity="center" android:id="@id/edit_month" android:background="@drawable/debug_edittext_bg" android:layout_width="35.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:maxLength="2" android:inputType="number" />
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="月" />
+        <EditText android:textSize="16.0dip" android:gravity="center" android:id="@id/edit_day" android:background="@drawable/debug_edittext_bg" android:layout_width="35.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:maxLength="2" android:inputType="number" />
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <EditText android:textSize="16.0dip" android:gravity="center" android:id="@id/edit_hour" android:background="@drawable/debug_edittext_bg" android:layout_width="35.0dip" android:layout_height="25.0dip" android:maxLength="2" android:inputType="number" />
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text=" : " />
+        <EditText android:textSize="16.0dip" android:gravity="center" android:id="@id/edit_minute" android:background="@drawable/debug_edittext_bg" android:layout_width="35.0dip" android:layout_height="25.0dip" android:maxLength="2" android:inputType="number" />
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text=" : " />
+        <EditText android:textSize="16.0dip" android:gravity="center" android:id="@id/edit_seconds" android:background="@drawable/debug_edittext_bg" android:layout_width="35.0dip" android:layout_height="25.0dip" android:maxLength="2" android:inputType="number" />
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+        <Button android:textSize="16.0dip" android:textColor="@android:color/black" android:id="@id/cancel_btn" android:layout_width="100.0dip" android:layout_height="50.0dip" android:text="取消" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:textSize="16.0dip" android:textColor="@android:color/black" android:id="@id/reset_btn" android:layout_width="100.0dip" android:layout_height="50.0dip" android:text="重置" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:textSize="16.0dip" android:textColor="@android:color/black" android:id="@id/sure_btn" android:layout_width="100.0dip" android:layout_height="50.0dip" android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

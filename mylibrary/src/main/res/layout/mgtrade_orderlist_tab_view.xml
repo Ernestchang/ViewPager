@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/sts_tab_text_color" android:id="@id/tab_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+    <TextView android:textSize="7.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tab_num" android:background="@drawable/mgtrade_orderlist_tab_num_bg" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12.0dip" android:layout_marginLeft="-3.0dip" android:layout_marginTop="8.0dip" android:singleLine="true" android:layout_toRightOf="@id/tab_tv" />
+    <View android:id="@id/tab_left_divider" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/profile_bg_grey" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/newmore_title_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:id="@id/newmore_btn_back" android:layout_width="80.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/pro_personal_ico_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:gravity="center" android:id="@id/newmore_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系统设置" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <com.meilishuo.profile.view.ElasticScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/newmore_title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/profile_bg_grey" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.meilishuo.profile.view.OptionsItemView android:id="@id/layout_edit_info" android:background="@drawable/pro_item_trans_selector" android:paddingLeft="@dimen/padding_middle" android:paddingRight="@dimen/padding_middle" android:layout_width="fill_parent" android:layout_height="@dimen/profile_option_item_height" app:optionContentColor="@color/pink_t80" app:optionTitle="个人信息设置" app:optionArray="@mipmap/pro_circle_info_arrow" app:optionTitleSize="16" app:optionImageSize="22" />
+                <View android:id="@id/divier_line1" android:layout_height="1.0px" android:layout_marginLeft="@dimen/padding_middle" style="@style/borderline_slide" />
+                <com.meilishuo.profile.view.OptionsItemView android:id="@id/layout_bind" android:background="@drawable/pro_item_trans_selector" android:paddingLeft="@dimen/padding_middle" android:paddingRight="@dimen/padding_middle" android:layout_width="fill_parent" android:layout_height="@dimen/profile_option_item_height" app:optionContentColor="@color/pink_t80" app:optionTitle="站外绑定设置" app:optionArray="@mipmap/pro_circle_info_arrow" app:optionTitleSize="16" app:optionImageSize="22" />
+                <View android:id="@id/divier_line2" android:layout_height="1.0px" android:layout_marginLeft="@dimen/padding_middle" style="@style/borderline_slide" />
+                <com.meilishuo.profile.view.OptionsItemView android:id="@id/layout_clear_cache" android:background="@drawable/pro_item_trans_selector" android:paddingLeft="@dimen/padding_middle" android:paddingRight="@dimen/padding_middle" android:layout_width="fill_parent" android:layout_height="@dimen/profile_option_item_height" app:optionContentColor="@color/pink_t80" app:optionTitle="清除缓存" app:optionArray="@mipmap/pro_circle_info_arrow" app:optionTitleSize="16" app:optionImageSize="22" />
+                <View android:layout_height="1.0px" android:layout_marginLeft="@dimen/padding_middle" style="@style/borderline_slide" />
+                <View android:id="@id/divier_line3" android:background="@color/profile_bg_grey" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <com.meilishuo.profile.view.OptionsItemView android:id="@id/layout_meilishuo_weibo" android:background="@drawable/pro_item_trans_selector" android:paddingLeft="@dimen/padding_middle" android:paddingRight="@dimen/padding_middle" android:layout_width="fill_parent" android:layout_height="@dimen/profile_option_item_height" app:optionContentColor="@color/pink_t80" app:optionTitle="关注美丽说微信" app:optionArray="@mipmap/pro_circle_info_arrow" app:optionTitleSize="16" app:optionImageSize="22" />
+                <View android:layout_height="1.0px" android:layout_marginLeft="@dimen/padding_middle" style="@style/borderline_slide" />
+                <com.meilishuo.profile.view.OptionsItemView android:id="@id/layout_update" android:background="@drawable/pro_item_trans_selector" android:paddingLeft="@dimen/padding_middle" android:paddingRight="@dimen/padding_middle" android:layout_width="fill_parent" android:layout_height="@dimen/profile_option_item_height" app:optionContentColor="@color/pink_t80" app:optionTitle="版本信息" app:optionArray="@mipmap/pro_circle_info_arrow" app:optionTitleSize="16" app:optionImageSize="22" />
+                <View android:id="@id/bottom_line" android:paddingLeft="@dimen/padding_middle" android:paddingRight="@dimen/padding_middle" android:visibility="gone" android:layout_height="1.0px" style="@style/borderline_slide" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ffff3366" android:gravity="center" android:id="@id/setting_profile_exit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="20.0dip" android:text="退出登录" />
+            <ImageView android:id="@id/iv_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitStart" />
+        </LinearLayout>
+    </com.meilishuo.profile.view.ElasticScrollView>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sku_bug_remaining_time_ll" android:layout_width="fill_parent" android:layout_height="29.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:id="@id/sku_bug_remaining_time_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="离团购开始还有一段时间." />
+    <View android:background="#33e5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

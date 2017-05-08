@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_new_msg_layout1" android:background="@drawable/mg_live_chat_newmsg_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/im_new_message1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="6条新消息" android:layout_centerVertical="true" />
+        <ImageView android:background="@drawable/mg_live_chat_newmsg_down_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="4.0dip" android:layout_toRightOf="@id/im_new_message1" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="190.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="3.0dip" android:layout_above="@id/rl_new_msg_layout1">
+        <com.mogujie.live.view.MGChatView android:layout_gravity="bottom" android:id="@id/message_list1" android:layout_width="300.0dip" android:layout_height="170.0dip" android:layout_marginTop="5.0dip" android:transcriptMode="alwaysScroll" android:overScrollMode="never" />
+        <View android:layout_width="250.0dip" android:layout_height="50.0dip" android:alpha="0.3" />
+    </FrameLayout>
+</merge>

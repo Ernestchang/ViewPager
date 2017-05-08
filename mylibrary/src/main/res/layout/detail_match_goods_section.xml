@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_match_goods_section" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/tabs" android:layout_width="0.0dip" android:layout_height="wrap_content" android:divider="@drawable/detail_empty_8dp" android:layout_weight="1.0" android:showDividers="middle|beginning" />
+    </LinearLayout>
+    <View android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_match" android:layout_width="fill_parent" android:layout_height="95.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:overScrollMode="never" />
+</merge>

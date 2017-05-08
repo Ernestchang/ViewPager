@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/rl_top_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/home_trend_item_top" />
+    <FrameLayout android:id="@id/imageLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="191.0dip" android:layout_below="@id/rl_top_view">
+        <com.astonmartin.image.WebImageView android:id="@id/imageView" android:background="@drawable/mls_default_bg" android:layout_width="fill_parent" android:layout_height="191.0dip" android:scaleType="centerCrop" />
+        <RelativeLayout android:id="@id/topCoverView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_video_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_video_play" android:layout_centerInParent="true" />
+            <RelativeLayout android:background="@drawable/bg_fashion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/iv_icon_fashion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_icon_fashion" android:scaleType="center" />
+                    <com.mogujie.uikit.textview.MGTextView android:textSize="11.0sp" android:textColor="#ffe40046" android:gravity="center" android:id="@id/tv_goods_nums" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView android:id="@id/detailView" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/imageLayout" />
+    <View android:background="@android:color/darker_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/detailView" />
+</merge>

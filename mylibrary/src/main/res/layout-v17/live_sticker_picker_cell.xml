@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/sticker_thumbnail" android:background="@drawable/live_sticker_cell_bg_selector" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/sticker_download_tip" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/live_sticker_download_arrow" android:layout_alignRight="@id/sticker_thumbnail" android:layout_alignBottom="@id/sticker_thumbnail" android:layout_alignEnd="@id/sticker_thumbnail" />
+        <ProgressBar android:id="@id/sticker_download_progressbar" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="3.0dip" android:max="100" android:progress="40" android:progressDrawable="@drawable/live_sticker_download_progress_drawable" android:minHeight="3.0dip" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+</LinearLayout>

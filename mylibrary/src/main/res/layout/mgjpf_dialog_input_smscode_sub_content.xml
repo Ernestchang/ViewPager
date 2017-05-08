@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pf_send_captcha_phone_number_linerlayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_dialog_msg_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgjpf_send_smscode_to_phone_text" />
+            <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_dialog_title_text_color" android:id="@id/pf_send_captcha_phone_number_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <ImageView android:id="@id/pf_send_captcha_phone_number_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/mgjpf_help_icon" />
+        </LinearLayout>
+        <com.mogujie.mgjpfbasesdk.suspensionbox.PFInputSmsCodeEchoView android:id="@id/pf_input_smscode_echo_view" android:background="@drawable/mgjpf_view_border_separator_bg" android:layout_width="wrap_content" android:layout_height="@dimen/mgjpf_input_pwd_echo_view_height" android:layout_marginLeft="2.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="2.0dip" />
+        <com.mogujie.mgjpfbasesdk.widget.PFCaptchaButton android:textColor="#ff999999" android:gravity="center" android:layout_gravity="right" android:id="@id/pf_find_smscode_send_captcha_btn" android:layout_height="@dimen/mgjpf_input_pwd_echo_view_height" android:layout_marginTop="40.0dip" app:countDownQuantityInSecond="60" style="@style/MGJPF_tv_btn.PFCaptcha" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="20.0dip">
+        <CheckBox android:id="@id/pf_input_smscode_bfm_protocol_selectable" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/mgjpf_checkbox_circle_bg" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/mgjpf_main_text_color1" android:id="@id/pf_input_smscode_bfm_protocol_tv" android:paddingBottom="5.0dip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mgjpf_sms_verification_sign_protocol_text" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="#ff999999" android:id="@id/pf_send_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="验证码由" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_dialog_msg_text_color" android:id="@id/pf_input_send_from_tv" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="#ff999999" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发出" />
+    </LinearLayout>
+    <include android:id="@id/pf_input_sms_keyboard" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/mgjpf_input_pwd_keyboard" />
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/mgjpf_main_text_title_size" android:textColor="@color/mgjpf_brand_text_color" android:layout_gravity="center_horizontal" android:id="@id/mobile_change_old_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" />
+    <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/purse_mobile_change_tips" />
+    <RelativeLayout android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="40.0dip">
+        <EditText android:id="@id/mobile_change_captcha_et" android:layout_width="fill_parent" android:hint="@string/purse_mobile_change_captcha_hint" android:layout_toLeftOf="@id/mobile_change_captcha_btn" style="@style/PFRowTextView.PFRowRightEditText.InputCaptcha" />
+        <View android:layout_toLeftOf="@id/mobile_change_captcha_btn" style="@style/mgjpf_basesdk_vdivider" />
+        <com.mogujie.mgjpfbasesdk.widget.PFCaptchaButton android:id="@id/mobile_change_captcha_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:countDownQuantityInSecond="60" app:isAuto="false" style="@style/MGJPF_tv_btn.PFCaptcha" />
+    </RelativeLayout>
+    <Button android:enabled="false" android:id="@id/mobile_change_modify_btn" android:layout_width="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/mgjpf_next_step" style="@style/MGJPF_tv_btn" />
+</LinearLayout>

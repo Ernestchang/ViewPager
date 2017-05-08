@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/shape_live_forecast_user_bg" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginLeft="14.0dip" android:layout_toRightOf="@id/line_septer" android:layout_centerVertical="true" />
+    <com.astonmartin.image.WebImageView android:textStyle="bold" android:id="@id/img_avatar" android:layout_width="39.0dip" android:layout_height="39.0dip" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/line_septer" android:layout_centerVertical="true" />
+    <com.astonmartin.image.WebImageView android:id="@id/iv_daren_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="-3.0dip" android:layout_marginBottom="-3.0dip" android:layout_alignRight="@id/img_avatar" android:layout_alignBottom="@id/img_avatar" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffeef1fa" android:ellipsize="end" android:id="@id/tv_userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:singleLine="true" android:layout_toRightOf="@id/img_avatar" android:layout_alignTop="@id/img_avatar" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffeef1fa" android:ellipsize="end" android:id="@id/tv_topic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:singleLine="true" android:layout_toRightOf="@id/img_avatar" android:layout_alignBottom="@id/img_avatar" />
+</RelativeLayout>

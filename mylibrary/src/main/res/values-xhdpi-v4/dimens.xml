@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_2">16.0sp</dimen>
+    <dimen name="font_size_3">15.0sp</dimen>
+    <dimen name="font_size_4">14.0sp</dimen>
+    <dimen name="font_size_5">13.0sp</dimen>
+    <dimen name="padding_big">20.0dip</dimen>
+    <dimen name="padding_middle">15.0dip</dimen>
+    <dimen name="padding_small">10.0dip</dimen>
+    <dimen name="font_size_1">17.0sp</dimen>
+    <dimen name="font_size_6">12.0sp</dimen>
+    <dimen name="font_size_8">11.0sp</dimen>
+    <dimen name="padding_tiny">5.0dip</dimen>
+    <dimen name="round_head_size_big">60.0dip</dimen>
+    <dimen name="round_head_size_middle">50.0dip</dimen>
+    <dimen name="round_head_size_small">35.0dip</dimen>
+    <dimen name="round_head_size_tiny">25.0dip</dimen>
+    <dimen name="single_item_height">48.0dip</dimen>
+    <dimen name="single_small_item_height">42.0dip</dimen>
+    <dimen name="title_size">18.0sp</dimen>
+    <dimen name="two_item_height">58.0dip</dimen>
+    <dimen name="activities_float_luhan_mg_bottom">160.0dip</dimen>
+    <dimen name="activities_float_luhan_mg_right">10.0dip</dimen>
+    <dimen name="activities_float_luhan_width">90.0dip</dimen>
+    <dimen name="font_size_9">10.0sp</dimen>
+    <dimen name="img_empty_normal_size">140.0dip</dimen>
+    <dimen name="margin_normal">10.0dip</dimen>
+    <dimen name="tc_left_margin">15.0dip</dimen>
+    <dimen name="tc_res_subject_margin">35.0dip</dimen>
+</resources>

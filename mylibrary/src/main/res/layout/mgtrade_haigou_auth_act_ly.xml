@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.mltrade.haigouauth.view.HaigouAuthView android:id="@id/haigou_auth_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/result_top_slash" android:background="#ffd1d1d1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+    <RelativeLayout android:id="@id/auth_result_ly" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="170.0dip">
+        <TextView android:textSize="21.0sp" android:textColor="#ff333333" android:id="@id/auth_result_title" android:paddingRight="35.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:drawableLeft="@drawable/mgtrade_auth_result_ok_icon" android:drawablePadding="11.0dip" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/auth_result_title" android:layout_alignLeft="@id/auth_result_title">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_auth_result_name_label" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:id="@id/auth_result_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_auth_result_num_label" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:id="@id/auth_result_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_auth_result_up_time_label" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:id="@id/auth_result_up_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/auth_result_fail_ly" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="170.0dip">
+        <TextView android:textSize="21.0sp" android:textColor="#ff333333" android:id="@id/auth_result_fail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/mgtrade_auth_result_caution_icon" android:drawablePadding="11.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/auth_result_fail_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+        <Button android:textSize="18.0sp" android:textColor="@color/dialog_positive_text_color" android:gravity="center" android:orientation="horizontal" android:id="@id/re_submit_button" android:background="@drawable/dialog_positive_btn_bg" android:visibility="gone" android:layout_width="165.0dip" android:layout_height="40.0dip" android:layout_marginTop="23.0dip" android:text="@string/mgtrade_auth_re_submit_btn" />
+    </LinearLayout>
+    <View android:id="@id/result_bottom_slash" android:background="#ffd1d1d1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

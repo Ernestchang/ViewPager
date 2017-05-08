@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/status_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/pfbindcard_process_line_view" />
+    <ViewFlipper android:id="@id/mgjpf_bind_card_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/status_view">
+        <include layout="@layout/pfbindcard_num_input_view" />
+        <include layout="@layout/pfbindcard_info_input_view" />
+        <include layout="@layout/pfbindcard_captcha_input_view" />
+    </ViewFlipper>
+</RelativeLayout>

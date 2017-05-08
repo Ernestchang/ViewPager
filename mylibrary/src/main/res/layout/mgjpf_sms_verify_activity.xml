@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/sms_verify_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/pf_linearlayout_horizonal_divider" android:showDividers="middle" android:dividerPadding="15.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="@dimen/mgjpf_row_left_text_view_width" android:text="手机号：" android:layout_alignParentLeft="true" style="@style/PFRowTextView.sms_verify_info_item" />
+        <TextView android:textColor="@color/mgjpf_brand_text_color" android:id="@id/phone_number_unavailable" android:text="不可用？" android:layout_alignParentRight="true" style="@style/PFRowTextView.sms_verify_info_item" />
+        <TextView android:id="@id/sms_verify_phone_number" android:layout_margin="0.0dip" android:text="1234" android:layout_toLeftOf="@id/phone_number_unavailable" style="@style/PFRowTextView.sms_verify_info_item" />
+    </RelativeLayout>
+    <include layout="@layout/mgjpf_sms_verify_layout" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/mgjpf_bindcard_tip_tv" android:text="@string/pfbindcard_info_tips" style="@style/pfbindcard_top_tip_style" />
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/mgjpf_bind_card_info_expire_label" android:layout_width="wrap_content" android:text="@string/pfbindcard_info_expire_label" style="@style/PFRowTextView.PFRowLeftTextView" />
+        <EditText android:id="@id/mgjpf_bind_card_info_expire_et" android:layout_width="fill_parent" android:hint="@string/pfbindcard_info_expire_hint" android:maxLength="5" android:layout_toRightOf="@id/mgjpf_bind_card_info_expire_label" android:inputType="number" style="@style/pfbindcard_editText_style" />
+    </RelativeLayout>
+</LinearLayout>

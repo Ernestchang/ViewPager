@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mogujie.ui.view.PullToRefreshLayout android:id="@id/pullToRefreshLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header" />
+    <ImageView android:id="@id/iv_top" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/search_category_btn_top_pressed" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

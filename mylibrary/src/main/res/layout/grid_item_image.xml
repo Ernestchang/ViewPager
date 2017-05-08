@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/image_picker_content_cell3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.astonmartin.image.WebImageView android:id="@id/grid_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:layout_gravity="center|right|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip">
+        <ImageButton android:id="@id/grid_checkbox" android:background="@drawable/image_picker_cell_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/grid_imageindex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:layout_gravity="center|right|top" android:id="@id/grid_checkbox_clicker" android:background="@android:color/transparent" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+</FrameLayout>

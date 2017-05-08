@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffdedede" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/detail_pro_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/detail_more" android:drawableRight="@drawable/detail_goods_goto_icon" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/detail_pro_items_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/detail_pro_more" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</merge>

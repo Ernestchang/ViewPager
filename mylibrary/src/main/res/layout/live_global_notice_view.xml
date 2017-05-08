@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_icon" android:background="@drawable/live_ic_global_annoucement_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffff5577" android:ellipsize="marquee" android:id="@id/tv_announcement" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.5dip" android:layout_marginRight="9.5dip" android:text="目前交易系统异常，请大家稍后下单！目前交易系统异常，请大家稍后下单！目前交易系统异常，请大家稍后下单！目前交易系统异常，请大家稍后下单！" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" android:layout_toLeftOf="@id/flyt_close" android:layout_toRightOf="@id/iv_icon" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" />
+    <FrameLayout android:id="@id/flyt_close" android:padding="12.5dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageButton android:layout_gravity="center|right" android:background="@drawable/live_ic_global_announcement_close" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

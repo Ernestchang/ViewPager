@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/im_message_bottom_edit" layout="@layout/home_comment_bottom_edit" />
+        <com.meilishuo.base.emoji.EmojiView android:id="@id/emo_gridview" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_alignParentLeft="true" />
+    </LinearLayout>
+</merge>

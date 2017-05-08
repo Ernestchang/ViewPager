@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffff3366" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meilishuo.profile.view.SettingTipView android:id="@id/profile_head_setting" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" app:src="@drawable/pro_new_setting" app:tip="@drawable/pro_me_bg_bubble_small_new" />
+    <ImageView android:id="@id/help_consult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/pro_help_consult" android:layout_toLeftOf="@id/to_shoppingcart_btn" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/to_shoppingcart_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/pro_new_shopping" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/img_shoppingcart_point" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/pro_shopcart_point" android:layout_alignParentRight="true" />
+</RelativeLayout>

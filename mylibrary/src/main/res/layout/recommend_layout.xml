@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/recommend_title_wrap" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/left_divider" android:background="@color/app_stroke_color2" android:layout_width="30.0dip" android:layout_height="1.0px" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/official_text4" android:gravity="center" android:id="@id/recommend_title" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/left_divider" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+        <View android:background="@color/app_stroke_color2" android:layout_width="30.0dip" android:layout_height="1.0px" android:layout_toRightOf="@id/recommend_title" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/keywords_container" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/recommend_title_wrap" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/prize_draw_fail_rootview" android:background="@drawable/prize_draw_result_bg" android:visibility="gone" android:layout_width="240.0dip" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/prize_draw_fail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="可惜！差点就中奖了！" android:layout_centerHorizontal="true" />
+    <com.astonmartin.image.WebImageView android:id="@id/prize_draw_fail_icon" android:paddingRight="20.0dip" android:layout_width="195.0dip" android:layout_height="140.0dip" android:src="@drawable/prize_draw_fail_icon" android:layout_centerInParent="true" />
+    <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/prize_draw_fail_button" android:background="@drawable/prize_draw_success_button_bg" android:layout_width="120.0dip" android:layout_height="35.0dip" android:layout_marginBottom="15.0dip" android:text="我知道啦" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/prize_draw_fail_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="努力点赞赢更多好礼哦" android:layout_above="@id/prize_draw_fail_button" android:layout_centerHorizontal="true" />
+</RelativeLayout>

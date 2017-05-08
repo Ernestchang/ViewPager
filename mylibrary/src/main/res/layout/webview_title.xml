@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="@dimen/base_title_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/left_btn" android:paddingLeft="15.0dip" android:paddingRight="35.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back_btn" android:scaleType="center" android:layout_alignParentLeft="true" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/base_layout_title_divider">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/middle_text_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <TextView android:textSize="18.0sp" android:textColor="@color/official_text0" android:ellipsize="end" android:gravity="center" android:id="@id/middle_text" android:layout_width="@dimen/title_max_width" android:layout_height="wrap_content" android:maxWidth="@dimen/title_max_width" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/search_bar_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:layout_toLeftOf="@id/left_btn" android:layout_toRightOf="@id/right_btn" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/search_bar" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/h5_index_search_bg" android:scaleType="fitXY" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/h5_search_icon" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center_vertical" android:id="@id/search_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/triplebuy_index_search" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <Button android:textSize="16.0sp" android:textColor="@color/official_text0" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/right_btn" android:background="@android:color/transparent" android:paddingRight="15.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <com.astonmartin.image.WebImageView android:layout_gravity="center_vertical" android:id="@id/right_image_btn" android:paddingLeft="5.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/check_mark" android:scaleType="fitCenter" />
+        <com.astonmartin.image.WebImageView android:layout_gravity="center_vertical" android:id="@id/right_image_btn1" android:paddingLeft="5.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/check_mark" android:scaleType="fitCenter" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/duoduo_btn" android:background="@android:color/transparent" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/contact_btn_bg" />
+    </LinearLayout>
+</merge>

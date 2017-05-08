@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/pref_bundle_debug" android:key="bundle_debug" android:summary="@string/pref_bundle_debug" />
+    <Preference android:title="@string/pref_title_use_debug" android:key="use_debug" android:summary="@string/pref_title_use_debug" />
+    <CheckBoxPreference android:title="@string/pref_title_debug_js_inject" android:key="debug_js_inject" android:summary="@string/pref_summary_debug_js_inject" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_title_cordova_js_inject" android:key="cordova_js_inject" android:summary="@string/pref_summary_cordova_js_inject" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/pref_title_disable_caching" android:key="disable_caching" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_title_enable_proxy" android:key="enable_proxy" android:defaultValue="false" />
+    <EditTextPreference android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:capitalize="words" android:title="@string/pref_title_enable_proxy_url_raw" android:key="enable_proxy_url_raw" android:dependency="enable_proxy" android:defaultValue="@string/pref_default_enable_proxy_url_raw" android:inputType="textCapWords" />
+    <EditTextPreference android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:capitalize="words" android:title="@string/pref_title_enable_proxy_url" android:key="enable_proxy_url" android:dependency="enable_proxy" android:defaultValue="@string/pref_default_enable_proxy_url" android:inputType="textCapWords" />
+    <CheckBoxPreference android:title="@string/pref_title_use_virtual_host" android:key="use_virtual_host" android:defaultValue="false" />
+    <EditTextPreference android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:capitalize="words" android:title="@string/pref_title_virtual_host_raw" android:key="virtual_host_raw" android:defaultValue="@string/pref_default_virtual_host_raw" android:inputType="textCapWords" />
+    <EditTextPreference android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:capitalize="words" android:title="@string/pref_title_virtual_host" android:key="virtual_host" android:defaultValue="@string/pref_default_virtual_host" android:inputType="textCapWords" />
+    <CheckBoxPreference android:title="@string/pref_title_use_base_cache" android:key="use_base_cache" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_title_use_cache" android:key="use_cache" android:defaultValue="false" />
+    <Preference android:title="@string/pref_title_upload_model" android:key="upload_model" android:summary="@string/pref_summary_upload_model" />
+    <CheckBoxPreference android:title="@string/pref_title_log" android:key="log" android:defaultValue="false" />
+    <Preference android:title="@string/pref_title_clear_cookie" android:key="clear_cookie" android:summary="@string/pref_summary_clear_cookie" />
+    <Preference android:title="@string/pref_title_h5_demo" android:key="h5_demo" android:summary="@string/pref_summary_h5_demo" />
+    <CheckBoxPreference android:title="@string/pref_title_use_xwalk" android:key="use_xwalk" android:defaultValue="false" />
+    <Preference android:title="@string/pref_title_xwalk_config" android:key="xwalk_config" />
+    <Preference android:title="@string/pref_title_use_xwalk_force" android:key="use_xwalk_force" />
+    <Preference android:title="@string/pref_title_clear_xwalk_zip" android:key="clear_xwalk_zip" />
+    <Preference android:title="@string/pref_title_clear_xwalk_so" android:key="clear_xwalk_so" />
+    <Preference android:title="@string/pref_title_clear_xwalk_config" android:key="clear_xwalk_config" />
+    <Preference android:title="@string/pref_title_upload_xwalk_crash_log" android:key="upload_xwalk_crash_log" />
+    <Preference android:title="@string/pref_title_scan_dist_amr_files" android:key="scan_dist_amr_files" />
+    <Preference android:title="@string/pref_title_scan_dist_amr_files" android:key="scan_dist_amr_files" />
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="90.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/image" android:background="@drawable/mls_default_bg" android:layout_width="90.0dip" android:layout_height="90.0dip" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/image" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/topic_goods_price" android:gravity="center" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:gravity="center" android:id="@id/originPrice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:lines="1" />
+    </LinearLayout>
+</merge>

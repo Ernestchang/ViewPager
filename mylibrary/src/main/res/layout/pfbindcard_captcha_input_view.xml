@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mogujie.mgjpfbindcard.bindcard.view.PFBindCardCaptchaInputView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/mgjpf_main_text_size4" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/mgjpf_bind_card_captcha_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/pfbindcard_captcha_tip" />
+    <View android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/pf_linearlayout_horizonal_divider" android:showDividers="middle" android:dividerPadding="15.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/mgjpf_bind_card_captcha_phone_label" android:text="@string/pfbindcard_info_phone_label" style="@style/PFRowTextView.PFRowLeftTextView" />
+            <TextView android:id="@id/mgjpf_bind_card_captcha_phone_tv" android:layout_width="0.0dip" android:layout_toRightOf="@id/mgjpf_bind_card_captcha_phone_label" android:layout_alignParentRight="true" style="@style/PFRowTextView.PFRowRightEditText" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/mgjpf_bind_card_captcha_et" android:layout_width="wrap_content" android:hint="@string/pfbindcard_captcha_hint" android:layout_toLeftOf="@id/mgjpf_bind_card_captcha_btn" android:layout_alignParentLeft="true" style="@style/PFRowTextView.PFRowRightEditText.InputCaptcha" />
+            <com.mogujie.mgjpfbasesdk.widget.PFCaptchaButton android:id="@id/mgjpf_bind_card_captcha_btn" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:countDownQuantityInSecond="60" style="@style/MGJPF_tv_btn.PFCaptcha" />
+            <View android:layout_toLeftOf="@id/mgjpf_bind_card_captcha_btn" style="@style/mgjpf_basesdk_vdivider" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/mgjpf_main_text_size4" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/mgjpf_bind_card_captcha_sms_channel_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" />
+    <Button android:enabled="false" android:id="@id/finish_btn" android:layout_width="fill_parent" android:layout_margin="20.0dip" android:text="@string/pfbindcard_done_btn_text" style="@style/MGJPF_tv_btn" />
+</com.mogujie.mgjpfbindcard.bindcard.view.PFBindCardCaptchaInputView>

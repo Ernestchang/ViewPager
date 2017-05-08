@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/background_view" android:background="#7f000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/mgtrade_round_corner_white_bg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="13.0sp" android:textColor="#ff727272" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paysdk_empty_act_tip" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff727272" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/paysdk_empty_act_tip_2" />
+    </LinearLayout>
+</RelativeLayout>

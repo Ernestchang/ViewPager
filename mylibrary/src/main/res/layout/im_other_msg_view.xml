@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="left" android:id="@id/user_stub_layout" android:layout="@layout/im_other_msg_view_user" android:inflatedId="@id/msg_user_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</merge>

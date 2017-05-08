@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/items_ly" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/confirm_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/confirm_change" />
+            <View android:layout_width="fill_parent" android:layout_height="30.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

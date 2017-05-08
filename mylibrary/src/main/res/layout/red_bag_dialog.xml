@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/red_bag" android:layout_width="270.0dip" android:layout_height="318.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/title" android:layout_width="90.0dip" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:text="打赏给主播" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/jine_layout" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginTop="75.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="24.0sp" android:textColor="#ffb77b0f" android:id="@id/jine" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="13.1" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffb77b0f" android:id="@id/yuan" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text="元" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#ffb77b0f" android:id="@id/text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="108.0dip" android:text="一生一世黑凤梨" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/red_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="143.0dip">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textColor="#ffb77b0f" android:gravity="center" android:id="@id/first_jine" android:background="@drawable/red_bag_outline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.88元" android:layout_weight="1.0" />
+            <View android:layout_width="10.0dip" android:layout_height="fill_parent" />
+            <TextView android:textColor="#ffb77b0f" android:gravity="center" android:id="@id/second_jine" android:background="@drawable/red_bag_outline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.88元" android:layout_weight="1.0" />
+            <View android:layout_width="10.0dip" android:layout_height="fill_parent" />
+            <TextView android:textColor="#ffb77b0f" android:gravity="center" android:id="@id/third_jine" android:background="@drawable/red_bag_outline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.88元" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textColor="#ffb77b0f" android:gravity="center" android:id="@id/fourth_jine" android:background="@drawable/red_bag_outline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.88元" android:layout_weight="1.0" />
+            <View android:layout_width="10.0dip" android:layout_height="fill_parent" />
+            <TextView android:textColor="#ffb77b0f" android:gravity="center" android:id="@id/fifth_jine" android:background="@drawable/red_bag_outline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.88元" android:layout_weight="1.0" />
+            <View android:layout_width="10.0dip" android:layout_height="fill_parent" />
+            <TextView android:textColor="#ffb77b0f" android:gravity="center" android:id="@id/sixth_jine" android:background="@drawable/red_bag_outline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.88元" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30.0dip">
+            <TextView android:textColor="#ffb77b0f" android:gravity="center" android:id="@id/seventh_jine" android:background="@drawable/red_bag_outline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.88元" android:layout_weight="1.0" />
+            <View android:layout_width="10.0dip" android:layout_height="fill_parent" />
+            <TextView android:textColor="#ffb77b0f" android:gravity="center" android:id="@id/eighth_jine" android:background="@drawable/red_bag_outline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.88元" android:layout_weight="1.0" />
+            <View android:layout_width="10.0dip" android:layout_height="fill_parent" />
+            <TextView android:textColor="#ffb77b0f" android:gravity="center" android:id="@id/ninth_jine" android:background="@drawable/red_bag_outline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.88元" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="250.0dip" android:layout_height="35.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/live_redbag_pay_zhifubao_bg" android:gravity="center_vertical" android:id="@id/ali_pay" android:background="@drawable/live_redbag_pay_zhifubao_bg" android:paddingLeft="12.0dip" android:paddingTop="7.5dip" android:paddingRight="12.0dip" android:paddingBottom="7.5dip" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="fill_parent" android:text="支付宝支付" android:drawableLeft="@drawable/live_alipay_icon" android:drawablePadding="5.0dip" />
+        <View android:layout_width="10.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/live_redbag_pay_weixin_bg" android:gravity="center_vertical" android:id="@id/weixin_pay" android:background="@drawable/live_redbag_pay_weixin_bg" android:paddingLeft="19.0dip" android:paddingTop="7.5dip" android:paddingRight="19.0dip" android:paddingBottom="7.5dip" android:layout_width="120.0dip" android:layout_height="fill_parent" android:text="微信支付" android:drawableLeft="@drawable/live_wechatpay_icon" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/live_item_blue_flag" android:maxLevel="0" />
+    <item android:drawable="@drawable/live_item_red_flag" android:maxLevel="1" />
+    <item android:drawable="@drawable/live_item_greed_flag" android:maxLevel="2" />
+    <item android:drawable="@drawable/live_item_yellow_flag" android:maxLevel="3" />
+    <item android:drawable="@drawable/live_item_zi_flag" android:maxLevel="4" />
+</level-list>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.mogujie.mgjpfbasesdk.banner.PFBannerLayout android:id="@id/top_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="50.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.viewpagerindicator.TabPageIndicator android:id="@id/tab_indicator" android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="50.0dip" app:indicatorTheme="@style/purse_MineTabPageIndicator" app:indicatorLyTheme="@style/purse_MineTabPageIndicatorLy" />
+        <com.viewpagerindicator.UnderlinePageIndicator android:id="@id/tab_underline_indicator" android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" app:selectedColor="@color/purse_baifumei_dialog_ok_text_color" app:item_padding="20.0dip" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/fund_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

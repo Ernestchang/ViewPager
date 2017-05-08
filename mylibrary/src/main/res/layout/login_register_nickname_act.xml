@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.mogujie.login.coreapi.view.FixedProportionImageView android:id="@id/register_avatar" android:background="@drawable/login_register_avatar_circle_border" android:padding="1.0px" android:layout_width="125.0dip" android:layout_height="125.0dip" android:layout_marginTop="25.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/login_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/change_avatar" android:layout_alignBottom="@id/register_avatar" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="42.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/recommend_name_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:alpha="0.0">
+            <TextView android:textAppearance="?loginEditTextAppearance" android:textColor="@color/login_color_999999" android:gravity="center_vertical" android:id="@id/recommend_tv_1" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+            <View android:background="#ffd8d8d9" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <TextView android:textAppearance="?loginEditTextAppearance" android:textColor="@color/login_color_999999" android:gravity="center_vertical" android:id="@id/recommend_tv_2" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+            <View android:background="#ffd8d8d9" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+        <TextView android:gravity="bottom" android:id="@id/tip" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/phone_nick_notice" style="?attr/loginLabelStyle" />
+        <RelativeLayout android:id="@id/nick_edit_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tip">
+            <EditText android:id="@id/nick_edit" android:background="#ffffffff" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:hint="@string/login_third_set_nickname" android:maxLength="20" android:inputType="text" style="?attr/loginEditTextStyle" />
+            <ImageView android:id="@id/clear_btn" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/login_clear_btn" android:scaleType="center" android:layout_alignRight="@id/nick_edit" android:layout_centerVertical="true" />
+            <View android:background="#ffd8d8d9" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/nick_edit" />
+        </RelativeLayout>
+        <Button android:gravity="center" android:id="@id/register_btn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/nick_edit_ly" style="?attr/loginLargeButtonStyle" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/add_others_panel" android:padding="20.0dip" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="215.0dip" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/add_others_panel_1" android:layout_width="fill_parent" android:layout_height="105.0dip" android:weightSum="4.0" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <View android:layout_gravity="center_horizontal" android:id="@id/take_camera_btn" android:background="@mipmap/im_take_camera_btn_bg" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+            <TextView android:textSize="@dimen/im_msg_add_others_text" android:textColor="@color/default_light_black_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/take_camera_btn_text" style="@style/IMTextViewStyle" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <View android:layout_gravity="center_horizontal" android:id="@id/pick_photo_btn" android:background="@mipmap/im_take_photo_btn_bg" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+            <TextView android:textSize="@dimen/im_msg_add_others_text" android:textColor="@color/default_light_black_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/take_photo_btn_text" style="@style/IMTextViewStyle" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <View android:layout_gravity="center_horizontal" android:id="@id/send_report_btn" android:background="@mipmap/im_report_btn_bg" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+            <TextView android:textSize="@dimen/im_msg_add_others_text" android:textColor="@color/default_light_black_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/report_btn_text" style="@style/IMTextViewStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/add_others_panel_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0" android:layout_weight="1.0" />
+</LinearLayout>

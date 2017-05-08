@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:layout_gravity="center" android:id="@id/member_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="邀请互动连线（最多可与三个成员进行互动直播）" />
+    <TextView android:background="#ffc8c8c8" android:layout_width="380.0dip" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+    <ListView android:id="@id/member_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

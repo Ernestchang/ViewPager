@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/im_maybe_send_image_layout" android:background="@mipmap/im_maybe_send" android:paddingTop="8.0dip" android:paddingBottom="11.0dip" android:layout_width="69.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="#ff828282" android:id="@id/im_maybe_send_image_text" android:layout_width="53.0dip" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/im_maybe_send_image" android:layout_alignLeft="@id/im_maybe_send_image" />
+    <ImageView android:id="@id/im_maybe_send_image" android:background="@drawable/im_border_aaa" android:padding="0.5dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="centerCrop" android:cropToPadding="true" android:layout_below="@id/im_maybe_send_image_text" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/out_side_recommed_good_img" android:layout_width="90.0dip" android:layout_height="90.0dip" android:scaleType="centerCrop" />
+    <TextView android:textSize="11.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/out_side_recommed_good_name" android:layout_width="88.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ffff3366" android:layout_gravity="bottom" android:id="@id/out_side_recommed_good_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:layout_gravity="bottom" android:id="@id/out_side_recommed_good_orl_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

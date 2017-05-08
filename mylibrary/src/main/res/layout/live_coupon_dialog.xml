@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/live_ly_coubons_corner_bg" android:layout_width="270.0dip" android:layout_height="234.0dip" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/rll_coupons_get_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/rll_coupons_result_img" android:background="@drawable/live_coupons_get_success" android:layout_width="135.0dip" android:layout_height="94.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="22.0sp" android:textColor="#fff4efb0" android:gravity="center" android:id="@id/rll_coupons_result_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="圈已领完" android:layout_above="@id/rll_coupons_result_img" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/rll_coupons_result_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="12.0dip" android:text="下次手速快点" android:layout_below="@id/rll_coupons_result_img" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rll_coupons_info" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rll_info" android:background="@drawable/live_coupons_bg" android:layout_width="241.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true">
+                <TextView android:gravity="center" android:id="@id/tv_live_shop_name" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="又见复古店" style="@style/CouponsTextStyle" />
+                <LinearLayout android:gravity="center" android:id="@id/lly_live_coupons_cut_price" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_below="@id/tv_live_shop_name" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/tv_live_coupons_symbol" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="￥" style="@style/CouponsTextStyle" />
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/tv_live_coupons_cut_price" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="50" android:layout_toRightOf="@id/tv_live_coupons_symbol" style="@style/CouponsTextStyle" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tv_live_coupons_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="全店满199元减20元" android:layout_below="@id/lly_live_coupons_cut_price" style="@style/CouponsTextStyle" />
+            </RelativeLayout>
+            <TextView android:textSize="22.0sp" android:textColor="#fff4efb0" android:gravity="center" android:id="@id/tv_live_coupons_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="主播送券啦" android:layout_above="@id/rll_info" />
+            <Button android:textColor="@color/white" android:id="@id/btn_get_coupons" android:background="@drawable/btn_coubons_get_btn_bg" android:layout_width="241.0dip" android:layout_height="35.0dip" android:layout_marginTop="15.0dip" android:text="@string/live_btn_get_coupons" android:layout_below="@id/rll_info" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

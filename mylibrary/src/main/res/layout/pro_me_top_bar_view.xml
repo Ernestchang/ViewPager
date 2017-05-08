@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/base_title_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/me_top_setting" android:background="@drawable/pro_me_top_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+    <com.meilishuo.profile.me.MeTopMessage android:id="@id/me_top_message" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/title_right_meassage" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

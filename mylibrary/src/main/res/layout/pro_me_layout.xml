@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/base_title_bar_height">
+        <LinearLayout android:orientation="vertical" android:background="@color/profile_bg_grey" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.profile.me.MeTop android:id="@id/me_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.meilishuo.profile.view.ProfileResourceStateLayout android:id="@id/layout_profile_resource" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/me_layout_top_margin" />
+            <com.meilishuo.profile.me.MeOrderSome android:id="@id/me_ordersome" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/me_layout_top_margin" />
+            <com.meilishuo.profile.me.MeWalletAndOther android:id="@id/me_widget_wallet" android:background="@color/white" android:padding="@dimen/padding_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/me_layout_top_margin" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/padding_small" android:verticalSpacing="@dimen/padding_middle" android:numColumns="@integer/profile_label_column_num" />
+            <com.meilishuo.profile.me.ShareTalentView android:id="@id/layout_profile_sharetalent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/me_layout_top_margin" />
+            <include android:id="@id/live_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/me_layout_top_margin" layout="@layout/pro_me_live_item" />
+            <com.meilishuo.profile.view.ProfileFamilyAppLayout android:id="@id/layout_profile_family_app" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/me_layout_top_margin" android:layout_marginBottom="@dimen/padding_small" />
+        </LinearLayout>
+    </ScrollView>
+    <com.meilishuo.profile.me.MeTopBar android:id="@id/me_top_bar" android:layout_width="fill_parent" android:layout_height="@dimen/base_title_bar_height" />
+</FrameLayout>

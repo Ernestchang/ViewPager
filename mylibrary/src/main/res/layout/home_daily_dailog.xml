@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/daily_dailog_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/under_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <com.astonmartin.image.WebImageView android:id="@id/waterflag" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/content_layout" android:background="@color/white_t90" android:paddingLeft="3.0dip" android:paddingTop="3.0dip" android:paddingRight="3.0dip" android:layout_width="400.0dip" android:layout_height="400.0dip" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/daily_dailog_msg_layout" android:padding="15.0dip" android:paddingLeft="3.0dip" android:paddingTop="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@color/blck_text" android:id="@id/self_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/blck_text" android:layout_gravity="center" android:id="@id/submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看日笺" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.astonmartin.image.WebImageView android:id="@id/daily_dailog_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_above="@id/daily_dailog_msg_layout" />
+        <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/daily_dailog_msg_layout">
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tempreture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/white" android:id="@id/loc_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/tempreture" android:layout_centerVertical="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="right" android:id="@id/self_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:maxLines="2" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:lineSpacingMultiplier="1.2" />
+    </RelativeLayout>
+    <ImageView android:id="@id/close_button" android:padding="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mls_dialog_close" android:layout_below="@id/content_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

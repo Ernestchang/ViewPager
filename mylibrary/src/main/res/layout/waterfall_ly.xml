@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/to_top" android:visibility="gone" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/to_top_btn" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.astonmartin.image.WebImageView android:id="@id/right_bottom_tips" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="72.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

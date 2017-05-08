@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/grey_l3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginBottom="6.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/grey_d1" android:id="@id/left_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="6.0dip" android:layout_below="@id/divider" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/right_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignTop="@id/left_title" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip" android:layout_below="@id/left_title">
+        <include android:orientation="vertical" android:id="@id/goods_ly1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="3.5dip" android:layout_marginBottom="0.0dip" android:layout_weight="1.0" layout="@layout/tile_view_home" />
+        <include android:orientation="vertical" android:id="@id/goods_ly2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.5dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="0.0dip" android:layout_weight="1.0" layout="@layout/tile_view_home" />
+    </LinearLayout>
+</RelativeLayout>

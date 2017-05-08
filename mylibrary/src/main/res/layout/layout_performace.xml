@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mogujie.appmate.layout.MyViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:id="@id/tv_record" android:background="@drawable/white_corners_bg" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始记录" android:layout_alignParentLeft="true" />
+        <com.viewpagerindicator.CirclePageIndicator android:layout_gravity="center_horizontal" android:id="@id/indicator" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:id="@id/tv_log" android:background="@drawable/white_corners_bg" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看日志" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

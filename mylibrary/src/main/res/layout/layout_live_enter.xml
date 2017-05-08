@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_create_bg_small" android:scaleType="centerCrop" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/live_animation_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_small_tv_0" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffd1d1d1" android:id="@id/actor_hurry_come_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进入直播间中" android:layout_below="@id/live_animation_view" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

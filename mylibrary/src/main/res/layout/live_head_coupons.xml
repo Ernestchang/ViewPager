@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/live_shape_goods_head_coupons_bg" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:layout_width="68.0dip" android:layout_height="68.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/live_head_coupon_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="14.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13.0sp" android:textColor="#fff04b31" android:gravity="center_horizontal" android:id="@id/tv_head_coupons_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="减" android:singleLine="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="9.0sp" android:textColor="#fff6971b" android:gravity="center_horizontal" android:id="@id/tv_head_coupons_condition" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="满" android:singleLine="true" android:layout_above="@id/tv_head_coupons_title" />
+    </RelativeLayout>
+</RelativeLayout>

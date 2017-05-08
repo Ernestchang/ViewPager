@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:paddingBottom="10.0dip" android:layout_width="175.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageViewWithCover android:id="@id/item_wiv_content" android:background="@drawable/default_item_bg_large" android:layout_width="175.0dip" android:layout_height="225.0dip" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/item_ll_tags" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff232222" android:ellipsize="end" android:id="@id/item_tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="9.0dip" android:singleLine="true" android:layout_below="@id/item_wiv_content" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff989898" android:id="@id/item_tv_old_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="9.0dip" android:layout_below="@id/item_tv_name" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_ll_price_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="9.0dip" android:layout_below="@id/item_tv_old_price">
+        <com.astonmartin.image.WebImageView android:id="@id/item_iv_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#fffc135b" android:id="@id/item_tv_new_price" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:background="#fffc135b" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="9.0dip" android:text="加入购物车" android:layout_below="@id/item_ll_price_tag" />
+</RelativeLayout>

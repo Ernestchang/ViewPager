@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/detail_sku_popup_item_grey_bg" android:layout_width="wrap_content" android:layout_height="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/picker_decrement" android:background="@color/transparent" android:layout_width="30.0dip" android:layout_height="25.0dip" android:src="?detail_sku_num_picker_desc" />
+    <View android:background="@drawable/detail_num_picker_divider" android:layout_width="1.0px" android:layout_height="25.0dip" />
+    <TextView android:textColor="@color/detail_official_text0" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/picker_input" android:layout_width="wrap_content" android:layout_height="25.0dip" android:maxWidth="64.0dip" android:minWidth="32.0dip" android:singleLine="true" />
+    <View android:background="@drawable/detail_num_picker_divider" android:layout_width="1.0px" android:layout_height="25.0dip" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/picker_increment" android:background="@color/transparent" android:layout_width="30.0dip" android:layout_height="25.0dip" android:src="?detail_sku_num_picker_incr" />
+</LinearLayout>

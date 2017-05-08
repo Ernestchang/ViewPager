@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_light_divider" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:id="@id/btn_accuse_back" android:background="@drawable/feed_accuse_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/grey_text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投诉举报" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/grey_text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:text="请选择举报原因" />
+    <ListView android:id="@id/list_accuse_select" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

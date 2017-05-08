@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/mgjpf_bindcard_tip_tv" style="@style/pfbindcard_top_tip_style" />
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/add_new_card_label" android:layout_width="wrap_content" android:text="@string/pfbindcard_num_card_id_tv" style="@style/PFRowTextView.PFRowLeftTextView" />
+        <ImageView android:id="@id/scan_card" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/pfbindcard_scan_card_icon" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.mogujie.mgjpfbasesdk.widget.PFClearableEditText android:id="@id/add_new_card_et" android:layout_width="fill_parent" android:layout_toLeftOf="@id/scan_card" android:layout_toRightOf="@id/add_new_card_label" android:inputType="number" style="@style/pfbindcard_editText_style" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mgjpf_bindcard_num_protocol_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/mgjpf_bindcard_num_protocol_cb" android:background="@android:color/transparent" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:checked="true" android:button="@drawable/mgjpf_checkbox_circle_bg" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size4" android:textColor="@color/mgjpf_main_text_color2" android:gravity="center_vertical" android:id="@id/mgjpf_bindcard_num_protocol_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/pfbindcard_num_protocol" android:layout_toRightOf="@id/mgjpf_bindcard_num_protocol_cb" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

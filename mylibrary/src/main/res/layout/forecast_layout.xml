@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/shape_live_forecast_bg" android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/live_forecast_title" android:background="@drawable/live_forecast_logo" android:layout_width="34.0dip" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/line_septer" android:background="@drawable/live_forecast_seperator" android:layout_width="1.0px" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:layout_toRightOf="@id/live_forecast_title" android:layout_centerVertical="true" />
+    <com.mogujie.live.view.forecast.ForeCastTextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/foreCastTimer" android:background="@drawable/live_channel_list_preditor_time_bg_shape" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="27.0dip" android:layout_marginRight="12.0dip" android:text="12/11 15:00" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.mogujie.live.view.forecast.ForecastViewPager android:id="@id/vp_forecast" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/foreCastTimer" android:layout_toRightOf="@id/line_septer" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/forecast_maskview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

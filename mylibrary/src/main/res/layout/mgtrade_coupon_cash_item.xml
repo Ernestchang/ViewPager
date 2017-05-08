@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/cash_root_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:baselineAligned="false">
+        <RelativeLayout android:id="@id/left_info" android:background="@drawable/mgtrade_coupon_cash_red" android:paddingLeft="9.0dip" android:layout_width="fill_parent" android:layout_height="115.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textColor="@color/mgtrade_white" android:ellipsize="end" android:id="@id/coupon_title" android:paddingLeft="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="22.0dip" android:singleLine="true" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/mgtrade_white" android:id="@id/money_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/money_symbol" android:layout_below="@id/coupon_title" />
+            <TextView android:textSize="28.0sp" android:textColor="@color/mgtrade_white" android:ellipsize="end" android:id="@id/coupon_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.5dip" android:singleLine="true" android:layout_toRightOf="@id/money_symbol" android:layout_below="@id/coupon_title" android:layout_alignBaseline="@id/money_symbol" />
+            <TextView android:textColor="@color/mgtrade_white" android:ellipsize="end" android:id="@id/need_discount_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:text="@string/need_discount_symbol" android:singleLine="true" android:layout_toRightOf="@id/coupon_price" android:layout_below="@id/coupon_title" android:layout_alignBaseline="@id/coupon_price" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/mgtrade_white" android:ellipsize="end" android:id="@id/coupon_tips" android:paddingLeft="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:singleLine="true" android:layout_below="@id/money_symbol" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/right_info" android:background="@drawable/mgtrade_coupon_cash_left_white" android:layout_width="fill_parent" android:layout_height="115.0dip" android:layout_weight="2.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:id="@id/used_lb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgtrade_invalidate_time" />
+                <TextView android:textSize="12.0sp" android:id="@id/started_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:id="@id/end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+                <TextView android:id="@id/tv_cash_handsel" android:background="@drawable/mgtrade_coupon_handsel_btn_bg" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/shop_pro_handsel" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_timemachine_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mgtrade_coupon_cash_timemachine_icon" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/icon_4_status" android:background="@drawable/mgtrade_used_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+</RelativeLayout>

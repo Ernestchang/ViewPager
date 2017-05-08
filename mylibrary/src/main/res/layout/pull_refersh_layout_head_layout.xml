@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/header_bg_image" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/fl_inner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ff727272" android:gravity="center" android:id="@id/head_layout_title" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/indicator_view" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="13.0dip" android:src="@drawable/mg_pull_to_refresh_indicator_bg" android:layout_toLeftOf="@id/head_layout_title" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</merge>

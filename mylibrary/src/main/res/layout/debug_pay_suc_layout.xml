@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/et_input_pay_id_esc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="输入支付订单号编码" />
+    <EditText android:id="@id/et_input_pay_id_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="输入支付订单号数字" />
+    <Button android:id="@id/bt_enter_pay_act" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="进入支付成功页" />
+</LinearLayout>

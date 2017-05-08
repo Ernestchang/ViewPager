@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meilishuo.listpage.widget.MLSSupperRecyclerView android:id="@id/pullrefresh_list" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="LinearLayoutManager"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <com.meilishuo.profile.collection.view.CollectionDeleteLayout android:id="@id/layout_delete" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.meilishuo.picturewall.support.TopWithRecyclerView android:id="@id/to_top_view" android:background="@drawable/pro_to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="@dimen/padding_small" android:layout_marginBottom="@dimen/padding_small" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" />
+</RelativeLayout>

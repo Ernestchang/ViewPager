@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:repeatCount="infinite" android:repeatMode="restart"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="60" android:drawable="@drawable/horse_light_outline_1" />
+    <item android:duration="60" android:drawable="@drawable/horse_light_outline2" />
+</animation-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/header_bg_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/fl_inner" android:paddingLeft="@dimen/header_footer_left_right_padding" android:paddingRight="@dimen/header_footer_left_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:id="@id/pull_to_refresh_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rotate_icon" />
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/rotate_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0px" android:src="@drawable/rotate_icon" />
+    </FrameLayout>
+</merge>

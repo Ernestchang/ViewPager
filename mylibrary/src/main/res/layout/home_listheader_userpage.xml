@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/iv_userpage_headerbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/userpage_default_bg" android:scaleType="centerCrop" />
+    <View android:id="@id/cover_bg" android:background="@color/black_t60" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/headerview_userpage" android:paddingTop="75.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.astonmartin.image.WebImageView android:id="@id/iv_userpage_avatar" android:padding="1.5dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/home_im_default_avatar_round" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+            <com.astonmartin.image.WebImageView android:id="@id/iv_userpage_verify" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="-14.0dip" android:layout_marginTop="44.5dip" android:src="@drawable/home_main_userpage_icon_verify" android:scaleType="fitCenter" android:layout_toRightOf="@id/iv_userpage_avatar" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/txt_userpage_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/iv_userpage_avatar" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/txt_userpage_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:maxLines="2" android:layout_below="@id/txt_userpage_username" android:layout_centerHorizontal="true" android:lineSpacingExtra="4.0sp" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/txt_userpage_description">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_userpage_praise" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/txt_userpage_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获赞" />
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:background="@color/white_t50" android:layout_width="@dimen/divider_line_height" android:layout_height="20.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_userpage_share" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/txt_userpage_shared" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="被分享" />
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:background="@color/white_t50" android:layout_width="@dimen/divider_line_height" android:layout_height="20.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_userpage_fans" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/txt_userpage_following" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

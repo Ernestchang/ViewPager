@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/detail_list_item_default_bg">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="66.0dip" />
+
+    <com.astonmartin.image.WebImageView
+        android:id="@id/avatar"
+        android:layout_width="36.0dip"
+        android:layout_height="36.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="10.0dip" />
+
+    <LinearLayout
+        android:id="@id/name_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80.0dip"
+        android:layout_marginTop="13.0dip"
+        android:layout_toRightOf="@id/avatar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/detail_official_text0"
+            android:textSize="16.0sp" />
+
+        <com.astonmartin.image.WebImageView
+            android:id="@id/tag_icon"
+            android:layout_width="14.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginLeft="4.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/tag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:singleLine="true"
+            android:textColor="@color/detail_cert_tag_text_color"
+            android:textSize="12.0sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_layout"
+        android:layout_marginRight="90.0dip"
+        android:layout_marginTop="3.0dip"
+        android:layout_toRightOf="@id/avatar"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/detail_official_text4"
+        android:textSize="13.0sp" />
+
+    <include
+        layout="@layout/detail_follow_button_small_layout"
+        android:layout_width="60.0dip"
+        android:layout_height="25.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15.0dip" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/detail_color_user_at_divider" />
+</RelativeLayout>

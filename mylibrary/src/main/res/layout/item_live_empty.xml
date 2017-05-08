@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <View android:id="@id/empty_logo" android:background="@drawable/live_none" android:layout_width="230.0dip" android:layout_height="114.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#b2ffffff" android:id="@id/empty_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="可爱的主播正在赶来的路上~" android:layout_below="@id/empty_logo" android:layout_centerHorizontal="true" />
+        <View android:id="@id/socail_view" android:background="@drawable/live_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="-6.0dip" android:layout_marginRight="3.0dip" android:layout_below="@id/empty_title" />
+        <com.astonmartin.image.WebImageView android:id="@id/empty_socail_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/shape_live_socail_bg" android:layout_below="@id/empty_title" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/empty_socail_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="快来解锁更多直播" android:drawableRight="@drawable/live_socail_arrow" android:drawablePadding="4.0dip" android:layout_below="@id/empty_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

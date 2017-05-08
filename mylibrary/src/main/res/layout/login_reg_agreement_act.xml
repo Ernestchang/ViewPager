@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/accept" android:layout_alignParentTop="true" />
+    <View android:id="@id/_anchor" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+    <Button android:id="@id/decline" android:background="@drawable/login_button_bg_decline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_decline" android:layout_toLeftOf="@id/_anchor" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="?attr/loginCrystalButtonStyle" />
+    <Button android:textColor="#ffffffff" android:id="@id/accept" android:background="@drawable/login_button_bg_accept" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_accept" android:layout_toRightOf="@id/_anchor" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="?attr/loginCrystalButtonStyle" />
+</RelativeLayout>

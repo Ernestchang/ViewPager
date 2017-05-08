@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mogujie.mgjpfbasesdk.widget.AsyncWebImageView android:id="@id/liyifeng_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    <com.mogujie.mgjpfbasesdk.widget.AsyncWebImageView android:id="@id/liyifeng_positive_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_alignLeft="@id/liyifeng_dialog_bg" android:layout_alignBottom="@id/liyifeng_dialog_bg" />
+    <com.mogujie.mgjpfbasesdk.widget.AsyncWebImageView android:id="@id/liyifeng_negative_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_toRightOf="@id/liyifeng_positive_btn" android:layout_alignTop="@id/liyifeng_positive_btn" />
+</RelativeLayout>

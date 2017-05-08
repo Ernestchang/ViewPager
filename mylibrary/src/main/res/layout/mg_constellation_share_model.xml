@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/constellation_share_ly" android:background="@drawable/constellation_share_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.mogujie.base.view.RotateTextView android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="left" android:autoLink="all" android:id="@id/message" android:paddingLeft="5.0dip" android:paddingRight="7.0dip" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:lineSpacingExtra="20.0dip" />
+        <ImageView android:id="@id/constellation_share_image_load_failed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/share_model_load_image_failed" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/constellation_image" android:layout_width="74.0dip" android:layout_height="74.0dip" android:layout_marginLeft="119.0dip" android:layout_marginTop="332.0dip" android:src="@drawable/qrcode_share_logo" />
+        <RelativeLayout android:gravity="center" android:id="@id/constellation_qrcode_rl" android:background="#ffe4d6ff" android:layout_width="82.0dip" android:layout_height="82.0dip" android:layout_marginTop="90.0dip" android:layout_below="@id/constellation_image" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/constellation_share_qrcode" android:layout_width="78.0dip" android:layout_height="78.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/qrcode_share_logo" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/constellation_share_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="25.0dip" android:text="@string/long_click_to_look_constellation_small_screen" android:singleLine="true" android:layout_below="@id/constellation_qrcode_rl" android:layout_centerHorizontal="true" android:alpha="0.6" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shape_live_chat_item_bg2" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ffff5777" android:layout_gravity="center_vertical" android:id="@id/mg_live_prize_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:maxWidth="140.0dip" android:singleLine="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/mg_live_prize_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抽中了" android:singleLine="true" android:layout_toRightOf="@id/mg_live_prize_user" android:layout_centerVertical="true" />
+    <TextView android:textColor="#ffff5777" android:id="@id/mg_live_prize_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/mg_live_prize_text" android:layout_centerVertical="true" />
+</RelativeLayout>

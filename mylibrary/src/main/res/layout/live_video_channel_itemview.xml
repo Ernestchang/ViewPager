@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/live_shape_channel_carditem_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlyt_video_cover" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.astonmartin.image.WebImageView android:id="@id/iv_video_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center|left" android:background="@drawable/live_ic_video_channel_play" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:layout_gravity="center|right" android:id="@id/tv_video_duration" android:background="@drawable/live_shape_video_channel_duration_bg" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:paddingLeft="8.0dip" android:paddingTop="6.0dip" android:paddingRight="3.5dip" android:paddingBottom="8.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rlyt_video_cover">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="left" android:id="@id/tv_video_intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" android:singleLine="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/tv_video_intro">
+            <com.astonmartin.image.WebImageView android:id="@id/iv_video_user_avatar" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/tv_video_user_name" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/iv_video_user_avatar" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

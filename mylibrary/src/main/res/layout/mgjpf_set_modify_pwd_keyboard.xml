@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mogujie.mgjpfbasesdk.pwd.PFInputPwdKeyboard android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="#ff398fc3" android:gravity="center" android:layout_gravity="center" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgjpf_safe_keyboard_title" android:drawableLeft="@drawable/mgjpf_input_pwd_keyboard_icon" android:drawablePadding="4.0dip" />
+    </FrameLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:id="@id/pf_input_pwd_btn1" style="@style/PFInputPwdKeyboardBtn" />
+        <Button android:id="@id/pf_input_pwd_btn2" style="@style/PFInputPwdKeyboardBtn" />
+        <Button android:id="@id/pf_input_pwd_btn3" style="@style/PFInputPwdKeyboardBtn" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:id="@id/pf_input_pwd_btn4" style="@style/PFInputPwdKeyboardBtn" />
+        <Button android:id="@id/pf_input_pwd_btn5" style="@style/PFInputPwdKeyboardBtn" />
+        <Button android:id="@id/pf_input_pwd_btn6" style="@style/PFInputPwdKeyboardBtn" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:id="@id/pf_input_pwd_btn7" style="@style/PFInputPwdKeyboardBtn" />
+        <Button android:id="@id/pf_input_pwd_btn8" style="@style/PFInputPwdKeyboardBtn" />
+        <Button android:id="@id/pf_input_pwd_btn9" style="@style/PFInputPwdKeyboardBtn" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:enabled="false" android:background="@drawable/mgjpf_pwd_keyboard_btn_del_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <Button android:id="@id/pf_input_pwd_btn0" style="@style/PFInputPwdKeyboardBtn" />
+        <ImageView android:id="@id/pf_input_pwd_del" android:background="@drawable/mgjpf_pwd_keyboard_btn_del_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/mgjpf_input_pwd_keyboard_del" android:scaleType="center" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.mogujie.mgjpfbasesdk.pwd.PFInputPwdKeyboard>

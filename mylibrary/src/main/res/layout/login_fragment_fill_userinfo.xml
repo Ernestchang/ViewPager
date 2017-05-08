@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@id/tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" style="?attr/loginFillUserInfoTipStyle" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="20.0dip">
+            <com.astonmartin.image.WebImageView android:id="@id/register_avatar" android:background="@drawable/login_fill_userinfo_avatar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/change_avatar" style="?attr/loginChangeAvatarButtonStyle" />
+        </FrameLayout>
+        <com.mogujie.login.component.view.ClearableEditText android:id="@id/nick_edit" android:background="@drawable/login_edittext_bg_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:imeOptions="actionDone" style="?attr/loginFillUserInfoInputStyle" />
+        <Button android:id="@id/btn_done" android:layout_marginLeft="15.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/login_completed" style="?attr/loginLargeButtonStyle" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mogujie.uikit.listview.MGRecycleListView android:id="@id/pw_goods_item" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/rlyt_bottombar" android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/flyt_add_to_shelf" android:layout_width="160.0dip" android:layout_height="33.0dip" android:layout_marginRight="15.0dip" android:layout_centerInParent="true">
+            <TextView android:enabled="false" android:textSize="14.0sp" android:textColor="@color/live_goods_onsale_addtoshelf" android:gravity="center" android:layout_gravity="center|left" android:id="@id/btn_sendCoupons" android:background="@drawable/live_selector_addtoshelf_btn" android:layout_width="160.0dip" android:layout_height="33.0dip" android:text="@string/send_coupons" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

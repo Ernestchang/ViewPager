@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/down_title" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_title" />
+    <com.mogujie.smartupdate.lib.NumberProgressBar android:id="@id/number_progress_bar" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" custom:progress_text_size="14.0sp" style="@style/NumberProgressBar_Beauty_Red" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/cancel_btn" android:background="@drawable/corner_tv" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/cancel" />
+    <RelativeLayout android:gravity="center" android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_centerVertical="true" style="?android:attr/progressBarStyle" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff9d9d9d" android:id="@id/loading_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/update_wait_patching" android:layout_toRightOf="@id/loading_progress" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

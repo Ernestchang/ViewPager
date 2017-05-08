@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="12.0sp" android:textColor="#ff727272" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/bank_card_safe_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pfbindcard_cvv_num_help" android:drawableTop="@drawable/pfbankcard_safe_info_img" android:drawablePadding="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

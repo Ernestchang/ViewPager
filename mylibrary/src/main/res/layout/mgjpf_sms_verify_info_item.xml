@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sms_verify_info_item_title" android:layout_width="@dimen/mgjpf_row_left_text_view_width" android:layout_alignParentLeft="true" style="@style/PFRowTextView.sms_verify_info_item" />
+    <TextView android:id="@id/sms_verify_info_item_value" android:layout_alignParentRight="true" style="@style/PFRowTextView.sms_verify_info_item" />
+    <View android:layout_below="@id/sms_verify_info_item_title" style="@style/mgjpf_basesdk_hdivider" />
+</merge>

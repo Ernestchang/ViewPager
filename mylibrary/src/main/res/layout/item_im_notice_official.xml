@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/offical_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/avatar_wrap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/offical_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:src="@mipmap/im_default_avatar_round" android:scaleType="fitCenter" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/offical_unread_count" android:background="@mipmap/im_message_notify_no_calc_icon" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="9.0dip" android:scaleType="fitCenter" style="@style/IMTextViewStyle" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="17.0dip" android:layout_toRightOf="@id/avatar_wrap">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/grey_d1" android:id="@id/offical_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/offical_user_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:src="@mipmap/im_new_n_icon_official" android:layout_toRightOf="@id/offical_nick_name" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:id="@id/offical_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/offical_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/bottom_line" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

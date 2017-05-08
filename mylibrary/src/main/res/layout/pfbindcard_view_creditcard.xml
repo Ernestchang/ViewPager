@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.codetail.widget.RevealLinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/pfbindcard_front_card_outline" android:background="@drawable/pfbindcard_card_color_round_rect_default" android:layout_width="@dimen/pfbindcard_card_width_normal" android:layout_height="@dimen/pfbindcard_card_height_normal">
+        <include layout="@layout/pfbindcard_front_card" />
+        <include android:visibility="gone" layout="@layout/pfbindcard_back_card" />
+    </io.codetail.widget.RevealLinearLayout>
+</merge>

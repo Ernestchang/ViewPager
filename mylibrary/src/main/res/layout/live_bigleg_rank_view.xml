@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlyt_bigleg_rank" android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="32.5dip" android:layout_marginTop="105.0dip" android:layout_marginRight="32.5dip" android:layout_marginBottom="105.0dip" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/rlyt_title_bar" android:background="@drawable/live_ic_wardlist_tile_bg" android:clickable="true" android:layout_width="153.0dip" android:layout_height="35.5dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/live_wardlist" android:drawableLeft="@drawable/live_facebeauty_icon" android:drawablePadding="4.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/live_shape_wardlist_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rlyt_title_bar">
+            <LinearLayout android:orientation="horizontal" android:id="@id/llyt_wardlist_group" android:background="@drawable/live_shape_wardlist_group_bg" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="51.5dip" android:layout_marginTop="15.0dip" android:layout_marginRight="51.5dip">
+                <Button android:textColor="@color/live_wardlist_group_text" android:gravity="center" android:id="@id/btn_rank_thisroom" android:background="@drawable/live_selector_wardlist_group_bg_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="本场排行" android:layout_weight="1.0" />
+                <Button android:textColor="@color/live_wardlist_group_text" android:gravity="center" android:id="@id/btn_rank_total" android:background="@drawable/live_selector_wardlist_group_bg_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="累计排行" android:layout_weight="1.0" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/flyt_wardlist" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_below="@id/llyt_wardlist_group" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

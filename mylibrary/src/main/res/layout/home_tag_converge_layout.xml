@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meilishuo.mainpage.view.ScaleRecycleView android:id="@id/header_recyleview" android:background="@color/white" android:paddingBottom="@dimen/padding_tiny" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meilishuo.base.view.GradientRelativeLayout android:id="@id/header" android:background="@drawable/home_background_transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" app:endColor="@color/white" app:startColor="@color/white">
+        <com.meilishuo.base.view.GradientTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/btn_back" android:paddingLeft="10.0dip" android:paddingRight="@dimen/padding_big" android:layout_width="40.0dip" android:layout_height="fill_parent" android:drawableLeft="@drawable/ico_return_white" android:drawablePadding="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:endColor="@color/grey_gradient_end" app:startColor="@color/white" />
+        <com.meilishuo.base.view.GradientTextView android:textSize="18.0sp" android:textColor="@color/transparent" android:id="@id/title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:endColor="@color/grey_gradient_end" app:startColor="@color/white" />
+        <com.meilishuo.mainpage.view.LoadingView android:id="@id/loadding" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/home_loading_flower" android:layout_centerInParent="true" />
+    </com.meilishuo.base.view.GradientRelativeLayout>
+    <include android:id="@id/replace_holder_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header" layout="@layout/home_tag_tabview" />
+    <ImageView android:id="@id/camera" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/home_capture_pic" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

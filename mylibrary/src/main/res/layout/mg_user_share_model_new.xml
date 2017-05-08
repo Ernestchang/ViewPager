@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/user_share_desc_layout" android:background="@drawable/user_share_model_desc_ly_bg" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/user_share_qrcode_baseinfo" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.mogujie.base.view.RoundImageView android:id="@id/bg_base_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/user_share_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/share_logo_icon" />
+            <LinearLayout android:orientation="vertical" android:id="@id/baseInfo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/avatar_ly" android:background="@drawable/user_share_model_avatar_bg" android:layout_width="102.0dip" android:layout_height="102.0dip" android:layout_marginTop="50.0dip">
+                    <ImageView android:id="@id/user_share_avatar" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/nickname_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/user_share_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="nickname" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:id="@id/certified_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="平面模特" android:drawableLeft="@mipmap/user_share_model_isv" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/user_share_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxWidth="200.0dip" android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容" android:maxLines="2" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:id="@id/follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="234关注" />
+                    <View android:layout_gravity="center_vertical" android:background="@android:color/white" android:layout_width="1.0dip" android:layout_height="8.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:id="@id/fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="35万粉丝" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/user_share_qrcode_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/user_share_qrcode_baseinfo" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/user_share_qrcode" android:layout_width="72.0dip" android:layout_height="72.0dip" />
+            <ImageView android:id="@id/user_share_qrcode_img" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/share_qrcode_newicon" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:id="@id/user_share_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="长按扫描二维码,关注Ta的生活点滴" android:layout_below="@id/user_share_qrcode_rl" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/user_share_1212_banner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/double12_banner" android:layout_below="@id/user_share_tips" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_allview" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/logo" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="27.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/live_mogu_logo" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/btn_close" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_close_white" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="48.0dip" android:layout_below="@id/logo">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.mogujie.live.view.RoundImageView android:id="@id/iv_userico" android:background="@drawable/shap_default_ico" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="" android:layout_below="@id/iv_userico" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/facescore_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="颜值 0" android:singleLine="true" android:layout_below="@id/tv_username" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="19.0sp" android:textColor="@color/pink" android:id="@id/tv_desc1" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="本次直播已结束" android:layout_below="@id/facescore_textview" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/pink" android:id="@id/tv_desc2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="下次赶早哦～" android:layout_below="@id/tv_desc1" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/data_view_bg" android:background="@drawable/live_finish_lay_bg" android:paddingTop="28.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="50.0dip" android:layout_below="@id/tv_username">
+                <View android:id="@id/divider_view" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_left" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="64.0dip" android:layout_toLeftOf="@id/divider_view">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lly_fans_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip">
+                        <TextView android:textSize="23.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_new_fans_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="新粉丝" />
+                    </LinearLayout>
+                    <TextView android:textSize="23.0sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/tv_listener_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/gray" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="观众" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_right" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="64.0dip" android:layout_toRightOf="@id/divider_view">
+                    <TextView android:textSize="23.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_good_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="赞" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_add_cart_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="20.0dip">
+                        <TextView android:textSize="23.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_cart_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+                        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/gray" android:gravity="center" android:id="@id/tv_cart_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加购物车" />
+                            <ImageView android:id="@id/iv_add_cart_more" android:layout_width="7.0dip" android:layout_height="13.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/mg_live_add_cart_more" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="50.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="40.0dip" android:layout_below="@id/data_view_bg">
+                <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/btn_thanks" android:background="@drawable/shape_live_finish_gift_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="7.0dip" android:text="答谢粉丝" android:layout_weight="1.0" />
+                <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/btn_publish_playback" android:background="@drawable/shape_live_finish_playback_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="7.0dip" android:text="发布回放" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

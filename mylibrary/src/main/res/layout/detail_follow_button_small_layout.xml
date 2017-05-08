@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/follow_btn" android:background="@drawable/detail_follow_btn_bg" android:layout_width="60.0dip" android:layout_height="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/detail_follow_btn_text" android:id="@id/follow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

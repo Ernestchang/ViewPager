@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_add" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mgtrade_comment_add" android:scaleType="centerInside" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/comment_tips_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mgtrade_comment_tips" android:scaleType="fitXY" android:layout_toRightOf="@id/image_add" android:layout_alignBottom="@id/image_add" />
+</RelativeLayout>

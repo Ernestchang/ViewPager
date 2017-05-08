@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.astonmartin.image.WebImageView android:id="@id/image_pic" android:background="@drawable/pro_image_common_frame" android:layout_width="@dimen/follow_tag_hori_item_size" android:layout_height="@dimen/follow_tag_hori_item_size" android:layout_marginRight="5.0dip" android:src="@drawable/pro_default_pic_bg" android:scaleType="centerCrop" />
+</LinearLayout>

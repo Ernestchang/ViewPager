@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/rate_view_divider" android:background="@color/detail_stroke_color2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.astonmartin.image.WebImageView android:id="@id/avatar" android:background="@drawable/detail_rate_avatar_bg" android:padding="1.0px" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" />
+    <include android:id="@id/detail_rate_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar" layout="@layout/detail_rate_item" />
+    <RelativeLayout android:id="@id/detail_comment_stretch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/avatar" android:layout_below="@id/detail_rate_box">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center|left" android:id="@id/detail_comment_added_comment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <GridView android:gravity="center" android:id="@id/detail_comment_added_image" android:paddingBottom="2.0dip" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:scrollbars="none" android:fadingEdgeLength="0.0dip" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="@dimen/detail_image_thumbnail_spacing" android:verticalSpacing="@dimen/detail_image_thumbnail_spacing" android:stretchMode="none" android:columnWidth="@dimen/detail_image_thumbnail_size" android:numColumns="3" android:layout_below="@id/detail_comment_added_comment" />
+    </RelativeLayout>
+    <com.meilishuo.detail.common.view.DashLineView android:id="@id/detail_comment_explain_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/avatar" android:layout_below="@id/detail_comment_stretch" />
+    <com.mogujie.uikit.textview.MGTextView android:textSize="13.0sp" android:textColor="#ff999999" android:id="@id/detail_comment_explain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_toRightOf="@id/avatar" android:layout_below="@id/detail_comment_explain_line" />
+    <View android:id="@id/rate_divider_wide" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_below="@id/detail_comment_explain" />
+    <View android:id="@id/rate_divider" android:background="@color/detail_divider_color_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/rate_divider_wide" />
+</merge>

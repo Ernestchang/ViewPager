@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="left" android:id="@id/message_content" android:background="@mipmap/im_mine_item_bg_normal" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxEms="12" android:layout_toLeftOf="@id/user_portrait" android:layout_below="@id/user_name" style="@style/IMTextViewStyle" />
+    <ViewStub android:id="@id/status_stub_layout" android:layout="@layout/im_mine_msg_view_status" android:inflatedId="@id/msg_status_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/message_content" android:layout_alignTop="@id/message_content" android:layout_alignBottom="@id/message_content" />
+</merge>

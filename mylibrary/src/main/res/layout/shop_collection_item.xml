@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/cd_item_title_ll" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/collection_item_wbv_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.astonmartin.image.WebImageView android:id="@id/collection_shop_imv1" android:layout_width="109.0dip" android:layout_height="109.0dip" android:scaleType="centerCrop" />
+            <com.astonmartin.image.WebImageView android:id="@id/collection_shop_imv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:scaleType="centerCrop" />
+            <com.astonmartin.image.WebImageView android:id="@id/collection_shop_imv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:scaleType="centerCrop" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_l30"
+    android:orientation="vertical">
+
+    <com.meilishuo.base.view.VerticalViewPager
+        android:id="@id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@id/back_btn"
+        android:layout_width="40.0dip"
+        android:layout_height="47.0dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/home_index_back_btn_white" />
+
+    <include
+        android:id="@id/neterror"
+        layout="@layout/home_networkerror_default_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        android:visibility="gone" />
+</RelativeLayout>

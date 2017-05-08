@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_default_height">
+        <FrameLayout android:id="@id/left_layout" android:clickable="true" android:layout_width="130.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/left_btn" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:src="@mipmap/im_message_top_left" android:scaleType="center" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/default_light_black_color" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/left_txt" android:paddingLeft="32.0dip" android:focusable="true" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="false" style="@style/IMTextViewStyle" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/title_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="18.0dip" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="145.0dip" android:singleLine="true" android:layout_centerInParent="true" style="@style/IMTextViewStyle" />
+            <ProgressBar android:id="@id/pb_load_data" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_toRightOf="@id/title" android:layout_centerInParent="true" style="?android:attr/progressBarStyle" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/right_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center|right" android:id="@id/right_btn" android:layout_width="36.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:src="@mipmap/im_shopping_cart" android:scaleType="center" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/default_light_black_color" android:ellipsize="end" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/right_txt" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/top_bar_right_max_width" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:maxWidth="@dimen/top_bar_right_max_width" android:singleLine="true" style="@style/IMTextViewStyle" />
+            <View android:layout_gravity="right" android:id="@id/right_txt_notify_single" android:background="@drawable/im_more_new_bg" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="2.0dip" android:layout_alignTop="@id/right_btn" android:layout_alignRight="@id/right_btn" style="@style/IMTextViewStyle" />
+            <View android:id="@id/right_notify_image" android:background="@drawable/im_social_notify_dot" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:layout_toRightOf="@id/right_btn" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="center|right" android:id="@id/shop_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="0.74dip" android:layout_marginRight="8.0dip" android:src="@mipmap/im_message_shop_icon" android:scaleType="center" android:layout_toLeftOf="@id/right_layout" />
+    </RelativeLayout>
+</LinearLayout>

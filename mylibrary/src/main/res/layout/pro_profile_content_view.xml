@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_sign_in" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/img_sign_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/pro_sign_in_city" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="签到商城" android:layout_toRightOf="@id/img_sign_in" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_sign_in_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/pro_detail_ico_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffff3366" android:id="@id/text_sign_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/img_sign_in_arrow" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_sign_in_point" android:visibility="gone" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/pro_img_red_point" android:layout_toLeftOf="@id/text_sign_in" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0px">
+        <View android:background="#33333333" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_coupon" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/img_coupon_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/pro_coupon_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="优惠劵" android:layout_toRightOf="@id/img_coupon_icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_coupon_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/pro_detail_ico_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/text_coupon_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/img_coupon_arrow" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_coupon_point" android:visibility="gone" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/pro_img_red_point" android:layout_toLeftOf="@id/text_coupon_num" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0px">
+        <View android:background="#33333333" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_moneybag" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/img_moneybag_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/pro_moneybag_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="钱包" android:layout_toRightOf="@id/img_moneybag_icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_moneybag_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/pro_detail_ico_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/text_moneybag_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/img_moneybag_arrow" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_ly" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_tip_captcha" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/loginWarningTipStyle" />
+        <com.mogujie.login.component.view.LabelEditText android:id="@id/captcha_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" app:labelTextAppearance="?loginLabelTextAppearance" app:editTextAppearance="?loginEditTextAppearance" style="?attr/loginEditTextStyle" />
+        <TextView android:textAppearance="?loginResendCaptchaTextAppearance" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/re_get_captcha_btn" android:padding="12.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_re_get_captcha" />
+        <Button android:gravity="center" android:id="@id/ok_btn" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="15.0dip" android:text="@string/login_captcha_ok" style="?attr/loginLargeButtonStyle" />
+    </LinearLayout>
+    <Button android:gravity="center" android:layout_gravity="center" android:id="@id/btn_retry" android:visibility="gone" android:layout_marginLeft="15.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="15.0dip" android:text="@string/login_captcha_retry" style="?attr/loginLargeButtonStyle" />
+</FrameLayout>

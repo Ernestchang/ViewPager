@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/picker_decrement" android:background="@null" android:layout_width="30.0dip" android:layout_height="fill_parent" />
+    <View android:id="@id/picker_decrement_divider" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <TextView android:textSize="17.0sp" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/picker_input" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="64.0dip" android:minWidth="32.0dip" android:singleLine="true" />
+    <View android:id="@id/picker_increment_divider" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/picker_increment" android:background="@null" android:layout_width="30.0dip" android:layout_height="fill_parent" />
+</merge>

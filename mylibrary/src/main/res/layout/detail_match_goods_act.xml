@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.detail.view.MatchGoodsTopBar android:id="@id/match_goods_top_bar" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="@dimen/detail_title_bar_height" />
+    <com.meilishuo.detail.view.MatchGoodsTabView android:orientation="horizontal" android:id="@id/tabs" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.meilishuo.detail.view.ToggleableViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include android:id="@id/bottom_ly" android:layout_width="fill_parent" android:layout_height="50.0dip" layout="@layout/detail_match_goods_buy_panel" />
+</LinearLayout>

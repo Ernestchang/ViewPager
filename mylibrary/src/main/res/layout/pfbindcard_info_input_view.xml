@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mogujie.mgjpfbindcard.bindcard.view.PFBindCardInfoInputView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/mgjpf_bind_card_info_top_divider" android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size4" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/mgjpf_bind_card_info_phone_note" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/pfbindcard_info_origin_phone_note" />
+        <LinearLayout android:orientation="vertical" android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/pf_linearlayout_horizonal_divider" android:showDividers="middle" android:dividerPadding="15.0dip">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/mgjpf_bind_card_info_ly" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/mgjpf_bind_card_info_type_label" android:text="@string/pfbindcard_info_type_label" style="@style/PFRowTextView.PFRowLeftTextView" />
+                <TextView android:id="@id/mgjpf_bind_card_info_type_tv" android:layout_width="0.0dip" android:layout_toRightOf="@id/mgjpf_bind_card_info_type_label" android:layout_alignParentRight="true" style="@style/PFRowTextView.PFRowRightEditText" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/mgjpf_bind_card_info_name_label" android:text="@string/pfbindcard_info_name_label" style="@style/PFRowTextView.PFRowLeftTextView" />
+                <com.mogujie.mgjpfbasesdk.widget.PFClearableEditText android:id="@id/mgjpf_bind_card_info_name_et" android:layout_width="fill_parent" android:hint="@string/pfbindcard_info_name_hint" android:layout_toRightOf="@id/mgjpf_bind_card_info_name_label" style="@style/PFRowTextView.PFRowRightEditText" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/mgjpf_bind_card_info_person_id_label" android:text="@string/pfbindcard_info_person_id_label" style="@style/PFRowTextView.PFRowLeftTextView" />
+                <com.mogujie.mgjpfbasesdk.widget.PFClearableEditText android:id="@id/mgjpf_bind_card_info_person_id_et" android:layout_width="fill_parent" android:hint="@string/pfbindcard_info_person_id_hint" android:digits="0123456789Xx" android:layout_toRightOf="@id/mgjpf_bind_card_info_person_id_label" style="@style/PFRowTextView.PFRowRightEditText" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/mgjpf_bind_card_info_cvv_label" android:text="@string/pfbindcard_info_cvv_label" style="@style/PFRowTextView.PFRowLeftTextView" />
+                <EditText android:id="@id/mgjpf_bind_card_info_cvv_et" android:layout_width="0.0dip" android:hint="@string/pfbindcard_info_cvv_hint" android:layout_toLeftOf="@id/mgjpf_bind_card_info_cvv_icon" android:layout_toRightOf="@id/mgjpf_bind_card_info_cvv_label" android:inputType="number" style="@style/PFRowTextView.PFRowRightEditText" />
+                <ImageView android:id="@id/mgjpf_bind_card_info_cvv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/pfbindcard_help_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/mgjpf_bind_card_info_expire_label" android:text="@string/pfbindcard_info_expire_label" style="@style/PFRowTextView.PFRowLeftTextView" />
+                <EditText android:id="@id/mgjpf_bind_card_info_expire_et" android:layout_width="0.0dip" android:hint="@string/pfbindcard_info_expire_hint" android:layout_toLeftOf="@id/mgjpf_bind_card_info_expire_icon" android:layout_toRightOf="@id/mgjpf_bind_card_info_expire_label" android:inputType="number" style="@style/PFRowTextView.PFRowRightEditText" />
+                <ImageView android:id="@id/mgjpf_bind_card_info_expire_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/pfbindcard_help_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <View android:id="@id/mgjpf_bind_card_info_phone_divider" android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/origin_phone_number_container" android:background="@color/mgjpf_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/mgjpf_bind_card_info_origin_phone_label" android:text="@string/pfbindcard_info_origin_phone_label" style="@style/PFRowTextView.PFRowLeftTextView" />
+            <TextView android:id="@id/mgjpf_bind_card_info_origin_phone_tv" android:layout_width="0.0dip" android:layout_toRightOf="@id/mgjpf_bind_card_info_origin_phone_label" android:layout_alignParentRight="true" style="@style/PFRowTextView.PFRowRightEditText" />
+        </RelativeLayout>
+        <View android:id="@id/origin_phone_number_divider" android:background="@color/mgjpf_view_divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/mgjpf_bind_card_info_phone_label" android:text="@string/pfbindcard_info_phone_label" style="@style/PFRowTextView.PFRowLeftTextView" />
+            <com.mogujie.mgjpfbasesdk.widget.PFClearableEditText android:id="@id/mgjpf_bind_card_info_phone_et" android:layout_width="fill_parent" android:hint="@string/pfbindcard_info_phone_hint" android:layout_toRightOf="@id/mgjpf_bind_card_info_phone_label" android:inputType="number" style="@style/PFRowTextView.PFRowRightEditText" />
+        </RelativeLayout>
+        <View android:background="@color/mgjpf_view_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size4" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/mgjpf_bind_card_info_bottom_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:text="@string/pfbindcard_info_tips" />
+        <Button android:id="@id/next_btn" android:layout_width="fill_parent" android:layout_margin="20.0dip" android:text="@string/pfbindcard_next_btn_text" style="@style/MGJPF_tv_btn" />
+    </LinearLayout>
+</com.mogujie.mgjpfbindcard.bindcard.view.PFBindCardInfoInputView>

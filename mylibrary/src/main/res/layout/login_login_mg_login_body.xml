@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scroll_layout" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/login_content_view" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.mogujie.login.component.view.LabelEditText android:id="@id/login_uname_ly" android:background="@drawable/login_edittext_bg_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="15.0dip" android:inputType="text" android:imeOptions="actionNext" app:labelText="@string/login_account_input_label" app:labelTextAppearance="?loginLabelTextAppearance" app:editTextHint="@string/account_hint" app:editTextAppearance="?loginEditTextAppearance" />
+            <com.mogujie.login.component.view.LabelEditText android:id="@id/login_password_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="15.0dip" android:inputType="textPassword" android:imeOptions="actionGo" app:labelText="@string/login_password_input_label" app:labelTextAppearance="?loginLabelTextAppearance" app:editTextHint="@string/enter_password" app:editTextAppearance="?loginEditTextAppearance" style="?attr/loginPasswordEditTextStyle" />
+            <com.mogujie.login.coreapi.view.CaptchaView android:gravity="center" android:id="@id/mg_login_captcha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="17.5dip" android:layout_marginRight="15.0dip" />
+            <Button android:id="@id/login_btn" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/login" style="?attr/loginLargeButtonStyle" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="34.0dip" android:showDividers="middle" android:dividerPadding="6.0dip">
+                <TextView android:gravity="left" android:id="@id/world_login_textview" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/login_foreign_mobile_login" android:layout_weight="1.0" style="?attr/loginLabelButtonStyle" />
+                <TextView android:gravity="center_horizontal" android:id="@id/tv_free_login" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/login_free_login_title" android:layout_weight="1.0" style="?attr/loginLabelButtonStyle" />
+                <TextView android:textColor="?loginThemeColorPrimary" android:gravity="right" android:id="@id/tv_register" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/login_register_account" android:layout_weight="1.0" style="?attr/loginLabelButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/login_content_view">
+            <com.mogujie.login.component.view.MGThirdLoginView android:id="@id/login_third_loginview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?attr/loginThirdViewStyle" />
+        </LinearLayout>
+        <TextView android:id="@id/tv_unsafe_tip" style="@style/DefaultLoginNotAllowTipStyle" />
+    </RelativeLayout>
+</ScrollView>

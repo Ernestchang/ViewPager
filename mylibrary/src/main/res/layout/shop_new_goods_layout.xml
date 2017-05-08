@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/shop_title_bar_height">
+        <ImageView android:id="@id/btn_back" android:layout_width="@dimen/shop_title_bar_height" android:layout_height="fill_parent" android:src="@drawable/shop_back_btn" android:scaleType="center" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/shop_cart" android:layout_width="@dimen/shop_title_bar_height" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/shop_cart_btn" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/shop_cart_new" android:background="@drawable/shop_more_new_bg" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="9.5dip" android:layout_marginRight="2.0dip" android:layout_alignTop="@id/shop_cart" android:layout_alignRight="@id/shop_cart" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/grey_d3_1" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxWidth="200.0dip" android:text="@string/shop_bottom_bar_new" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.meilishuo.xiaodian.shop.widget.PinnedHeaderListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_below="@id/headerbar" />
+    <ImageView android:id="@id/to_top" android:visibility="gone" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/to_top_btn" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

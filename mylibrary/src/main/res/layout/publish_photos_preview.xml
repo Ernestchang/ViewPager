@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/publish_feed_comment_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <TextView android:id="@id/back" android:layout_width="60.0dip" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <TextView android:id="@id/title" android:text="@string/publish_photos_preview" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <com.meilishuo.publish.view.KeepScaleImageView android:id="@id/show_photo_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_small">
+        <TextView android:textColor="@color/publish_grey_d3" android:id="@id/again_take" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_big" android:text="重拍" style="@style/RoundWhiteBtn" />
+        <TextView android:id="@id/btn_sure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_sure" style="@style/RoundPinkBtn" />
+    </LinearLayout>
+</LinearLayout>

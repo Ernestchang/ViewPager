@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="60.0dip" android:layout_height="60.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/hexagon_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/default_avatar_round" />
+        <com.astonmartin.image.WebImageView android:id="@id/identity_img" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="7.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/grey_d3_1" android:ellipsize="end" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:ellipsize="end" android:id="@id/about_me" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.meilishuo.base.view.AttentionTextView android:layout_gravity="center" android:id="@id/fans_btn_attention" android:layout_width="wrap_content" style="@style/BtnAttentionStyle" />
+    </FrameLayout>
+</LinearLayout>

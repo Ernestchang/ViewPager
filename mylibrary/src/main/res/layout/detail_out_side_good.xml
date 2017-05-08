@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/out_side_content_ly" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.detail.view.OutSideScrollView android:id="@id/out_side_scroll_ly" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/out_side_bottom_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.mogujie.uikit.autoscroll.viewpager.AutoScrollBanner android:id="@id/out_side_banner" android:layout_width="fill_parent" android:layout_height="410.0dip" />
+            <com.meilishuo.detail.view.OutSideGoodsInfoView android:id="@id/out_side_info" android:paddingBottom="21.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/out_side_other_info" android:background="@color/white" android:paddingBottom="11.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.meilishuo.detail.view.OutSideGoodsBrandView android:id="@id/out_side_brand_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" />
+                <com.meilishuo.detail.view.OutSideGoodsContentView android:orientation="vertical" android:id="@id/out_side_content_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="6.0dip" />
+                <com.meilishuo.detail.view.OutSideGoodsRecommendGoodView android:orientation="vertical" android:id="@id/out_side_recommend_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:id="@id/out_side_tv_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginBottom="26.0dip" android:text="@string/detail_out_side_source_url" />
+        </LinearLayout>
+    </com.meilishuo.detail.view.OutSideScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/out_side_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/out_side_collect_layout" android:background="@color/white" android:layout_width="115.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/out_side_iv_collection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/detail_out_side_icon_no_collect" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/out_side_tv_collection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/detail_out_side_collect_text" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <Button android:enabled="true" android:textSize="16.0sp" android:textColor="@color/detail_red_button_text_color" android:gravity="center" android:id="@id/out_side_btn_go" android:background="@drawable/detail_red_button_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.meilishuo.detail.view.OutSideGoodsTopBar android:id="@id/out_side_title" android:layout_width="fill_parent" android:layout_height="@dimen/detail_title_bar_height" android:layout_alignParentTop="true" />
+</RelativeLayout>

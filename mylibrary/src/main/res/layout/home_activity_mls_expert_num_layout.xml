@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/comment_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/base_title_bar_height" android:layout_alignParentTop="true">
+        <TextView android:id="@id/back" android:layout_width="45.0dip" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <TextView android:id="@id/title" android:text="@string/mls_expert_list" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <View android:background="@color/divider_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.mogujie.uikit.listview.MGListView android:id="@id/list_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_layout" android:layout_below="@id/header" />
+</RelativeLayout>

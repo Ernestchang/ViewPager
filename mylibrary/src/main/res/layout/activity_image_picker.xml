@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/gallery_topbar" android:background="@color/gallery_topbar_background_color" android:layout_width="fill_parent" android:layout_height="@dimen/gallery_topbar_height">
+        <RelativeLayout android:id="@id/gallery_topbar_lyt" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/gallery_topbar_title_text_size" android:textColor="@color/gallery_topbar_title_color" android:gravity="center_vertical" android:id="@id/gallery_topbar_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableRight="@drawable/ic_shrinked" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+            <ImageButton android:id="@id/gallery_topbar_left_button" android:background="@android:color/transparent" android:paddingLeft="@dimen/gallery_topbar_button_padding" android:paddingRight="@dimen/gallery_topbar_button_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_close" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/gallery_topbar_text_button_text_size" android:textColor="@color/gallery_topbar_button_color" android:gravity="center_vertical" android:id="@id/gallery_topbar_right_text_button" android:background="@android:color/transparent" android:paddingRight="@dimen/gallery_topbar_button_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/gallery_topbar_right_text" android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/gallery_topbar_image_count" android:gravity="center" android:id="@id/gallery_topbar_image_count" android:background="@drawable/gallery_image_count" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:text="0" android:layout_toLeftOf="@id/gallery_topbar_right_text_button" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/gallery_topbar_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <GridView android:id="@id/gallery_gridview" android:background="@android:color/white" android:padding="@dimen/gallery_grid_spacing" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/gallery_grid_spacing" android:verticalSpacing="@dimen/gallery_grid_spacing" android:layout_below="@id/gallery_topbar" />
+    <View android:id="@id/gallery_mask" android:background="#66000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/gallery_topbar" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/v_header_date" layout="@layout/subject_header_date" />
+    <com.astonmartin.image.WebImageView android:id="@id/image" android:background="@drawable/mls_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:scaleType="centerCrop" android:layout_below="@id/v_header_date" />
+    <View android:id="@id/imageCover" android:background="@drawable/topic_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/v_header_date" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/grey_d1" android:gravity="center" android:id="@id/tag" android:background="@drawable/home_topic_tag_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_below="@id/v_header_date" />
+    <RelativeLayout android:id="@id/titleLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="30.0dip" android:layout_alignBottom="@id/image">
+        <TextView android:textSize="22.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/grey_d1" android:ellipsize="end" android:gravity="center" android:id="@id/goodsCount" android:background="@drawable/topic_goods_num_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="10.0dip" android:lines="1" android:layout_below="@id/subTitle" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="0.0dip" android:minHeight="112.0dip" android:layout_below="@id/image" />
+</RelativeLayout>

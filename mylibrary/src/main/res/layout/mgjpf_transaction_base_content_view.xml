@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mogujie.mgjpfbasesdk.banner.PFBannerLayout android:id="@id/topBanner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/pf_transaction_remaining_container" android:background="@drawable/mgjpf_view_border_separator_bg" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:id="@id/pf_transaction_remaining_note" android:layout_width="wrap_content" android:layout_marginRight="40.0dip" style="@style/PFRowTextView" />
+        <TextView android:textSize="22.0sp" android:textColor="?pf_brand_text_color" android:id="@id/pf_transaction_remaining_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:layout_marginRight="2.0dip" android:singleLine="true" android:layout_toRightOf="@id/pf_transaction_remaining_note" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" android:layout_toRightOf="@id/pf_transaction_remaining_balance" style="@style/PFRowTextView" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/pf_transaction_bankcard_container" android:background="@drawable/mgjpf_view_border_separator_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/mgjpf_transaction_bank_item_view_height" android:layout_marginTop="20.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/pf_transaction_bankcard_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/pf_transaction_bankcard_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/pf_transaction_bankcard_right_pointer" android:layout_toRightOf="@id/pf_transaction_bankcard_logo" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_main_text_color1" android:id="@id/pf_transaction_bankcard_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:singleLine="true" />
+            <TextView android:textSize="@dimen/mgjpf_main_text_size3" android:textColor="@color/mgjpf_main_text_color3" android:gravity="center_vertical" android:id="@id/pf_transaction_bankcard_tailNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/pf_transaction_bankcard_right_pointer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mgjpf_view_right_pointer" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/mgjpf_view_border_separator_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:id="@id/pf_transaction_money_note" android:text="@string/mgjpf_money_text" style="@style/PFRowTextView.PFRowLeftTextView" />
+        <com.mogujie.mgjpfbasesdk.widget.PFClearableEditText android:id="@id/pf_transaction_money_et" android:layout_width="fill_parent" android:layout_toRightOf="@id/pf_transaction_money_note" android:inputType="numberDecimal" style="@style/PFRowTextView.PFRowRightEditText" />
+    </RelativeLayout>
+    <Button android:enabled="false" android:id="@id/pf_transaction_next_btn" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="15.0dip" android:text="@string/mgjpf_next_step" style="@style/MGJPF_tv_btn" />
+</LinearLayout>

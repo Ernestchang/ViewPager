@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mgtrade_car_check_btn_minwidth">0.0dip</dimen>
+    <dimen name="mgtrade_car_check_btn_padding">10.0dip</dimen>
+    <dimen name="mgtrade_car_price_margin">4.0dip</dimen>
+</resources>

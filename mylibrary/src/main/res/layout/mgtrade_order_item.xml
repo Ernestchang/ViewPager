@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/order_sel_ly" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/order_item_sku_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" />
+            <RelativeLayout android:id="@id/order_item_sku_show_more" android:background="#ffffffff" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="38.0dip">
+                <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:id="@id/order_item_remain_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/mgtrade_order_list_show_more_arraw" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/order_presell" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/mgtrade_red_color" android:id="@id/order_price_value1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$100" android:layout_alignParentRight="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:id="@id/order_price_name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="定金:" android:layout_toLeftOf="@id/order_price_value1" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:id="@id/order_ship_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="包邮" android:layout_toLeftOf="@id/order_price_name1" />
+            </RelativeLayout>
+            <RelativeLayout android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="#fff0f0f0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <TextView android:textSize="13.0sp" android:id="@id/order_price_value2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$120" android:layout_alignParentRight="true" />
+                <TextView android:textSize="13.0sp" android:id="@id/order_price_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="尾款:" android:layout_toLeftOf="@id/order_price_value2" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/price_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="10.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/mgtrade_official_text_color_2" android:ellipsize="end" android:id="@id/order_item_extra_message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="sssss" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:id="@id/delivery_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mgtrade_official_text_color_4" android:id="@id/order_item_price_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/mgtrade_bill_all_price" />
+                <com.mogujie.uikit.textview.AutofitTextView android:textSize="16.0sp" android:textColor="@color/mgtrade_red_color" android:ellipsize="end" android:id="@id/order_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/mgtrade_default_chn_price" android:singleLine="true" app:sizeToFit="false" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/mgtrade_red_color" android:id="@id/unpay_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:text="@string/mgtrade_bill_un_wepay" android:layout_below="@id/order_item_price" android:layout_alignParentRight="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/button_ly" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/comment_complete_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:text="@string/mgtrade_order_comment_complete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/right_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <Button android:textSize="13.0sp" android:textColor="@color/mls_red" android:id="@id/order_item_button_extra" android:background="@drawable/mgtrade_red_stroke_round_corner_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginRight="10.0dip" android:minWidth="72.0dip" />
+                    <Button android:textSize="13.0sp" android:textColor="@color/dialog_positive_text_color" android:id="@id/order_item_button" android:background="@drawable/mgtrade_positive_btn_bkg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:minWidth="72.0dip" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="@color/mls_red" android:id="@id/order_item_remain_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:singleLine="true" android:layout_toLeftOf="@id/right_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

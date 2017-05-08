@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/paysdk_pay_bottom_bar_height" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="22.0sp" android:textColor="?pf_brand_text_color" android:layout_gravity="center_horizontal" android:id="@id/maibei_instalment_total_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+                <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color1" android:layout_gravity="bottom|center" android:id="@id/maibei_instalment_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/maibei_instalment_items_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+            <RelativeLayout android:id="@id/maibei_instalment_protocal_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                <CheckBox android:id="@id/maibei_instalment_protocol_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/paysdk_maibei_installment_item_checked_indicator" android:layout_toLeftOf="@id/maibei_instalment_protocol_text" />
+                <TextView android:textSize="@dimen/mgjpf_main_text_size2" android:textColor="@color/mgjpf_main_text_color2" android:id="@id/maibei_instalment_protocol_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:text="@string/paysdk_maibei_instalment_protocal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/maibei_instalment_bottom_bar" android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="@dimen/paysdk_pay_bottom_bar_height" android:animateLayoutChanges="true">
+        <TextView android:textSize="20.0sp" android:textColor="@color/mgjpf_brand_text_color" android:id="@id/maibei_instalment_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size3" android:textColor="@color/mgjpf_main_text_color1" android:id="@id/maibei_instalment_total_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_below="@id/maibei_instalment_total_price" />
+        <Button android:enabled="false" android:id="@id/maibei_instalment_pay_button" android:layout_width="@dimen/paysdk_pay_confirm_btn_width" android:layout_height="@dimen/paysdk_pay_confirm_btn_height" android:layout_marginRight="15.0dip" android:text="@string/mgjpf_dialog_ok_btn_text" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MGJPF_tv_btn" />
+    </RelativeLayout>
+</FrameLayout>

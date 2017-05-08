@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/pay_fail_webimage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:src="@drawable/paysdk_pay_fail_logo" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/mgjpf_brand_text_color" android:id="@id/pay_fail_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/paysdk_pay_fail_result" />
+        <TextView android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="#ff666666" android:gravity="center" android:id="@id/pay_fail_reason_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="30.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <Button android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_brand_text_color" android:id="@id/pay_fail_left_payment" android:background="@drawable/paysdk_pay_fail_action_left" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/mgjpf_main_text_size1" android:textColor="@color/mgjpf_white" android:id="@id/pay_fail_right_payment" android:background="@drawable/paysdk_pay_fail_action_right" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.mogujie.mgjpfbasesdk.banner.PFBannerLayout android:layout_gravity="bottom" android:id="@id/pay_fail_bottom_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

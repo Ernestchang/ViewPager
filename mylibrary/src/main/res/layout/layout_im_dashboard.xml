@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/red" android:id="@id/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="close" />
+                <Button android:id="@id/btn_im_dash_gift_small_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="gift小" />
+                <Button android:id="@id/btn_gift_small_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="gift小" />
+                <Button android:id="@id/btn_im_dash_gift_big_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="gift1" />
+                <Button android:id="@id/btn_im_dash_gift_big_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="gift2" />
+                <Button android:id="@id/btn_id_dash_danmu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="弹幕" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_gift_red_packet_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小红包" />
+                <Button android:id="@id/btn_gift_red_packet_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大红包" />
+                <Button android:id="@id/btn_im_dash_screen_shot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="截屏" />
+                <Button android:id="@id/btn_im_dash_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_im_dasg_coupons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠券" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

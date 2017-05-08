@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mgjpf_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/paysdk_cashier_payment_item" />
+    <View android:id="@id/maibei_payment_item_view_divider" android:background="@color/mgjpf_view_divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="55.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/maibei_payment_item_installment_layout" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/paysdk_cashier_payment_item_height" android:layout_marginLeft="55.0dip" android:divider="@color/mgjpf_view_divider_color" android:showDividers="beginning" android:dividerPadding="15.0dip">
+        <com.astonmartin.image.WebImageView android:id="@id/installment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/installment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paysdk_cashier_select_installment" />
+        <com.astonmartin.image.WebImageView android:id="@id/installment_left_btn_img" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View style="@style/horizontal_space" />
+        <com.astonmartin.image.WebImageView android:id="@id/installment_right_btn_img" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/mgjpf_main_text_color3" android:id="@id/selected_installment" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.astonmartin.image.WebImageView android:id="@id/installment_arrow_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:scaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>
